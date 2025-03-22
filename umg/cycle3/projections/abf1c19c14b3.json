@@ -1,0 +1,8 @@
+{
+  "UID": "abf1c19c14b3",
+  "Chain": "Informational/Potentiality/Causal \u2192 Causal/Potentiality \u2192 Causal/Potentiality/Informational \u2192 Causal/Potentiality/Informational \u2192 Informational/Potentiality/Causal \u2192 Informational/Potentiality/Causal \u2192 Causal/Potentiality",
+  "Phi": 4.2014,
+  "S_int": 0.3665,
+  "Decay": 0.37715,
+  "Force": "Identity"
+}
