@@ -1,0 +1,12 @@
+def Potentiality_Temporal(x):
+    """
+    Unified Model Function from: Potentiality → Temporal
+    Dominant Force: Weak
+    File: Potentiality/Temporal.txt
+    S_int: 0.086
+    Phi: 2.985979
+    Projection Weights: [0.05, 0.2, 0.3, 0.55]
+    """
+    decay = 0.85
+    transform = [0.05, 0.2, 0.3, 0.55]
+    return [decay * x[i] * transform[i] for i in range(4)]

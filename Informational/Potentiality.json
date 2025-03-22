@@ -1,0 +1,12 @@
+def Informational_Potentiality(x):
+    """
+    Unified Model Function from: Informational → Potentiality
+    Dominant Force: EM
+    File: Informational/Potentiality.json
+    S_int: 0.05985
+    Phi: 3.153844
+    Projection Weights: [0.1, 0.75, 0.25, 0.1]
+    """
+    decay = 0.85
+    transform = [0.1, 0.75, 0.25, 0.1]
+    return [decay * x[i] * transform[i] for i in range(4)]

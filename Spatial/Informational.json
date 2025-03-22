@@ -1,0 +1,12 @@
+def Spatial_Informational(x):
+    """
+    Unified Model Function from: Spatial → Informational
+    Dominant Force: EM
+    File: Spatial/Informational.json
+    S_int: 0.047775
+    Phi: 2.701457
+    Projection Weights: [0.1, 0.75, 0.25, 0.1]
+    """
+    decay = 0.85
+    transform = [0.1, 0.75, 0.25, 0.1]
+    return [decay * x[i] * transform[i] for i in range(4)]

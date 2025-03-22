@@ -1,0 +1,12 @@
+def Spatial_Causal_Temporal(x):
+    """
+    Unified Model Function from: Spatial → Causal → Temporal
+    Dominant Force: Strong
+    File: Spatial/Causal/Temporal.toml
+    S_int: 0.059063
+    Phi: 2.831321
+    Projection Weights: [0.2, 0.1, 0.7, 0.15]
+    """
+    decay = 0.7225
+    transform = [0.2, 0.1, 0.7, 0.15]
+    return [decay * x[i] * transform[i] for i in range(4)]

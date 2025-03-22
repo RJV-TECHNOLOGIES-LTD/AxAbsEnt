@@ -1,0 +1,12 @@
+def Informational_Causal(x):
+    """
+    Unified Model Function from: Informational → Causal
+    Dominant Force: Strong
+    File: Informational/Causal.toml
+    S_int: 0.0456
+    Phi: 3.057279
+    Projection Weights: [0.2, 0.1, 0.7, 0.15]
+    """
+    decay = 0.85
+    transform = [0.2, 0.1, 0.7, 0.15]
+    return [decay * x[i] * transform[i] for i in range(4)]

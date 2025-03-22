@@ -1,0 +1,12 @@
+def Potentiality_Informational_Temporal_Spatial(x):
+    """
+    Unified Model Function from: Potentiality → Informational → Temporal → Spatial
+    Dominant Force: EM
+    File: Potentiality/Informational/Temporal/Spatial.json
+    S_int: 0.04495
+    Phi: 2.835027
+    Projection Weights: [0.1, 0.75, 0.25, 0.1]
+    """
+    decay = 0.614125
+    transform = [0.1, 0.75, 0.25, 0.1]
+    return [decay * x[i] * transform[i] for i in range(4)]

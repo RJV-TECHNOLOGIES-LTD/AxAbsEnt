@@ -1,0 +1,12 @@
+def Causal_Spatial_Informational_Temporal(x):
+    """
+    Unified Model Function from: Causal → Spatial → Informational → Temporal
+    Dominant Force: EM
+    File: Causal/Spatial/Informational/Temporal.json
+    S_int: 0.0509
+    Phi: 2.764109
+    Projection Weights: [0.1, 0.75, 0.25, 0.1]
+    """
+    decay = 0.614125
+    transform = [0.1, 0.75, 0.25, 0.1]
+    return [decay * x[i] * transform[i] for i in range(4)]

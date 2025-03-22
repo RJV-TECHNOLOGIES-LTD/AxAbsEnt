@@ -1,0 +1,12 @@
+def Temporal_Causal(x):
+    """
+    Unified Model Function from: Temporal → Causal
+    Dominant Force: Weak
+    File: Temporal/Causal.txt
+    S_int: 0.063
+    Phi: 2.889414
+    Projection Weights: [0.05, 0.2, 0.3, 0.55]
+    """
+    decay = 0.85
+    transform = [0.05, 0.2, 0.3, 0.55]
+    return [decay * x[i] * transform[i] for i in range(4)]

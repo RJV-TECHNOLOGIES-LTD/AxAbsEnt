@@ -1,0 +1,12 @@
+def Informational_Potentiality_Temporal_Spatial_Causal(x):
+    """
+    Unified Model Function from: Informational → Potentiality → Temporal → Spatial → Causal
+    Dominant Force: Weak
+    File: Informational/Potentiality/Temporal/Spatial/Causal.txt
+    S_int: 0.056544
+    Phi: 2.861661
+    Projection Weights: [0.05, 0.2, 0.3, 0.55]
+    """
+    decay = 0.522006
+    transform = [0.05, 0.2, 0.3, 0.55]
+    return [decay * x[i] * transform[i] for i in range(4)]

@@ -1,0 +1,12 @@
+def Potentiality_Informational_Causal_Temporal(x):
+    """
+    Unified Model Function from: Potentiality → Informational → Causal → Temporal
+    Dominant Force: Strong
+    File: Potentiality/Informational/Causal/Temporal.toml
+    S_int: 0.05615
+    Phi: 3.033512
+    Projection Weights: [0.2, 0.1, 0.7, 0.15]
+    """
+    decay = 0.614125
+    transform = [0.2, 0.1, 0.7, 0.15]
+    return [decay * x[i] * transform[i] for i in range(4)]
