@@ -1,0 +1,5402 @@
+[
+  {
+    "UID": "11078070ba25",
+    "\u03a6": 3.3993,
+    "Decay": 0.7225,
+    "S_int": 0.1141,
+    "Force": "Strong",
+    "Weight": 2.455994,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "5f864412d3fc",
+    "\u03a6": 3.399,
+    "Decay": 0.7225,
+    "S_int": 0.2967,
+    "Force": "Weak",
+    "Weight": 2.455777,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "d51358f24912",
+    "\u03a6": 3.3987,
+    "Decay": 0.7225,
+    "S_int": 0.2051,
+    "Force": "Weak",
+    "Weight": 2.455561,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "e7920e533af1",
+    "\u03a6": 3.3966,
+    "Decay": 0.7225,
+    "S_int": 0.2323,
+    "Force": "Weak",
+    "Weight": 2.454044,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "d0dee136bb27",
+    "\u03a6": 3.3962,
+    "Decay": 0.7225,
+    "S_int": 0.1087,
+    "Force": "Strong",
+    "Weight": 2.453755,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "c9143bf9244f",
+    "\u03a6": 3.3948,
+    "Decay": 0.7225,
+    "S_int": 0.2963,
+    "Force": "Weak",
+    "Weight": 2.452743,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "ea1e7dbaeb7f",
+    "\u03a6": 3.3946,
+    "Decay": 0.7225,
+    "S_int": 0.3737,
+    "Force": "Strong",
+    "Weight": 2.452599,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "dde634387f45",
+    "\u03a6": 3.3943,
+    "Decay": 0.7225,
+    "S_int": 0.1851,
+    "Force": "Weak",
+    "Weight": 2.452382,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "020cf6dbf2c2",
+    "\u03a6": 3.3942,
+    "Decay": 0.7225,
+    "S_int": 0.1473,
+    "Force": "Gravity",
+    "Weight": 2.45231,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "61ef6550e01c",
+    "\u03a6": 3.3939,
+    "Decay": 0.7225,
+    "S_int": 0.1036,
+    "Force": "Gravity",
+    "Weight": 2.452093,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "01206e36990f",
+    "\u03a6": 3.3921,
+    "Decay": 0.7225,
+    "S_int": 0.125,
+    "Force": "EM",
+    "Weight": 2.450792,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "b11ce2406a80",
+    "\u03a6": 3.3914,
+    "Decay": 0.7225,
+    "S_int": 0.3805,
+    "Force": "Strong",
+    "Weight": 2.450287,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "f6db320082b8",
+    "\u03a6": 3.3898,
+    "Decay": 0.7225,
+    "S_int": 0.3841,
+    "Force": "Weak",
+    "Weight": 2.449131,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "7375e2935a32",
+    "\u03a6": 3.3864,
+    "Decay": 0.7225,
+    "S_int": 0.1765,
+    "Force": "Gravity",
+    "Weight": 2.446674,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "4380d9f5242b",
+    "\u03a6": 3.3864,
+    "Decay": 0.7225,
+    "S_int": 0.3008,
+    "Force": "Weak",
+    "Weight": 2.446674,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "c98291cf99b5",
+    "\u03a6": 3.3843,
+    "Decay": 0.7225,
+    "S_int": 0.1081,
+    "Force": "Weak",
+    "Weight": 2.445157,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "fcb3bea13803",
+    "\u03a6": 3.3835,
+    "Decay": 0.7225,
+    "S_int": 0.3314,
+    "Force": "Gravity",
+    "Weight": 2.444579,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "c6ac727447d1",
+    "\u03a6": 3.3804,
+    "Decay": 0.7225,
+    "S_int": 0.3591,
+    "Force": "EM",
+    "Weight": 2.442339,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "7b3f2007ca29",
+    "\u03a6": 3.3802,
+    "Decay": 0.7225,
+    "S_int": 0.2971,
+    "Force": "EM",
+    "Weight": 2.442194,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "55fe845ccd59",
+    "\u03a6": 3.378,
+    "Decay": 0.7225,
+    "S_int": 0.306,
+    "Force": "Weak",
+    "Weight": 2.440605,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "3c6920d6ed03",
+    "\u03a6": 3.3764,
+    "Decay": 0.7225,
+    "S_int": 0.1331,
+    "Force": "Gravity",
+    "Weight": 2.439449,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "5fa8ef930aef",
+    "\u03a6": 3.375,
+    "Decay": 0.7225,
+    "S_int": 0.3577,
+    "Force": "EM",
+    "Weight": 2.438438,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "f9a21640b08c",
+    "\u03a6": 3.373,
+    "Decay": 0.7225,
+    "S_int": 0.2442,
+    "Force": "Strong",
+    "Weight": 2.436993,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "3c07da7e59f3",
+    "\u03a6": 3.3721,
+    "Decay": 0.7225,
+    "S_int": 0.3026,
+    "Force": "Gravity",
+    "Weight": 2.436342,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "843c113daafa",
+    "\u03a6": 3.371,
+    "Decay": 0.7225,
+    "S_int": 0.2183,
+    "Force": "Gravity",
+    "Weight": 2.435548,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "5982f3328bc5",
+    "\u03a6": 3.3705,
+    "Decay": 0.7225,
+    "S_int": 0.3983,
+    "Force": "EM",
+    "Weight": 2.435186,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "bde6bc7883a6",
+    "\u03a6": 3.3695,
+    "Decay": 0.7225,
+    "S_int": 0.3661,
+    "Force": "EM",
+    "Weight": 2.434464,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "a165398a5516",
+    "\u03a6": 3.3668,
+    "Decay": 0.7225,
+    "S_int": 0.1969,
+    "Force": "Weak",
+    "Weight": 2.432513,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "1eedc24b3a4a",
+    "\u03a6": 3.3667,
+    "Decay": 0.7225,
+    "S_int": 0.2759,
+    "Force": "Strong",
+    "Weight": 2.432441,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "c188f7e7852b",
+    "\u03a6": 3.3659,
+    "Decay": 0.7225,
+    "S_int": 0.2915,
+    "Force": "Gravity",
+    "Weight": 2.431863,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "eb7b30c46c2e",
+    "\u03a6": 3.3655,
+    "Decay": 0.7225,
+    "S_int": 0.2486,
+    "Force": "Strong",
+    "Weight": 2.431574,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "81ca2a6ecef2",
+    "\u03a6": 3.365,
+    "Decay": 0.7225,
+    "S_int": 0.3828,
+    "Force": "Gravity",
+    "Weight": 2.431213,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "18172c26fbe0",
+    "\u03a6": 3.3625,
+    "Decay": 0.7225,
+    "S_int": 0.1448,
+    "Force": "EM",
+    "Weight": 2.429406,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "039bdf8ac601",
+    "\u03a6": 3.362,
+    "Decay": 0.7225,
+    "S_int": 0.3884,
+    "Force": "Weak",
+    "Weight": 2.429045,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "1a7c561440a7",
+    "\u03a6": 3.3609,
+    "Decay": 0.7225,
+    "S_int": 0.2552,
+    "Force": "Strong",
+    "Weight": 2.42825,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "cd8dded92a2c",
+    "\u03a6": 3.3604,
+    "Decay": 0.7225,
+    "S_int": 0.2861,
+    "Force": "Weak",
+    "Weight": 2.427889,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "d8fcf8cdead3",
+    "\u03a6": 3.3576,
+    "Decay": 0.7225,
+    "S_int": 0.1377,
+    "Force": "Strong",
+    "Weight": 2.425866,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "7fb17a154e69",
+    "\u03a6": 3.3547,
+    "Decay": 0.7225,
+    "S_int": 0.3185,
+    "Force": "EM",
+    "Weight": 2.423771,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "f34b2d885ec8",
+    "\u03a6": 3.3542,
+    "Decay": 0.7225,
+    "S_int": 0.2576,
+    "Force": "Strong",
+    "Weight": 2.423409,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "cac8332ed891",
+    "\u03a6": 3.3538,
+    "Decay": 0.7225,
+    "S_int": 0.3333,
+    "Force": "Gravity",
+    "Weight": 2.423121,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "321238924435",
+    "\u03a6": 3.3532,
+    "Decay": 0.7225,
+    "S_int": 0.1709,
+    "Force": "Strong",
+    "Weight": 2.422687,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "a48f352ff068",
+    "\u03a6": 3.3514,
+    "Decay": 0.7225,
+    "S_int": 0.1943,
+    "Force": "Gravity",
+    "Weight": 2.421387,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "307a21e47c26",
+    "\u03a6": 3.3501,
+    "Decay": 0.7225,
+    "S_int": 0.3382,
+    "Force": "Gravity",
+    "Weight": 2.420447,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "d13c25f6d005",
+    "\u03a6": 3.3482,
+    "Decay": 0.7225,
+    "S_int": 0.2875,
+    "Force": "EM",
+    "Weight": 2.419074,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "3c9974d1f786",
+    "\u03a6": 3.3465,
+    "Decay": 0.7225,
+    "S_int": 0.2532,
+    "Force": "Strong",
+    "Weight": 2.417846,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "cb10380003f2",
+    "\u03a6": 3.3463,
+    "Decay": 0.7225,
+    "S_int": 0.2649,
+    "Force": "Gravity",
+    "Weight": 2.417702,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "47fe24a00c87",
+    "\u03a6": 3.3404,
+    "Decay": 0.7225,
+    "S_int": 0.3829,
+    "Force": "Gravity",
+    "Weight": 2.413439,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "6c9763026410",
+    "\u03a6": 3.3402,
+    "Decay": 0.7225,
+    "S_int": 0.3845,
+    "Force": "EM",
+    "Weight": 2.413295,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "0e0b9442320b",
+    "\u03a6": 3.34,
+    "Decay": 0.7225,
+    "S_int": 0.34,
+    "Force": "Gravity",
+    "Weight": 2.41315,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "6dc66de3f9bc",
+    "\u03a6": 3.3366,
+    "Decay": 0.7225,
+    "S_int": 0.2606,
+    "Force": "Strong",
+    "Weight": 2.410693,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "0d8748617931",
+    "\u03a6": 3.3348,
+    "Decay": 0.7225,
+    "S_int": 0.1641,
+    "Force": "Strong",
+    "Weight": 2.409393,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "8b2598fbf8e8",
+    "\u03a6": 3.3342,
+    "Decay": 0.7225,
+    "S_int": 0.2771,
+    "Force": "Weak",
+    "Weight": 2.408959,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "68a5f176f25c",
+    "\u03a6": 3.3339,
+    "Decay": 0.7225,
+    "S_int": 0.1128,
+    "Force": "EM",
+    "Weight": 2.408743,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "683130b5c267",
+    "\u03a6": 3.3327,
+    "Decay": 0.7225,
+    "S_int": 0.2279,
+    "Force": "EM",
+    "Weight": 2.407876,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "e9caa6a1a943",
+    "\u03a6": 3.3326,
+    "Decay": 0.7225,
+    "S_int": 0.1885,
+    "Force": "Strong",
+    "Weight": 2.407803,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "adf176ebe7f6",
+    "\u03a6": 3.3315,
+    "Decay": 0.7225,
+    "S_int": 0.2001,
+    "Force": "Weak",
+    "Weight": 2.407009,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "1c1f06add4f4",
+    "\u03a6": 3.3306,
+    "Decay": 0.7225,
+    "S_int": 0.1975,
+    "Force": "Gravity",
+    "Weight": 2.406359,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "ebefe6a804be",
+    "\u03a6": 3.3303,
+    "Decay": 0.7225,
+    "S_int": 0.1867,
+    "Force": "Gravity",
+    "Weight": 2.406142,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "9d2fb2c98bc5",
+    "\u03a6": 3.3299,
+    "Decay": 0.7225,
+    "S_int": 0.2245,
+    "Force": "Weak",
+    "Weight": 2.405853,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "c54927c7bf1c",
+    "\u03a6": 3.3297,
+    "Decay": 0.7225,
+    "S_int": 0.1868,
+    "Force": "Strong",
+    "Weight": 2.405708,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "1491dfc15ca7",
+    "\u03a6": 3.3297,
+    "Decay": 0.7225,
+    "S_int": 0.2976,
+    "Force": "Strong",
+    "Weight": 2.405708,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "00193d8fb9cc",
+    "\u03a6": 3.3239,
+    "Decay": 0.7225,
+    "S_int": 0.3553,
+    "Force": "EM",
+    "Weight": 2.401518,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "4fbe3b3e2f94",
+    "\u03a6": 3.3236,
+    "Decay": 0.7225,
+    "S_int": 0.2097,
+    "Force": "EM",
+    "Weight": 2.401301,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "28575306e3bd",
+    "\u03a6": 3.323,
+    "Decay": 0.7225,
+    "S_int": 0.3218,
+    "Force": "Strong",
+    "Weight": 2.400867,
+    "Directive": "EXECUTE"
+  },
+  {
+    "UID": "81e51d6e53c9",
+    "\u03a6": 3.3185,
+    "Decay": 0.7225,
+    "S_int": 0.1895,
+    "Force": "EM",
+    "Weight": 2.397616,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "401cde064d55",
+    "\u03a6": 3.3174,
+    "Decay": 0.7225,
+    "S_int": 0.3232,
+    "Force": "EM",
+    "Weight": 2.396822,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f87d62e6b057",
+    "\u03a6": 3.3129,
+    "Decay": 0.7225,
+    "S_int": 0.2499,
+    "Force": "Gravity",
+    "Weight": 2.39357,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "2e0333564593",
+    "\u03a6": 3.3107,
+    "Decay": 0.7225,
+    "S_int": 0.1864,
+    "Force": "Weak",
+    "Weight": 2.391981,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d0754b7ec38c",
+    "\u03a6": 3.3102,
+    "Decay": 0.7225,
+    "S_int": 0.1522,
+    "Force": "Weak",
+    "Weight": 2.39162,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9847101094c2",
+    "\u03a6": 3.3071,
+    "Decay": 0.7225,
+    "S_int": 0.3467,
+    "Force": "Weak",
+    "Weight": 2.38938,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f0234b81f4e3",
+    "\u03a6": 3.3024,
+    "Decay": 0.7225,
+    "S_int": 0.113,
+    "Force": "Strong",
+    "Weight": 2.385984,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "fe8d9f373fda",
+    "\u03a6": 3.302,
+    "Decay": 0.7225,
+    "S_int": 0.3574,
+    "Force": "Strong",
+    "Weight": 2.385695,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "22767aafb80b",
+    "\u03a6": 3.298,
+    "Decay": 0.7225,
+    "S_int": 0.1563,
+    "Force": "Gravity",
+    "Weight": 2.382805,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "196873a6548f",
+    "\u03a6": 3.2979,
+    "Decay": 0.7225,
+    "S_int": 0.309,
+    "Force": "EM",
+    "Weight": 2.382733,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "1c2799a738b6",
+    "\u03a6": 3.2973,
+    "Decay": 0.7225,
+    "S_int": 0.3196,
+    "Force": "Weak",
+    "Weight": 2.382299,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "289dfe69da5d",
+    "\u03a6": 3.2966,
+    "Decay": 0.7225,
+    "S_int": 0.168,
+    "Force": "Gravity",
+    "Weight": 2.381794,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e98406326b6e",
+    "\u03a6": 3.2954,
+    "Decay": 0.7225,
+    "S_int": 0.2939,
+    "Force": "EM",
+    "Weight": 2.380927,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "05ea3721c61c",
+    "\u03a6": 3.2942,
+    "Decay": 0.7225,
+    "S_int": 0.1988,
+    "Force": "Strong",
+    "Weight": 2.38006,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "cb6d3c88c200",
+    "\u03a6": 3.2919,
+    "Decay": 0.7225,
+    "S_int": 0.3701,
+    "Force": "Gravity",
+    "Weight": 2.378398,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "8165eef10f20",
+    "\u03a6": 3.2912,
+    "Decay": 0.7225,
+    "S_int": 0.3639,
+    "Force": "Weak",
+    "Weight": 2.377892,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0247eb17d7e2",
+    "\u03a6": 3.2897,
+    "Decay": 0.7225,
+    "S_int": 0.2695,
+    "Force": "Strong",
+    "Weight": 2.376808,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "2d6f5ae645ac",
+    "\u03a6": 3.2894,
+    "Decay": 0.7225,
+    "S_int": 0.1504,
+    "Force": "Strong",
+    "Weight": 2.376591,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "180adc5b40c2",
+    "\u03a6": 3.2878,
+    "Decay": 0.7225,
+    "S_int": 0.1868,
+    "Force": "EM",
+    "Weight": 2.375436,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "530d54f11d03",
+    "\u03a6": 3.2878,
+    "Decay": 0.7225,
+    "S_int": 0.242,
+    "Force": "Gravity",
+    "Weight": 2.375436,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4b7263a5db12",
+    "\u03a6": 3.2868,
+    "Decay": 0.7225,
+    "S_int": 0.2416,
+    "Force": "Weak",
+    "Weight": 2.374713,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "51764bda47d9",
+    "\u03a6": 3.2819,
+    "Decay": 0.7225,
+    "S_int": 0.2222,
+    "Force": "Weak",
+    "Weight": 2.371173,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9f53247995c0",
+    "\u03a6": 3.2782,
+    "Decay": 0.7225,
+    "S_int": 0.1474,
+    "Force": "Weak",
+    "Weight": 2.368499,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "50393a38855e",
+    "\u03a6": 3.2768,
+    "Decay": 0.7225,
+    "S_int": 0.1912,
+    "Force": "EM",
+    "Weight": 2.367488,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "6cc76528a64d",
+    "\u03a6": 3.2729,
+    "Decay": 0.7225,
+    "S_int": 0.2079,
+    "Force": "Weak",
+    "Weight": 2.36467,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f437172bebb8",
+    "\u03a6": 3.2728,
+    "Decay": 0.7225,
+    "S_int": 0.2813,
+    "Force": "Gravity",
+    "Weight": 2.364598,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c8504f69c36d",
+    "\u03a6": 3.2723,
+    "Decay": 0.7225,
+    "S_int": 0.1209,
+    "Force": "EM",
+    "Weight": 2.364237,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "da8547c419a2",
+    "\u03a6": 3.2717,
+    "Decay": 0.7225,
+    "S_int": 0.2792,
+    "Force": "EM",
+    "Weight": 2.363803,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d474a09c0753",
+    "\u03a6": 3.2713,
+    "Decay": 0.7225,
+    "S_int": 0.3887,
+    "Force": "EM",
+    "Weight": 2.363514,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "142801196ae4",
+    "\u03a6": 3.2709,
+    "Decay": 0.7225,
+    "S_int": 0.395,
+    "Force": "Strong",
+    "Weight": 2.363225,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "98bdbe2a92eb",
+    "\u03a6": 3.2696,
+    "Decay": 0.7225,
+    "S_int": 0.1801,
+    "Force": "Gravity",
+    "Weight": 2.362286,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "bce39e99cfb6",
+    "\u03a6": 3.2695,
+    "Decay": 0.7225,
+    "S_int": 0.1844,
+    "Force": "Strong",
+    "Weight": 2.362214,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b6c722676a3b",
+    "\u03a6": 3.2669,
+    "Decay": 0.7225,
+    "S_int": 0.3994,
+    "Force": "Weak",
+    "Weight": 2.360335,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "46e09ca68c05",
+    "\u03a6": 3.2669,
+    "Decay": 0.7225,
+    "S_int": 0.3017,
+    "Force": "Strong",
+    "Weight": 2.360335,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "356ecf1da6c0",
+    "\u03a6": 3.2649,
+    "Decay": 0.7225,
+    "S_int": 0.2012,
+    "Force": "Strong",
+    "Weight": 2.35889,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c775239ab36d",
+    "\u03a6": 3.2616,
+    "Decay": 0.7225,
+    "S_int": 0.1868,
+    "Force": "Gravity",
+    "Weight": 2.356506,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b9e018ce816e",
+    "\u03a6": 3.2616,
+    "Decay": 0.7225,
+    "S_int": 0.2143,
+    "Force": "EM",
+    "Weight": 2.356506,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "3fc903c58f03",
+    "\u03a6": 3.2612,
+    "Decay": 0.7225,
+    "S_int": 0.3252,
+    "Force": "EM",
+    "Weight": 2.356217,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "efecf5cf29ec",
+    "\u03a6": 3.2574,
+    "Decay": 0.7225,
+    "S_int": 0.2415,
+    "Force": "EM",
+    "Weight": 2.353471,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "7c97fcf6de05",
+    "\u03a6": 3.2568,
+    "Decay": 0.7225,
+    "S_int": 0.3991,
+    "Force": "Strong",
+    "Weight": 2.353038,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "87aa7829cacf",
+    "\u03a6": 3.2553,
+    "Decay": 0.7225,
+    "S_int": 0.29,
+    "Force": "EM",
+    "Weight": 2.351954,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a39777113574",
+    "\u03a6": 3.2539,
+    "Decay": 0.7225,
+    "S_int": 0.3916,
+    "Force": "Weak",
+    "Weight": 2.350943,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "df315ae79556",
+    "\u03a6": 3.2535,
+    "Decay": 0.7225,
+    "S_int": 0.3107,
+    "Force": "Gravity",
+    "Weight": 2.350654,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e7f77d0ffda7",
+    "\u03a6": 3.2535,
+    "Decay": 0.7225,
+    "S_int": 0.1085,
+    "Force": "Weak",
+    "Weight": 2.350654,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0938e561df84",
+    "\u03a6": 3.2492,
+    "Decay": 0.7225,
+    "S_int": 0.1395,
+    "Force": "Strong",
+    "Weight": 2.347547,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "372ee0dea92b",
+    "\u03a6": 3.2457,
+    "Decay": 0.7225,
+    "S_int": 0.2503,
+    "Force": "EM",
+    "Weight": 2.345018,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "501dc9183aec",
+    "\u03a6": 3.2455,
+    "Decay": 0.7225,
+    "S_int": 0.2211,
+    "Force": "Strong",
+    "Weight": 2.344874,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4ec1c1bb178d",
+    "\u03a6": 3.2452,
+    "Decay": 0.7225,
+    "S_int": 0.3282,
+    "Force": "EM",
+    "Weight": 2.344657,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "efca16ad646a",
+    "\u03a6": 3.2438,
+    "Decay": 0.7225,
+    "S_int": 0.3814,
+    "Force": "Strong",
+    "Weight": 2.343646,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b34ae9c7be39",
+    "\u03a6": 3.2404,
+    "Decay": 0.7225,
+    "S_int": 0.1768,
+    "Force": "Weak",
+    "Weight": 2.341189,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e6be43e4ff94",
+    "\u03a6": 3.2402,
+    "Decay": 0.7225,
+    "S_int": 0.3929,
+    "Force": "Weak",
+    "Weight": 2.341045,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e4cc7a8ffc59",
+    "\u03a6": 3.2365,
+    "Decay": 0.7225,
+    "S_int": 0.145,
+    "Force": "Weak",
+    "Weight": 2.338371,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f368f079b974",
+    "\u03a6": 3.2342,
+    "Decay": 0.7225,
+    "S_int": 0.1206,
+    "Force": "EM",
+    "Weight": 2.336709,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "3f4a18404bce",
+    "\u03a6": 3.2321,
+    "Decay": 0.7225,
+    "S_int": 0.278,
+    "Force": "Gravity",
+    "Weight": 2.335192,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "fe0d433c801d",
+    "\u03a6": 3.2316,
+    "Decay": 0.7225,
+    "S_int": 0.1805,
+    "Force": "Weak",
+    "Weight": 2.334831,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4da05092d811",
+    "\u03a6": 3.2313,
+    "Decay": 0.7225,
+    "S_int": 0.2373,
+    "Force": "Gravity",
+    "Weight": 2.334614,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "112f56a95db3",
+    "\u03a6": 3.2238,
+    "Decay": 0.7225,
+    "S_int": 0.1603,
+    "Force": "EM",
+    "Weight": 2.329196,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b97753f8d7e3",
+    "\u03a6": 3.2235,
+    "Decay": 0.7225,
+    "S_int": 0.1348,
+    "Force": "Strong",
+    "Weight": 2.328979,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "06271be363a5",
+    "\u03a6": 3.2222,
+    "Decay": 0.7225,
+    "S_int": 0.2578,
+    "Force": "Strong",
+    "Weight": 2.32804,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "485d5f6b1e4c",
+    "\u03a6": 3.22,
+    "Decay": 0.7225,
+    "S_int": 0.2721,
+    "Force": "Strong",
+    "Weight": 2.32645,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4c610e418b0e",
+    "\u03a6": 3.2198,
+    "Decay": 0.7225,
+    "S_int": 0.3176,
+    "Force": "Strong",
+    "Weight": 2.326306,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "8307bc134cb2",
+    "\u03a6": 3.2185,
+    "Decay": 0.7225,
+    "S_int": 0.1252,
+    "Force": "Strong",
+    "Weight": 2.325366,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "2ea12be20f27",
+    "\u03a6": 3.2183,
+    "Decay": 0.7225,
+    "S_int": 0.168,
+    "Force": "EM",
+    "Weight": 2.325222,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b4bef41afcfd",
+    "\u03a6": 3.2181,
+    "Decay": 0.7225,
+    "S_int": 0.1079,
+    "Force": "EM",
+    "Weight": 2.325077,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "574727404dbd",
+    "\u03a6": 3.2125,
+    "Decay": 0.7225,
+    "S_int": 0.1293,
+    "Force": "Gravity",
+    "Weight": 2.321031,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f0450b4f7ab4",
+    "\u03a6": 3.2118,
+    "Decay": 0.7225,
+    "S_int": 0.3638,
+    "Force": "Strong",
+    "Weight": 2.320526,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "cbb300adf6db",
+    "\u03a6": 3.2098,
+    "Decay": 0.7225,
+    "S_int": 0.1265,
+    "Force": "EM",
+    "Weight": 2.319081,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9ff9805432e8",
+    "\u03a6": 3.205,
+    "Decay": 0.7225,
+    "S_int": 0.1304,
+    "Force": "Strong",
+    "Weight": 2.315613,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "fd820240eca2",
+    "\u03a6": 3.2041,
+    "Decay": 0.7225,
+    "S_int": 0.3456,
+    "Force": "Gravity",
+    "Weight": 2.314962,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "43903fc4ca49",
+    "\u03a6": 3.2039,
+    "Decay": 0.7225,
+    "S_int": 0.281,
+    "Force": "EM",
+    "Weight": 2.314818,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d33e13bd3bc8",
+    "\u03a6": 3.203,
+    "Decay": 0.7225,
+    "S_int": 0.3191,
+    "Force": "EM",
+    "Weight": 2.314167,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "23bebdfab334",
+    "\u03a6": 3.2005,
+    "Decay": 0.7225,
+    "S_int": 0.3831,
+    "Force": "EM",
+    "Weight": 2.312361,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e3b9f02f107c",
+    "\u03a6": 3.1998,
+    "Decay": 0.7225,
+    "S_int": 0.1886,
+    "Force": "Weak",
+    "Weight": 2.311856,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "88e43b6009a5",
+    "\u03a6": 3.1996,
+    "Decay": 0.7225,
+    "S_int": 0.1942,
+    "Force": "Gravity",
+    "Weight": 2.311711,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "117c7ae3e4fc",
+    "\u03a6": 3.1987,
+    "Decay": 0.7225,
+    "S_int": 0.2361,
+    "Force": "Strong",
+    "Weight": 2.311061,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "806d21fcefd5",
+    "\u03a6": 3.1949,
+    "Decay": 0.7225,
+    "S_int": 0.2208,
+    "Force": "Strong",
+    "Weight": 2.308315,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0978b43f902e",
+    "\u03a6": 3.1921,
+    "Decay": 0.7225,
+    "S_int": 0.2868,
+    "Force": "Strong",
+    "Weight": 2.306292,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "ee04caa7d93b",
+    "\u03a6": 3.1917,
+    "Decay": 0.7225,
+    "S_int": 0.3608,
+    "Force": "Strong",
+    "Weight": 2.306003,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "bc614b1fdc5e",
+    "\u03a6": 3.1878,
+    "Decay": 0.7225,
+    "S_int": 0.16,
+    "Force": "Strong",
+    "Weight": 2.303186,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "97cc32e68b95",
+    "\u03a6": 3.1872,
+    "Decay": 0.7225,
+    "S_int": 0.3532,
+    "Force": "Weak",
+    "Weight": 2.302752,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "ac1a5fa80592",
+    "\u03a6": 3.1864,
+    "Decay": 0.7225,
+    "S_int": 0.203,
+    "Force": "Weak",
+    "Weight": 2.302174,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0d2a406895cd",
+    "\u03a6": 3.1862,
+    "Decay": 0.7225,
+    "S_int": 0.2192,
+    "Force": "EM",
+    "Weight": 2.30203,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "5bc78934aab9",
+    "\u03a6": 3.1806,
+    "Decay": 0.7225,
+    "S_int": 0.3515,
+    "Force": "EM",
+    "Weight": 2.297983,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c0a057839535",
+    "\u03a6": 3.1803,
+    "Decay": 0.7225,
+    "S_int": 0.2404,
+    "Force": "Weak",
+    "Weight": 2.297767,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "acd3b7f94649",
+    "\u03a6": 3.1798,
+    "Decay": 0.7225,
+    "S_int": 0.1058,
+    "Force": "Gravity",
+    "Weight": 2.297406,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4c21b8e22d45",
+    "\u03a6": 3.1797,
+    "Decay": 0.7225,
+    "S_int": 0.2225,
+    "Force": "Gravity",
+    "Weight": 2.297333,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d6bb78dba0a1",
+    "\u03a6": 3.1796,
+    "Decay": 0.7225,
+    "S_int": 0.1841,
+    "Force": "Weak",
+    "Weight": 2.297261,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "ae2e43b3c63d",
+    "\u03a6": 3.1792,
+    "Decay": 0.7225,
+    "S_int": 0.3722,
+    "Force": "Gravity",
+    "Weight": 2.296972,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b26be27ab3be",
+    "\u03a6": 3.1784,
+    "Decay": 0.7225,
+    "S_int": 0.1208,
+    "Force": "Weak",
+    "Weight": 2.296394,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0e34e2578e58",
+    "\u03a6": 3.1779,
+    "Decay": 0.7225,
+    "S_int": 0.2029,
+    "Force": "Weak",
+    "Weight": 2.296033,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a3ce267f1836",
+    "\u03a6": 3.1776,
+    "Decay": 0.7225,
+    "S_int": 0.2451,
+    "Force": "EM",
+    "Weight": 2.295816,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b59b66d3b0dd",
+    "\u03a6": 3.1754,
+    "Decay": 0.7225,
+    "S_int": 0.263,
+    "Force": "Strong",
+    "Weight": 2.294226,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "84ba3feab356",
+    "\u03a6": 3.1749,
+    "Decay": 0.7225,
+    "S_int": 0.1148,
+    "Force": "Weak",
+    "Weight": 2.293865,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c8d4f3c072c7",
+    "\u03a6": 3.1713,
+    "Decay": 0.7225,
+    "S_int": 0.3547,
+    "Force": "EM",
+    "Weight": 2.291264,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e50aff3ff48a",
+    "\u03a6": 3.1672,
+    "Decay": 0.7225,
+    "S_int": 0.2464,
+    "Force": "Strong",
+    "Weight": 2.288302,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "cfb46913a5d6",
+    "\u03a6": 3.1654,
+    "Decay": 0.7225,
+    "S_int": 0.1165,
+    "Force": "Weak",
+    "Weight": 2.287002,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "8a15611574e3",
+    "\u03a6": 3.1652,
+    "Decay": 0.7225,
+    "S_int": 0.1965,
+    "Force": "Weak",
+    "Weight": 2.286857,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "70097cf82944",
+    "\u03a6": 3.1641,
+    "Decay": 0.7225,
+    "S_int": 0.305,
+    "Force": "EM",
+    "Weight": 2.286062,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "bbbce746785d",
+    "\u03a6": 3.163,
+    "Decay": 0.7225,
+    "S_int": 0.3832,
+    "Force": "Strong",
+    "Weight": 2.285267,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "55e07b0fc0d9",
+    "\u03a6": 3.1607,
+    "Decay": 0.7225,
+    "S_int": 0.2585,
+    "Force": "Weak",
+    "Weight": 2.283606,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "28b51db93536",
+    "\u03a6": 3.1598,
+    "Decay": 0.7225,
+    "S_int": 0.2526,
+    "Force": "Gravity",
+    "Weight": 2.282956,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "5d16c722d099",
+    "\u03a6": 3.1588,
+    "Decay": 0.7225,
+    "S_int": 0.314,
+    "Force": "EM",
+    "Weight": 2.282233,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e61ef6b85a1e",
+    "\u03a6": 3.1573,
+    "Decay": 0.7225,
+    "S_int": 0.2307,
+    "Force": "Gravity",
+    "Weight": 2.281149,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9e46b22959d3",
+    "\u03a6": 3.154,
+    "Decay": 0.7225,
+    "S_int": 0.3195,
+    "Force": "Weak",
+    "Weight": 2.278765,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f58fb2e2121a",
+    "\u03a6": 3.153,
+    "Decay": 0.7225,
+    "S_int": 0.2434,
+    "Force": "EM",
+    "Weight": 2.278043,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d58c2c2ab72b",
+    "\u03a6": 3.1505,
+    "Decay": 0.7225,
+    "S_int": 0.2285,
+    "Force": "EM",
+    "Weight": 2.276236,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "de4a1aecec33",
+    "\u03a6": 3.1445,
+    "Decay": 0.7225,
+    "S_int": 0.2105,
+    "Force": "Strong",
+    "Weight": 2.271901,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "72dfa171298c",
+    "\u03a6": 3.143,
+    "Decay": 0.7225,
+    "S_int": 0.3246,
+    "Force": "Strong",
+    "Weight": 2.270818,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e77d361aa5fe",
+    "\u03a6": 3.1413,
+    "Decay": 0.7225,
+    "S_int": 0.3893,
+    "Force": "EM",
+    "Weight": 2.269589,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "018b05445830",
+    "\u03a6": 3.1407,
+    "Decay": 0.7225,
+    "S_int": 0.1892,
+    "Force": "Gravity",
+    "Weight": 2.269156,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e47c3da27320",
+    "\u03a6": 3.1394,
+    "Decay": 0.7225,
+    "S_int": 0.103,
+    "Force": "Strong",
+    "Weight": 2.268217,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d8c95f132b84",
+    "\u03a6": 3.1368,
+    "Decay": 0.7225,
+    "S_int": 0.3491,
+    "Force": "Gravity",
+    "Weight": 2.266338,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "687e0e45c60d",
+    "\u03a6": 3.1351,
+    "Decay": 0.7225,
+    "S_int": 0.2974,
+    "Force": "EM",
+    "Weight": 2.26511,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e4412d56ce75",
+    "\u03a6": 3.1349,
+    "Decay": 0.7225,
+    "S_int": 0.1927,
+    "Force": "Weak",
+    "Weight": 2.264965,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "ea24b0a7b5d2",
+    "\u03a6": 3.13,
+    "Decay": 0.7225,
+    "S_int": 0.1668,
+    "Force": "Gravity",
+    "Weight": 2.261425,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d63ef974fcc8",
+    "\u03a6": 3.1296,
+    "Decay": 0.7225,
+    "S_int": 0.3359,
+    "Force": "Weak",
+    "Weight": 2.261136,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d2b5e4bdb643",
+    "\u03a6": 3.1277,
+    "Decay": 0.7225,
+    "S_int": 0.2184,
+    "Force": "EM",
+    "Weight": 2.259763,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d2ec5d9d6f6e",
+    "\u03a6": 3.1276,
+    "Decay": 0.7225,
+    "S_int": 0.1499,
+    "Force": "Weak",
+    "Weight": 2.259691,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "19e39e9b9454",
+    "\u03a6": 3.1273,
+    "Decay": 0.7225,
+    "S_int": 0.3448,
+    "Force": "Strong",
+    "Weight": 2.259474,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d29ffefa9fbc",
+    "\u03a6": 3.1268,
+    "Decay": 0.7225,
+    "S_int": 0.208,
+    "Force": "Strong",
+    "Weight": 2.259113,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a408d70a8af3",
+    "\u03a6": 3.122,
+    "Decay": 0.7225,
+    "S_int": 0.1561,
+    "Force": "Weak",
+    "Weight": 2.255645,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c42d2b8df0b2",
+    "\u03a6": 3.1218,
+    "Decay": 0.7225,
+    "S_int": 0.3605,
+    "Force": "Weak",
+    "Weight": 2.255501,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c40b4eed348e",
+    "\u03a6": 3.1214,
+    "Decay": 0.7225,
+    "S_int": 0.2414,
+    "Force": "Weak",
+    "Weight": 2.255212,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "6f982a1f7f72",
+    "\u03a6": 3.121,
+    "Decay": 0.7225,
+    "S_int": 0.1531,
+    "Force": "EM",
+    "Weight": 2.254923,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "bfe941f8f9a4",
+    "\u03a6": 3.1203,
+    "Decay": 0.7225,
+    "S_int": 0.2752,
+    "Force": "Weak",
+    "Weight": 2.254417,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d94a56e413ad",
+    "\u03a6": 3.1201,
+    "Decay": 0.7225,
+    "S_int": 0.1106,
+    "Force": "Weak",
+    "Weight": 2.254272,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "2afe6acc3322",
+    "\u03a6": 3.1199,
+    "Decay": 0.7225,
+    "S_int": 0.1003,
+    "Force": "Weak",
+    "Weight": 2.254128,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "850f85f134ce",
+    "\u03a6": 3.1178,
+    "Decay": 0.7225,
+    "S_int": 0.2057,
+    "Force": "Weak",
+    "Weight": 2.25261,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "bdff36ecc73c",
+    "\u03a6": 3.1155,
+    "Decay": 0.7225,
+    "S_int": 0.2542,
+    "Force": "Weak",
+    "Weight": 2.250949,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d0a2da6c7248",
+    "\u03a6": 3.1047,
+    "Decay": 0.7225,
+    "S_int": 0.3941,
+    "Force": "Weak",
+    "Weight": 2.243146,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4ca17149bdab",
+    "\u03a6": 3.1035,
+    "Decay": 0.7225,
+    "S_int": 0.39,
+    "Force": "EM",
+    "Weight": 2.242279,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d016075aee91",
+    "\u03a6": 3.1024,
+    "Decay": 0.7225,
+    "S_int": 0.2209,
+    "Force": "Strong",
+    "Weight": 2.241484,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9febeed4e871",
+    "\u03a6": 3.1015,
+    "Decay": 0.7225,
+    "S_int": 0.3019,
+    "Force": "Weak",
+    "Weight": 2.240834,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "5016e0067eb5",
+    "\u03a6": 3.101,
+    "Decay": 0.7225,
+    "S_int": 0.2748,
+    "Force": "Strong",
+    "Weight": 2.240473,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a7fbf2cdc243",
+    "\u03a6": 3.1005,
+    "Decay": 0.7225,
+    "S_int": 0.2188,
+    "Force": "Strong",
+    "Weight": 2.240111,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "35d5d7f8bc62",
+    "\u03a6": 3.0985,
+    "Decay": 0.7225,
+    "S_int": 0.3579,
+    "Force": "Weak",
+    "Weight": 2.238666,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "cdb66c6e6a41",
+    "\u03a6": 3.0909,
+    "Decay": 0.7225,
+    "S_int": 0.3816,
+    "Force": "Strong",
+    "Weight": 2.233175,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "3341279aeb5b",
+    "\u03a6": 3.0887,
+    "Decay": 0.7225,
+    "S_int": 0.1563,
+    "Force": "Strong",
+    "Weight": 2.231586,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "64c4eb3c3c3b",
+    "\u03a6": 3.0871,
+    "Decay": 0.7225,
+    "S_int": 0.1596,
+    "Force": "EM",
+    "Weight": 2.23043,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0f2dc19b604b",
+    "\u03a6": 3.0839,
+    "Decay": 0.7225,
+    "S_int": 0.2923,
+    "Force": "EM",
+    "Weight": 2.228118,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a4cfe35d7d76",
+    "\u03a6": 3.0832,
+    "Decay": 0.7225,
+    "S_int": 0.1565,
+    "Force": "Strong",
+    "Weight": 2.227612,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d12f8ebfdad9",
+    "\u03a6": 3.0825,
+    "Decay": 0.7225,
+    "S_int": 0.3169,
+    "Force": "Weak",
+    "Weight": 2.227106,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a3c245108ca1",
+    "\u03a6": 3.0825,
+    "Decay": 0.7225,
+    "S_int": 0.3539,
+    "Force": "EM",
+    "Weight": 2.227106,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "becc66f8d12a",
+    "\u03a6": 3.0821,
+    "Decay": 0.7225,
+    "S_int": 0.1503,
+    "Force": "Gravity",
+    "Weight": 2.226817,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "6125f47f1e6a",
+    "\u03a6": 3.0788,
+    "Decay": 0.7225,
+    "S_int": 0.2489,
+    "Force": "EM",
+    "Weight": 2.224433,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "7158336adab7",
+    "\u03a6": 3.0752,
+    "Decay": 0.7225,
+    "S_int": 0.3726,
+    "Force": "EM",
+    "Weight": 2.221832,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "76381d1a64c6",
+    "\u03a6": 3.072,
+    "Decay": 0.7225,
+    "S_int": 0.1418,
+    "Force": "Strong",
+    "Weight": 2.21952,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "1f7cf8714b2b",
+    "\u03a6": 3.0712,
+    "Decay": 0.7225,
+    "S_int": 0.3589,
+    "Force": "EM",
+    "Weight": 2.218942,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b03680374d87",
+    "\u03a6": 3.0701,
+    "Decay": 0.7225,
+    "S_int": 0.2839,
+    "Force": "Strong",
+    "Weight": 2.218147,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "399e29425105",
+    "\u03a6": 3.069,
+    "Decay": 0.7225,
+    "S_int": 0.273,
+    "Force": "Strong",
+    "Weight": 2.217353,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4dab06be52ce",
+    "\u03a6": 3.0688,
+    "Decay": 0.7225,
+    "S_int": 0.302,
+    "Force": "Gravity",
+    "Weight": 2.217208,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "5f06befb2c50",
+    "\u03a6": 3.0684,
+    "Decay": 0.7225,
+    "S_int": 0.2256,
+    "Force": "EM",
+    "Weight": 2.216919,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e8f0b9e80042",
+    "\u03a6": 3.0661,
+    "Decay": 0.7225,
+    "S_int": 0.2446,
+    "Force": "Gravity",
+    "Weight": 2.215257,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "3666832dc828",
+    "\u03a6": 3.0628,
+    "Decay": 0.7225,
+    "S_int": 0.1553,
+    "Force": "Weak",
+    "Weight": 2.212873,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "89f668e2cb52",
+    "\u03a6": 3.062,
+    "Decay": 0.7225,
+    "S_int": 0.142,
+    "Force": "EM",
+    "Weight": 2.212295,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "951cb0115d89",
+    "\u03a6": 3.0601,
+    "Decay": 0.7225,
+    "S_int": 0.3623,
+    "Force": "EM",
+    "Weight": 2.210922,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9ccd51cea233",
+    "\u03a6": 3.0584,
+    "Decay": 0.7225,
+    "S_int": 0.2912,
+    "Force": "Weak",
+    "Weight": 2.209694,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "bdf89b322a9c",
+    "\u03a6": 3.055,
+    "Decay": 0.7225,
+    "S_int": 0.1009,
+    "Force": "EM",
+    "Weight": 2.207238,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "6f2baed0730f",
+    "\u03a6": 3.0549,
+    "Decay": 0.7225,
+    "S_int": 0.1698,
+    "Force": "Strong",
+    "Weight": 2.207165,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c0f09080db97",
+    "\u03a6": 3.0528,
+    "Decay": 0.7225,
+    "S_int": 0.3984,
+    "Force": "Gravity",
+    "Weight": 2.205648,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "5af65729d9c6",
+    "\u03a6": 3.0516,
+    "Decay": 0.7225,
+    "S_int": 0.2748,
+    "Force": "Strong",
+    "Weight": 2.204781,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "305b910741df",
+    "\u03a6": 3.0507,
+    "Decay": 0.7225,
+    "S_int": 0.1251,
+    "Force": "Gravity",
+    "Weight": 2.204131,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "bbb9e050c397",
+    "\u03a6": 3.0505,
+    "Decay": 0.7225,
+    "S_int": 0.2705,
+    "Force": "Gravity",
+    "Weight": 2.203986,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "dfef78586754",
+    "\u03a6": 3.0481,
+    "Decay": 0.7225,
+    "S_int": 0.1689,
+    "Force": "Weak",
+    "Weight": 2.202252,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0e650c6fdf96",
+    "\u03a6": 3.046,
+    "Decay": 0.7225,
+    "S_int": 0.1145,
+    "Force": "EM",
+    "Weight": 2.200735,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "586441f877f9",
+    "\u03a6": 3.0439,
+    "Decay": 0.7225,
+    "S_int": 0.163,
+    "Force": "Strong",
+    "Weight": 2.199218,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "8d4f8a4b14be",
+    "\u03a6": 3.0398,
+    "Decay": 0.7225,
+    "S_int": 0.2254,
+    "Force": "EM",
+    "Weight": 2.196255,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "12ac605e424b",
+    "\u03a6": 3.036,
+    "Decay": 0.7225,
+    "S_int": 0.3151,
+    "Force": "Strong",
+    "Weight": 2.19351,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "88c117d661e5",
+    "\u03a6": 3.0358,
+    "Decay": 0.7225,
+    "S_int": 0.2707,
+    "Force": "EM",
+    "Weight": 2.193366,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0e1ffc6dc79e",
+    "\u03a6": 3.0357,
+    "Decay": 0.7225,
+    "S_int": 0.3631,
+    "Force": "Strong",
+    "Weight": 2.193293,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4210b1c53a92",
+    "\u03a6": 3.0356,
+    "Decay": 0.7225,
+    "S_int": 0.217,
+    "Force": "Strong",
+    "Weight": 2.193221,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f1bb8ae213b0",
+    "\u03a6": 3.0352,
+    "Decay": 0.7225,
+    "S_int": 0.1578,
+    "Force": "Weak",
+    "Weight": 2.192932,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "95112e9b46c4",
+    "\u03a6": 3.0351,
+    "Decay": 0.7225,
+    "S_int": 0.3454,
+    "Force": "Weak",
+    "Weight": 2.19286,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "98b211e3405f",
+    "\u03a6": 3.035,
+    "Decay": 0.7225,
+    "S_int": 0.3295,
+    "Force": "EM",
+    "Weight": 2.192788,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c6c65bc87bf9",
+    "\u03a6": 3.0348,
+    "Decay": 0.7225,
+    "S_int": 0.3341,
+    "Force": "EM",
+    "Weight": 2.192643,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "62c16fd43d22",
+    "\u03a6": 3.0343,
+    "Decay": 0.7225,
+    "S_int": 0.1988,
+    "Force": "Strong",
+    "Weight": 2.192282,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "5a11784b8b2b",
+    "\u03a6": 3.034,
+    "Decay": 0.7225,
+    "S_int": 0.2816,
+    "Force": "Gravity",
+    "Weight": 2.192065,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "abc9667b836c",
+    "\u03a6": 3.0323,
+    "Decay": 0.7225,
+    "S_int": 0.2385,
+    "Force": "Gravity",
+    "Weight": 2.190837,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "bd7e5756fad7",
+    "\u03a6": 3.0318,
+    "Decay": 0.7225,
+    "S_int": 0.1988,
+    "Force": "Strong",
+    "Weight": 2.190476,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9011db9969c1",
+    "\u03a6": 3.0311,
+    "Decay": 0.7225,
+    "S_int": 0.2132,
+    "Force": "Gravity",
+    "Weight": 2.18997,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "2558a6863e43",
+    "\u03a6": 3.031,
+    "Decay": 0.7225,
+    "S_int": 0.3837,
+    "Force": "Strong",
+    "Weight": 2.189898,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e76012fcd151",
+    "\u03a6": 3.0284,
+    "Decay": 0.7225,
+    "S_int": 0.2307,
+    "Force": "Strong",
+    "Weight": 2.188019,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0ebef8130975",
+    "\u03a6": 3.0282,
+    "Decay": 0.7225,
+    "S_int": 0.1244,
+    "Force": "Weak",
+    "Weight": 2.187874,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b5876ace2b87",
+    "\u03a6": 3.0249,
+    "Decay": 0.7225,
+    "S_int": 0.1519,
+    "Force": "Gravity",
+    "Weight": 2.18549,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "568938fad723",
+    "\u03a6": 3.021,
+    "Decay": 0.7225,
+    "S_int": 0.3781,
+    "Force": "Gravity",
+    "Weight": 2.182673,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "5334bf7e195c",
+    "\u03a6": 3.0199,
+    "Decay": 0.7225,
+    "S_int": 0.2996,
+    "Force": "EM",
+    "Weight": 2.181878,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e9977d452e81",
+    "\u03a6": 3.0198,
+    "Decay": 0.7225,
+    "S_int": 0.3853,
+    "Force": "Weak",
+    "Weight": 2.181806,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e2244e363319",
+    "\u03a6": 3.0196,
+    "Decay": 0.7225,
+    "S_int": 0.1097,
+    "Force": "EM",
+    "Weight": 2.181661,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "72d7df713ac1",
+    "\u03a6": 3.0182,
+    "Decay": 0.7225,
+    "S_int": 0.1724,
+    "Force": "EM",
+    "Weight": 2.18065,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "ff092acacd55",
+    "\u03a6": 3.0177,
+    "Decay": 0.7225,
+    "S_int": 0.3206,
+    "Force": "EM",
+    "Weight": 2.180288,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "bda6a40fd402",
+    "\u03a6": 3.0149,
+    "Decay": 0.7225,
+    "S_int": 0.2071,
+    "Force": "Weak",
+    "Weight": 2.178265,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c783591d2726",
+    "\u03a6": 3.0131,
+    "Decay": 0.7225,
+    "S_int": 0.2197,
+    "Force": "Strong",
+    "Weight": 2.176965,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "315cba465184",
+    "\u03a6": 3.0104,
+    "Decay": 0.7225,
+    "S_int": 0.3056,
+    "Force": "EM",
+    "Weight": 2.175014,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "fe6cda4bb4bf",
+    "\u03a6": 3.0098,
+    "Decay": 0.7225,
+    "S_int": 0.3195,
+    "Force": "Weak",
+    "Weight": 2.17458,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "aeeea1120547",
+    "\u03a6": 3.0094,
+    "Decay": 0.7225,
+    "S_int": 0.3921,
+    "Force": "Strong",
+    "Weight": 2.174291,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "cd5a8de98a8f",
+    "\u03a6": 3.0094,
+    "Decay": 0.7225,
+    "S_int": 0.2528,
+    "Force": "Weak",
+    "Weight": 2.174291,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "5fd8de8f63e4",
+    "\u03a6": 3.0076,
+    "Decay": 0.7225,
+    "S_int": 0.2767,
+    "Force": "Strong",
+    "Weight": 2.172991,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "edee3cbbc503",
+    "\u03a6": 3.0074,
+    "Decay": 0.7225,
+    "S_int": 0.2558,
+    "Force": "Strong",
+    "Weight": 2.172847,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "78a47de25708",
+    "\u03a6": 3.0071,
+    "Decay": 0.7225,
+    "S_int": 0.3375,
+    "Force": "Gravity",
+    "Weight": 2.17263,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "2f70a8e007c4",
+    "\u03a6": 3.007,
+    "Decay": 0.7225,
+    "S_int": 0.2458,
+    "Force": "Gravity",
+    "Weight": 2.172558,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "44373660c922",
+    "\u03a6": 3.0065,
+    "Decay": 0.7225,
+    "S_int": 0.1254,
+    "Force": "Gravity",
+    "Weight": 2.172196,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "ca8cf4d7e82d",
+    "\u03a6": 3.0058,
+    "Decay": 0.7225,
+    "S_int": 0.3153,
+    "Force": "Strong",
+    "Weight": 2.17169,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "7f7ff31256e9",
+    "\u03a6": 3.0051,
+    "Decay": 0.7225,
+    "S_int": 0.3076,
+    "Force": "EM",
+    "Weight": 2.171185,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "735405fce9f4",
+    "\u03a6": 3.0028,
+    "Decay": 0.7225,
+    "S_int": 0.3063,
+    "Force": "Gravity",
+    "Weight": 2.169523,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b75ade0528b8",
+    "\u03a6": 2.9998,
+    "Decay": 0.7225,
+    "S_int": 0.3557,
+    "Force": "Strong",
+    "Weight": 2.167356,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "95e528f98633",
+    "\u03a6": 2.9974,
+    "Decay": 0.7225,
+    "S_int": 0.2508,
+    "Force": "Weak",
+    "Weight": 2.165621,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "52dc9dcba070",
+    "\u03a6": 2.9902,
+    "Decay": 0.7225,
+    "S_int": 0.2685,
+    "Force": "EM",
+    "Weight": 2.16042,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "2ebe15ae10cc",
+    "\u03a6": 2.9891,
+    "Decay": 0.7225,
+    "S_int": 0.1552,
+    "Force": "Strong",
+    "Weight": 2.159625,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "17e6fea95bbc",
+    "\u03a6": 2.9887,
+    "Decay": 0.7225,
+    "S_int": 0.2131,
+    "Force": "Gravity",
+    "Weight": 2.159336,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "000a8ec49e19",
+    "\u03a6": 2.9863,
+    "Decay": 0.7225,
+    "S_int": 0.2832,
+    "Force": "EM",
+    "Weight": 2.157602,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4483da7ec99f",
+    "\u03a6": 2.985,
+    "Decay": 0.7225,
+    "S_int": 0.1249,
+    "Force": "Strong",
+    "Weight": 2.156662,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "2ceade64d88f",
+    "\u03a6": 2.9847,
+    "Decay": 0.7225,
+    "S_int": 0.2669,
+    "Force": "Strong",
+    "Weight": 2.156446,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a2b7972bb7b2",
+    "\u03a6": 2.9809,
+    "Decay": 0.7225,
+    "S_int": 0.1178,
+    "Force": "EM",
+    "Weight": 2.1537,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0a1c135d97d8",
+    "\u03a6": 2.9798,
+    "Decay": 0.7225,
+    "S_int": 0.2726,
+    "Force": "Gravity",
+    "Weight": 2.152906,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "bb0c740f62a6",
+    "\u03a6": 2.9784,
+    "Decay": 0.7225,
+    "S_int": 0.1148,
+    "Force": "Gravity",
+    "Weight": 2.151894,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b3c926053937",
+    "\u03a6": 2.971,
+    "Decay": 0.7225,
+    "S_int": 0.2823,
+    "Force": "EM",
+    "Weight": 2.146548,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "34663bdab592",
+    "\u03a6": 2.9675,
+    "Decay": 0.7225,
+    "S_int": 0.1881,
+    "Force": "EM",
+    "Weight": 2.144019,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e4740c2025c1",
+    "\u03a6": 2.9674,
+    "Decay": 0.7225,
+    "S_int": 0.3211,
+    "Force": "Weak",
+    "Weight": 2.143947,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "cb78f910d0b5",
+    "\u03a6": 2.9663,
+    "Decay": 0.7225,
+    "S_int": 0.1133,
+    "Force": "Strong",
+    "Weight": 2.143152,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "6e07c434cfcc",
+    "\u03a6": 2.9637,
+    "Decay": 0.7225,
+    "S_int": 0.361,
+    "Force": "Strong",
+    "Weight": 2.141273,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "019e8312f569",
+    "\u03a6": 2.9587,
+    "Decay": 0.7225,
+    "S_int": 0.128,
+    "Force": "Strong",
+    "Weight": 2.137661,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "32c39905aea7",
+    "\u03a6": 2.9544,
+    "Decay": 0.7225,
+    "S_int": 0.3646,
+    "Force": "Weak",
+    "Weight": 2.134554,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "fca436dc0384",
+    "\u03a6": 2.9543,
+    "Decay": 0.7225,
+    "S_int": 0.1349,
+    "Force": "Weak",
+    "Weight": 2.134482,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "1cb390da212f",
+    "\u03a6": 2.9542,
+    "Decay": 0.7225,
+    "S_int": 0.1384,
+    "Force": "Weak",
+    "Weight": 2.13441,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d1d3fb0a8cd6",
+    "\u03a6": 2.9511,
+    "Decay": 0.7225,
+    "S_int": 0.1002,
+    "Force": "Weak",
+    "Weight": 2.13217,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c4bbf96218b0",
+    "\u03a6": 2.9511,
+    "Decay": 0.7225,
+    "S_int": 0.1702,
+    "Force": "Gravity",
+    "Weight": 2.13217,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9feb0b0bd076",
+    "\u03a6": 2.9505,
+    "Decay": 0.7225,
+    "S_int": 0.2418,
+    "Force": "Strong",
+    "Weight": 2.131736,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e988db72caa3",
+    "\u03a6": 2.9479,
+    "Decay": 0.7225,
+    "S_int": 0.3047,
+    "Force": "Weak",
+    "Weight": 2.129858,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "eddd97324bb5",
+    "\u03a6": 2.9472,
+    "Decay": 0.7225,
+    "S_int": 0.3165,
+    "Force": "EM",
+    "Weight": 2.129352,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "168928b59d2b",
+    "\u03a6": 2.9461,
+    "Decay": 0.7225,
+    "S_int": 0.3164,
+    "Force": "Weak",
+    "Weight": 2.128557,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "3220eda01807",
+    "\u03a6": 2.9457,
+    "Decay": 0.7225,
+    "S_int": 0.3525,
+    "Force": "Strong",
+    "Weight": 2.128268,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f6a08d00599f",
+    "\u03a6": 2.9449,
+    "Decay": 0.7225,
+    "S_int": 0.102,
+    "Force": "Weak",
+    "Weight": 2.12769,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e3c8c283f46f",
+    "\u03a6": 2.9438,
+    "Decay": 0.7225,
+    "S_int": 0.2844,
+    "Force": "Weak",
+    "Weight": 2.126896,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a9c015540d27",
+    "\u03a6": 2.9435,
+    "Decay": 0.7225,
+    "S_int": 0.3311,
+    "Force": "EM",
+    "Weight": 2.126679,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b95c8e3a8260",
+    "\u03a6": 2.9433,
+    "Decay": 0.7225,
+    "S_int": 0.3703,
+    "Force": "Gravity",
+    "Weight": 2.126534,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e401d8847aa2",
+    "\u03a6": 2.9427,
+    "Decay": 0.7225,
+    "S_int": 0.3312,
+    "Force": "Strong",
+    "Weight": 2.126101,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "eb176fc1bdb6",
+    "\u03a6": 2.9395,
+    "Decay": 0.7225,
+    "S_int": 0.1106,
+    "Force": "Weak",
+    "Weight": 2.123789,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "5faca4722c8a",
+    "\u03a6": 2.9395,
+    "Decay": 0.7225,
+    "S_int": 0.2196,
+    "Force": "Weak",
+    "Weight": 2.123789,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "1f3541671657",
+    "\u03a6": 2.9393,
+    "Decay": 0.7225,
+    "S_int": 0.3595,
+    "Force": "Weak",
+    "Weight": 2.123644,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f86def159399",
+    "\u03a6": 2.9384,
+    "Decay": 0.7225,
+    "S_int": 0.1233,
+    "Force": "Gravity",
+    "Weight": 2.122994,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "8444a9e0b1b3",
+    "\u03a6": 2.9371,
+    "Decay": 0.7225,
+    "S_int": 0.1112,
+    "Force": "Strong",
+    "Weight": 2.122055,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "415cf7e0012c",
+    "\u03a6": 2.9343,
+    "Decay": 0.7225,
+    "S_int": 0.3507,
+    "Force": "EM",
+    "Weight": 2.120032,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "8200d0af2f38",
+    "\u03a6": 2.9318,
+    "Decay": 0.7225,
+    "S_int": 0.2737,
+    "Force": "Strong",
+    "Weight": 2.118225,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "711fb9a11d2b",
+    "\u03a6": 2.9315,
+    "Decay": 0.7225,
+    "S_int": 0.229,
+    "Force": "Weak",
+    "Weight": 2.118009,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4dac4194404c",
+    "\u03a6": 2.9314,
+    "Decay": 0.7225,
+    "S_int": 0.2272,
+    "Force": "EM",
+    "Weight": 2.117936,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "3d26f256e442",
+    "\u03a6": 2.9306,
+    "Decay": 0.7225,
+    "S_int": 0.2114,
+    "Force": "Weak",
+    "Weight": 2.117359,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "56dc52093593",
+    "\u03a6": 2.9305,
+    "Decay": 0.7225,
+    "S_int": 0.3528,
+    "Force": "Strong",
+    "Weight": 2.117286,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "87fa57dc470d",
+    "\u03a6": 2.9298,
+    "Decay": 0.7225,
+    "S_int": 0.3808,
+    "Force": "Gravity",
+    "Weight": 2.116781,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "55f10c84ae68",
+    "\u03a6": 2.9289,
+    "Decay": 0.7225,
+    "S_int": 0.138,
+    "Force": "EM",
+    "Weight": 2.11613,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "31459a9238ac",
+    "\u03a6": 2.9277,
+    "Decay": 0.7225,
+    "S_int": 0.1645,
+    "Force": "Weak",
+    "Weight": 2.115263,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "04356d4da4bc",
+    "\u03a6": 2.9264,
+    "Decay": 0.7225,
+    "S_int": 0.1111,
+    "Force": "Weak",
+    "Weight": 2.114324,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d8bf9e41df32",
+    "\u03a6": 2.9257,
+    "Decay": 0.7225,
+    "S_int": 0.3543,
+    "Force": "Gravity",
+    "Weight": 2.113818,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "66f218252e70",
+    "\u03a6": 2.9238,
+    "Decay": 0.7225,
+    "S_int": 0.2128,
+    "Force": "Gravity",
+    "Weight": 2.112446,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0fe348986528",
+    "\u03a6": 2.9196,
+    "Decay": 0.7225,
+    "S_int": 0.3789,
+    "Force": "Weak",
+    "Weight": 2.109411,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "3a6b99c4d7ca",
+    "\u03a6": 2.9152,
+    "Decay": 0.7225,
+    "S_int": 0.2178,
+    "Force": "Strong",
+    "Weight": 2.106232,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "86a299d2ec69",
+    "\u03a6": 2.912,
+    "Decay": 0.7225,
+    "S_int": 0.3877,
+    "Force": "EM",
+    "Weight": 2.10392,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f391b0d696b9",
+    "\u03a6": 2.9058,
+    "Decay": 0.7225,
+    "S_int": 0.316,
+    "Force": "Weak",
+    "Weight": 2.099441,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "ec57e8a7acd5",
+    "\u03a6": 2.9018,
+    "Decay": 0.7225,
+    "S_int": 0.2154,
+    "Force": "Gravity",
+    "Weight": 2.096551,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "909480d8aedc",
+    "\u03a6": 2.9007,
+    "Decay": 0.7225,
+    "S_int": 0.3736,
+    "Force": "Gravity",
+    "Weight": 2.095756,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "db160f8e1417",
+    "\u03a6": 2.8988,
+    "Decay": 0.7225,
+    "S_int": 0.3621,
+    "Force": "Gravity",
+    "Weight": 2.094383,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "3be14080fca6",
+    "\u03a6": 2.8986,
+    "Decay": 0.7225,
+    "S_int": 0.3502,
+    "Force": "Weak",
+    "Weight": 2.094239,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d1dfb8d6549f",
+    "\u03a6": 2.8949,
+    "Decay": 0.7225,
+    "S_int": 0.1738,
+    "Force": "Strong",
+    "Weight": 2.091565,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "942a0bb967ec",
+    "\u03a6": 2.8932,
+    "Decay": 0.7225,
+    "S_int": 0.1885,
+    "Force": "Weak",
+    "Weight": 2.090337,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "cbdbc569338b",
+    "\u03a6": 2.8929,
+    "Decay": 0.7225,
+    "S_int": 0.3032,
+    "Force": "Gravity",
+    "Weight": 2.09012,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "1b01e71623af",
+    "\u03a6": 2.8927,
+    "Decay": 0.7225,
+    "S_int": 0.3723,
+    "Force": "Gravity",
+    "Weight": 2.089976,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d7de3261c559",
+    "\u03a6": 2.8899,
+    "Decay": 0.7225,
+    "S_int": 0.168,
+    "Force": "EM",
+    "Weight": 2.087953,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9724499ce76c",
+    "\u03a6": 2.8898,
+    "Decay": 0.7225,
+    "S_int": 0.3692,
+    "Force": "Strong",
+    "Weight": 2.087881,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "8a0a73cba782",
+    "\u03a6": 2.8892,
+    "Decay": 0.7225,
+    "S_int": 0.2064,
+    "Force": "Strong",
+    "Weight": 2.087447,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "11895c010386",
+    "\u03a6": 2.8867,
+    "Decay": 0.7225,
+    "S_int": 0.1701,
+    "Force": "EM",
+    "Weight": 2.085641,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d0446c63204c",
+    "\u03a6": 2.8866,
+    "Decay": 0.7225,
+    "S_int": 0.3695,
+    "Force": "Weak",
+    "Weight": 2.085568,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "70d0edd142a0",
+    "\u03a6": 2.885,
+    "Decay": 0.7225,
+    "S_int": 0.2418,
+    "Force": "Strong",
+    "Weight": 2.084413,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b75846ca3fcb",
+    "\u03a6": 2.8846,
+    "Decay": 0.7225,
+    "S_int": 0.118,
+    "Force": "Strong",
+    "Weight": 2.084124,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0c08bea5d1de",
+    "\u03a6": 2.8846,
+    "Decay": 0.7225,
+    "S_int": 0.1958,
+    "Force": "Strong",
+    "Weight": 2.084124,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0ca7dc08a43f",
+    "\u03a6": 2.8838,
+    "Decay": 0.7225,
+    "S_int": 0.351,
+    "Force": "Gravity",
+    "Weight": 2.083546,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "5bf25268f3b3",
+    "\u03a6": 2.8834,
+    "Decay": 0.7225,
+    "S_int": 0.1996,
+    "Force": "EM",
+    "Weight": 2.083257,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a325f07e51e7",
+    "\u03a6": 2.8811,
+    "Decay": 0.7225,
+    "S_int": 0.2879,
+    "Force": "Gravity",
+    "Weight": 2.081595,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "386cc6ec80c4",
+    "\u03a6": 2.8788,
+    "Decay": 0.7225,
+    "S_int": 0.2746,
+    "Force": "Strong",
+    "Weight": 2.079933,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "7cd91487af70",
+    "\u03a6": 2.8777,
+    "Decay": 0.7225,
+    "S_int": 0.2365,
+    "Force": "Strong",
+    "Weight": 2.079138,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "acbf358f54a6",
+    "\u03a6": 2.8772,
+    "Decay": 0.7225,
+    "S_int": 0.3677,
+    "Force": "EM",
+    "Weight": 2.078777,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b9582a8e0e9c",
+    "\u03a6": 2.8765,
+    "Decay": 0.7225,
+    "S_int": 0.3291,
+    "Force": "Weak",
+    "Weight": 2.078271,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "ee62c39af4fa",
+    "\u03a6": 2.8741,
+    "Decay": 0.7225,
+    "S_int": 0.1201,
+    "Force": "Weak",
+    "Weight": 2.076537,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "5e107c1c3734",
+    "\u03a6": 2.8741,
+    "Decay": 0.7225,
+    "S_int": 0.1006,
+    "Force": "EM",
+    "Weight": 2.076537,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9f38905f8b2c",
+    "\u03a6": 2.8735,
+    "Decay": 0.7225,
+    "S_int": 0.3122,
+    "Force": "Strong",
+    "Weight": 2.076104,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e4342c654196",
+    "\u03a6": 2.8722,
+    "Decay": 0.7225,
+    "S_int": 0.1389,
+    "Force": "Gravity",
+    "Weight": 2.075165,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "5b2ad1e7dccb",
+    "\u03a6": 2.8683,
+    "Decay": 0.7225,
+    "S_int": 0.3009,
+    "Force": "Strong",
+    "Weight": 2.072347,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "aa1f42f529fb",
+    "\u03a6": 2.8679,
+    "Decay": 0.7225,
+    "S_int": 0.2255,
+    "Force": "Weak",
+    "Weight": 2.072058,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e20943a3546e",
+    "\u03a6": 2.8663,
+    "Decay": 0.7225,
+    "S_int": 0.1188,
+    "Force": "EM",
+    "Weight": 2.070902,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c838ef7a23ff",
+    "\u03a6": 2.8652,
+    "Decay": 0.7225,
+    "S_int": 0.3219,
+    "Force": "Weak",
+    "Weight": 2.070107,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "bf20cbc6900b",
+    "\u03a6": 2.8647,
+    "Decay": 0.7225,
+    "S_int": 0.3625,
+    "Force": "Weak",
+    "Weight": 2.069746,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "632e6d9ab33d",
+    "\u03a6": 2.8613,
+    "Decay": 0.7225,
+    "S_int": 0.3105,
+    "Force": "Gravity",
+    "Weight": 2.067289,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0e638719dfb0",
+    "\u03a6": 2.8609,
+    "Decay": 0.7225,
+    "S_int": 0.21,
+    "Force": "Gravity",
+    "Weight": 2.067,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c2f0f985c0b3",
+    "\u03a6": 2.8593,
+    "Decay": 0.7225,
+    "S_int": 0.2202,
+    "Force": "Strong",
+    "Weight": 2.065844,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a03625369c19",
+    "\u03a6": 2.8591,
+    "Decay": 0.7225,
+    "S_int": 0.1376,
+    "Force": "Gravity",
+    "Weight": 2.0657,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a092e234949f",
+    "\u03a6": 2.8555,
+    "Decay": 0.7225,
+    "S_int": 0.1277,
+    "Force": "Gravity",
+    "Weight": 2.063099,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "ba6be078886e",
+    "\u03a6": 2.8523,
+    "Decay": 0.7225,
+    "S_int": 0.2426,
+    "Force": "EM",
+    "Weight": 2.060787,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "7d12be5582a5",
+    "\u03a6": 2.8517,
+    "Decay": 0.7225,
+    "S_int": 0.1457,
+    "Force": "Strong",
+    "Weight": 2.060353,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "387e8f582cc7",
+    "\u03a6": 2.8487,
+    "Decay": 0.7225,
+    "S_int": 0.3951,
+    "Force": "EM",
+    "Weight": 2.058186,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4b09bed24eee",
+    "\u03a6": 2.848,
+    "Decay": 0.7225,
+    "S_int": 0.2401,
+    "Force": "Strong",
+    "Weight": 2.05768,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "1bd622a3cc03",
+    "\u03a6": 2.8477,
+    "Decay": 0.7225,
+    "S_int": 0.1034,
+    "Force": "Strong",
+    "Weight": 2.057463,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "522d07ba0023",
+    "\u03a6": 2.8471,
+    "Decay": 0.7225,
+    "S_int": 0.1629,
+    "Force": "EM",
+    "Weight": 2.05703,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9040aa143f00",
+    "\u03a6": 2.8468,
+    "Decay": 0.7225,
+    "S_int": 0.2452,
+    "Force": "Gravity",
+    "Weight": 2.056813,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9e43cd150827",
+    "\u03a6": 2.8459,
+    "Decay": 0.7225,
+    "S_int": 0.257,
+    "Force": "EM",
+    "Weight": 2.056163,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4922c8b54758",
+    "\u03a6": 2.8449,
+    "Decay": 0.7225,
+    "S_int": 0.1943,
+    "Force": "Strong",
+    "Weight": 2.05544,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "56363352e530",
+    "\u03a6": 2.844,
+    "Decay": 0.7225,
+    "S_int": 0.166,
+    "Force": "Weak",
+    "Weight": 2.05479,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "bbbefcb6f1b5",
+    "\u03a6": 2.844,
+    "Decay": 0.7225,
+    "S_int": 0.1438,
+    "Force": "Strong",
+    "Weight": 2.05479,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "1c62c2a82fc0",
+    "\u03a6": 2.8434,
+    "Decay": 0.7225,
+    "S_int": 0.1236,
+    "Force": "Weak",
+    "Weight": 2.054356,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "edb6ca930c01",
+    "\u03a6": 2.843,
+    "Decay": 0.7225,
+    "S_int": 0.1815,
+    "Force": "Gravity",
+    "Weight": 2.054067,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "57051ba06a00",
+    "\u03a6": 2.8405,
+    "Decay": 0.7225,
+    "S_int": 0.2765,
+    "Force": "Weak",
+    "Weight": 2.052261,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "755746119601",
+    "\u03a6": 2.8381,
+    "Decay": 0.7225,
+    "S_int": 0.1307,
+    "Force": "Gravity",
+    "Weight": 2.050527,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "ba953d486777",
+    "\u03a6": 2.838,
+    "Decay": 0.7225,
+    "S_int": 0.2497,
+    "Force": "EM",
+    "Weight": 2.050455,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "53dc229c79d6",
+    "\u03a6": 2.8374,
+    "Decay": 0.7225,
+    "S_int": 0.185,
+    "Force": "Strong",
+    "Weight": 2.050022,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9e9f439dcfe4",
+    "\u03a6": 2.8364,
+    "Decay": 0.7225,
+    "S_int": 0.3505,
+    "Force": "Weak",
+    "Weight": 2.049299,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "376052a6505d",
+    "\u03a6": 2.836,
+    "Decay": 0.7225,
+    "S_int": 0.3958,
+    "Force": "EM",
+    "Weight": 2.04901,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c3a7ffb71ace",
+    "\u03a6": 2.8355,
+    "Decay": 0.7225,
+    "S_int": 0.2413,
+    "Force": "EM",
+    "Weight": 2.048649,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b08ba4f2aa9e",
+    "\u03a6": 2.8336,
+    "Decay": 0.7225,
+    "S_int": 0.388,
+    "Force": "Gravity",
+    "Weight": 2.047276,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "88d141f125ef",
+    "\u03a6": 2.8334,
+    "Decay": 0.7225,
+    "S_int": 0.3204,
+    "Force": "Strong",
+    "Weight": 2.047132,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "14c187353a1e",
+    "\u03a6": 2.8314,
+    "Decay": 0.7225,
+    "S_int": 0.2007,
+    "Force": "Strong",
+    "Weight": 2.045686,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f5cf53462e75",
+    "\u03a6": 2.8295,
+    "Decay": 0.7225,
+    "S_int": 0.2543,
+    "Force": "Weak",
+    "Weight": 2.044314,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "07c693eeffd3",
+    "\u03a6": 2.8282,
+    "Decay": 0.7225,
+    "S_int": 0.3347,
+    "Force": "Gravity",
+    "Weight": 2.043375,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b3c7b9584823",
+    "\u03a6": 2.8238,
+    "Decay": 0.7225,
+    "S_int": 0.1695,
+    "Force": "EM",
+    "Weight": 2.040195,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "32f76ad69450",
+    "\u03a6": 2.8225,
+    "Decay": 0.7225,
+    "S_int": 0.3645,
+    "Force": "Weak",
+    "Weight": 2.039256,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "68a8b5c1f8bb",
+    "\u03a6": 2.8211,
+    "Decay": 0.7225,
+    "S_int": 0.3146,
+    "Force": "Gravity",
+    "Weight": 2.038245,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "66d9c2aae3a1",
+    "\u03a6": 2.8179,
+    "Decay": 0.7225,
+    "S_int": 0.2296,
+    "Force": "Gravity",
+    "Weight": 2.035933,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "3b6f72951147",
+    "\u03a6": 2.8165,
+    "Decay": 0.7225,
+    "S_int": 0.3403,
+    "Force": "EM",
+    "Weight": 2.034921,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4722d2a00e03",
+    "\u03a6": 2.8148,
+    "Decay": 0.7225,
+    "S_int": 0.3878,
+    "Force": "EM",
+    "Weight": 2.033693,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "57e9d31ea3a9",
+    "\u03a6": 2.8147,
+    "Decay": 0.7225,
+    "S_int": 0.2926,
+    "Force": "EM",
+    "Weight": 2.033621,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b5b268b0aab8",
+    "\u03a6": 2.8142,
+    "Decay": 0.7225,
+    "S_int": 0.1317,
+    "Force": "EM",
+    "Weight": 2.03326,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b6abcd7f5222",
+    "\u03a6": 2.8126,
+    "Decay": 0.7225,
+    "S_int": 0.1255,
+    "Force": "Strong",
+    "Weight": 2.032104,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4cf9a6121952",
+    "\u03a6": 2.8077,
+    "Decay": 0.7225,
+    "S_int": 0.1177,
+    "Force": "Strong",
+    "Weight": 2.028563,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "14e2bddd45bd",
+    "\u03a6": 2.8076,
+    "Decay": 0.7225,
+    "S_int": 0.1572,
+    "Force": "Gravity",
+    "Weight": 2.028491,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c21435febbba",
+    "\u03a6": 2.8017,
+    "Decay": 0.7225,
+    "S_int": 0.1663,
+    "Force": "Weak",
+    "Weight": 2.024228,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d82e4048c2b9",
+    "\u03a6": 2.8016,
+    "Decay": 0.7225,
+    "S_int": 0.1335,
+    "Force": "EM",
+    "Weight": 2.024156,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9ec299d5f702",
+    "\u03a6": 2.7973,
+    "Decay": 0.7225,
+    "S_int": 0.1433,
+    "Force": "Strong",
+    "Weight": 2.021049,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "3a2de2f9ac43",
+    "\u03a6": 2.7971,
+    "Decay": 0.7225,
+    "S_int": 0.221,
+    "Force": "Weak",
+    "Weight": 2.020905,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f3b721173824",
+    "\u03a6": 2.795,
+    "Decay": 0.7225,
+    "S_int": 0.3649,
+    "Force": "Weak",
+    "Weight": 2.019388,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b38196a4eba0",
+    "\u03a6": 2.7932,
+    "Decay": 0.7225,
+    "S_int": 0.1167,
+    "Force": "Gravity",
+    "Weight": 2.018087,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a63540cbabaf",
+    "\u03a6": 2.7918,
+    "Decay": 0.7225,
+    "S_int": 0.2143,
+    "Force": "Weak",
+    "Weight": 2.017075,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "8ce1786575de",
+    "\u03a6": 2.7916,
+    "Decay": 0.7225,
+    "S_int": 0.2918,
+    "Force": "Gravity",
+    "Weight": 2.016931,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4a6edd4ff6e8",
+    "\u03a6": 2.7907,
+    "Decay": 0.7225,
+    "S_int": 0.1896,
+    "Force": "Strong",
+    "Weight": 2.016281,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "7204eceb09dd",
+    "\u03a6": 2.7904,
+    "Decay": 0.7225,
+    "S_int": 0.1104,
+    "Force": "Weak",
+    "Weight": 2.016064,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9461c968b636",
+    "\u03a6": 2.788,
+    "Decay": 0.7225,
+    "S_int": 0.1965,
+    "Force": "EM",
+    "Weight": 2.01433,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "37a3dee39dbb",
+    "\u03a6": 2.7877,
+    "Decay": 0.7225,
+    "S_int": 0.2313,
+    "Force": "Gravity",
+    "Weight": 2.014113,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e295f78aa0ca",
+    "\u03a6": 2.786,
+    "Decay": 0.7225,
+    "S_int": 0.1483,
+    "Force": "Strong",
+    "Weight": 2.012885,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0feefdc6b5a7",
+    "\u03a6": 2.7829,
+    "Decay": 0.7225,
+    "S_int": 0.1425,
+    "Force": "Gravity",
+    "Weight": 2.010645,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "6eb47c607f97",
+    "\u03a6": 2.7813,
+    "Decay": 0.7225,
+    "S_int": 0.13,
+    "Force": "EM",
+    "Weight": 2.009489,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a4226c311eb1",
+    "\u03a6": 2.7734,
+    "Decay": 0.7225,
+    "S_int": 0.3016,
+    "Force": "Strong",
+    "Weight": 2.003782,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "fe91310223d5",
+    "\u03a6": 2.7654,
+    "Decay": 0.7225,
+    "S_int": 0.2683,
+    "Force": "EM",
+    "Weight": 1.998002,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a6a80f4da8d6",
+    "\u03a6": 2.7651,
+    "Decay": 0.7225,
+    "S_int": 0.1673,
+    "Force": "Gravity",
+    "Weight": 1.997785,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a3992857fecc",
+    "\u03a6": 2.7639,
+    "Decay": 0.7225,
+    "S_int": 0.3768,
+    "Force": "EM",
+    "Weight": 1.996918,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "368ab25bf452",
+    "\u03a6": 2.7632,
+    "Decay": 0.7225,
+    "S_int": 0.3323,
+    "Force": "EM",
+    "Weight": 1.996412,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "01afa7fe5327",
+    "\u03a6": 2.7631,
+    "Decay": 0.7225,
+    "S_int": 0.1123,
+    "Force": "EM",
+    "Weight": 1.99634,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c77f2c036de7",
+    "\u03a6": 2.763,
+    "Decay": 0.7225,
+    "S_int": 0.3209,
+    "Force": "EM",
+    "Weight": 1.996268,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "87b4deade458",
+    "\u03a6": 2.7624,
+    "Decay": 0.7225,
+    "S_int": 0.2169,
+    "Force": "Weak",
+    "Weight": 1.995834,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "07597bff03a4",
+    "\u03a6": 2.762,
+    "Decay": 0.7225,
+    "S_int": 0.2569,
+    "Force": "EM",
+    "Weight": 1.995545,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "48cfed551e3b",
+    "\u03a6": 2.762,
+    "Decay": 0.7225,
+    "S_int": 0.3806,
+    "Force": "Weak",
+    "Weight": 1.995545,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "476875bf2c21",
+    "\u03a6": 2.7617,
+    "Decay": 0.7225,
+    "S_int": 0.2372,
+    "Force": "Weak",
+    "Weight": 1.995328,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "7c4247159764",
+    "\u03a6": 2.7607,
+    "Decay": 0.7225,
+    "S_int": 0.3609,
+    "Force": "Strong",
+    "Weight": 1.994606,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "7341825e1dde",
+    "\u03a6": 2.7605,
+    "Decay": 0.7225,
+    "S_int": 0.2599,
+    "Force": "Gravity",
+    "Weight": 1.994461,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d9bd3ec6ec9f",
+    "\u03a6": 2.7594,
+    "Decay": 0.7225,
+    "S_int": 0.2863,
+    "Force": "Weak",
+    "Weight": 1.993667,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "45d0c3763d51",
+    "\u03a6": 2.7545,
+    "Decay": 0.7225,
+    "S_int": 0.3869,
+    "Force": "Weak",
+    "Weight": 1.990126,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0faff3109345",
+    "\u03a6": 2.7525,
+    "Decay": 0.7225,
+    "S_int": 0.3991,
+    "Force": "EM",
+    "Weight": 1.988681,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4c12ecec61e9",
+    "\u03a6": 2.7522,
+    "Decay": 0.7225,
+    "S_int": 0.1687,
+    "Force": "Weak",
+    "Weight": 1.988465,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a598f2f337d3",
+    "\u03a6": 2.7518,
+    "Decay": 0.7225,
+    "S_int": 0.219,
+    "Force": "EM",
+    "Weight": 1.988175,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "626441714aa3",
+    "\u03a6": 2.7501,
+    "Decay": 0.7225,
+    "S_int": 0.2606,
+    "Force": "Weak",
+    "Weight": 1.986947,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "1c5c6465e7ae",
+    "\u03a6": 2.7495,
+    "Decay": 0.7225,
+    "S_int": 0.1422,
+    "Force": "Gravity",
+    "Weight": 1.986514,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "addb5bc9c618",
+    "\u03a6": 2.7486,
+    "Decay": 0.7225,
+    "S_int": 0.1565,
+    "Force": "Weak",
+    "Weight": 1.985864,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "12f4edcb089e",
+    "\u03a6": 2.7475,
+    "Decay": 0.7225,
+    "S_int": 0.3308,
+    "Force": "Strong",
+    "Weight": 1.985069,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "db95294daa49",
+    "\u03a6": 2.7474,
+    "Decay": 0.7225,
+    "S_int": 0.1623,
+    "Force": "Gravity",
+    "Weight": 1.984997,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9c59c946ee39",
+    "\u03a6": 2.7395,
+    "Decay": 0.7225,
+    "S_int": 0.1534,
+    "Force": "Strong",
+    "Weight": 1.979289,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "00d54c30582c",
+    "\u03a6": 2.7392,
+    "Decay": 0.7225,
+    "S_int": 0.1813,
+    "Force": "EM",
+    "Weight": 1.979072,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e46eaae1c095",
+    "\u03a6": 2.7389,
+    "Decay": 0.7225,
+    "S_int": 0.1505,
+    "Force": "Gravity",
+    "Weight": 1.978855,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a47367dad329",
+    "\u03a6": 2.7389,
+    "Decay": 0.7225,
+    "S_int": 0.2026,
+    "Force": "Weak",
+    "Weight": 1.978855,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "92329b2efc3e",
+    "\u03a6": 2.7373,
+    "Decay": 0.7225,
+    "S_int": 0.2767,
+    "Force": "EM",
+    "Weight": 1.977699,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "7896da63c4df",
+    "\u03a6": 2.7339,
+    "Decay": 0.7225,
+    "S_int": 0.1065,
+    "Force": "Strong",
+    "Weight": 1.975243,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "1aa5e46221d1",
+    "\u03a6": 2.7333,
+    "Decay": 0.7225,
+    "S_int": 0.1652,
+    "Force": "Gravity",
+    "Weight": 1.974809,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "3469d9f325f2",
+    "\u03a6": 2.7311,
+    "Decay": 0.7225,
+    "S_int": 0.164,
+    "Force": "Gravity",
+    "Weight": 1.97322,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "edfc38e396bd",
+    "\u03a6": 2.7309,
+    "Decay": 0.7225,
+    "S_int": 0.3822,
+    "Force": "Strong",
+    "Weight": 1.973075,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "8fd62d9926eb",
+    "\u03a6": 2.7301,
+    "Decay": 0.7225,
+    "S_int": 0.184,
+    "Force": "Strong",
+    "Weight": 1.972497,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "7bb263450c82",
+    "\u03a6": 2.7299,
+    "Decay": 0.7225,
+    "S_int": 0.1015,
+    "Force": "Gravity",
+    "Weight": 1.972353,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9da731ffdf75",
+    "\u03a6": 2.7297,
+    "Decay": 0.7225,
+    "S_int": 0.3106,
+    "Force": "Strong",
+    "Weight": 1.972208,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4b789bece97f",
+    "\u03a6": 2.7286,
+    "Decay": 0.7225,
+    "S_int": 0.1196,
+    "Force": "EM",
+    "Weight": 1.971414,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "2221b86ab56a",
+    "\u03a6": 2.7267,
+    "Decay": 0.7225,
+    "S_int": 0.2586,
+    "Force": "EM",
+    "Weight": 1.970041,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "ebad42d1c720",
+    "\u03a6": 2.7267,
+    "Decay": 0.7225,
+    "S_int": 0.23,
+    "Force": "Weak",
+    "Weight": 1.970041,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "21bbfbb99404",
+    "\u03a6": 2.7263,
+    "Decay": 0.7225,
+    "S_int": 0.1821,
+    "Force": "Strong",
+    "Weight": 1.969752,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a1290be54faf",
+    "\u03a6": 2.726,
+    "Decay": 0.7225,
+    "S_int": 0.1525,
+    "Force": "EM",
+    "Weight": 1.969535,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c180c4aaef8f",
+    "\u03a6": 2.7246,
+    "Decay": 0.7225,
+    "S_int": 0.2341,
+    "Force": "Strong",
+    "Weight": 1.968524,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "3e6c282241c5",
+    "\u03a6": 2.7244,
+    "Decay": 0.7225,
+    "S_int": 0.1867,
+    "Force": "EM",
+    "Weight": 1.968379,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "978a396018b7",
+    "\u03a6": 2.7221,
+    "Decay": 0.7225,
+    "S_int": 0.3868,
+    "Force": "EM",
+    "Weight": 1.966717,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "32cf53f11694",
+    "\u03a6": 2.7212,
+    "Decay": 0.7225,
+    "S_int": 0.1037,
+    "Force": "EM",
+    "Weight": 1.966067,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0edab7016a44",
+    "\u03a6": 2.72,
+    "Decay": 0.7225,
+    "S_int": 0.2115,
+    "Force": "EM",
+    "Weight": 1.9652,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "ad8afa9cd8d9",
+    "\u03a6": 2.718,
+    "Decay": 0.7225,
+    "S_int": 0.2828,
+    "Force": "Strong",
+    "Weight": 1.963755,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9c5d846f2cd6",
+    "\u03a6": 2.7173,
+    "Decay": 0.7225,
+    "S_int": 0.3564,
+    "Force": "Weak",
+    "Weight": 1.963249,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "55a4c082575f",
+    "\u03a6": 2.716,
+    "Decay": 0.7225,
+    "S_int": 0.3799,
+    "Force": "EM",
+    "Weight": 1.96231,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9f2453d5ae8b",
+    "\u03a6": 2.7128,
+    "Decay": 0.7225,
+    "S_int": 0.3652,
+    "Force": "Strong",
+    "Weight": 1.959998,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f1f27bc732ae",
+    "\u03a6": 2.7123,
+    "Decay": 0.7225,
+    "S_int": 0.1665,
+    "Force": "Gravity",
+    "Weight": 1.959637,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "cda44a634702",
+    "\u03a6": 2.7098,
+    "Decay": 0.7225,
+    "S_int": 0.1417,
+    "Force": "EM",
+    "Weight": 1.957831,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "aa8810d6196a",
+    "\u03a6": 2.7096,
+    "Decay": 0.7225,
+    "S_int": 0.2337,
+    "Force": "Strong",
+    "Weight": 1.957686,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "ffa815331deb",
+    "\u03a6": 2.7067,
+    "Decay": 0.7225,
+    "S_int": 0.3398,
+    "Force": "Strong",
+    "Weight": 1.955591,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c92bf4364549",
+    "\u03a6": 2.706,
+    "Decay": 0.7225,
+    "S_int": 0.1533,
+    "Force": "EM",
+    "Weight": 1.955085,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c7a0a7eb44e5",
+    "\u03a6": 2.7034,
+    "Decay": 0.7225,
+    "S_int": 0.1667,
+    "Force": "Strong",
+    "Weight": 1.953206,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b80209494138",
+    "\u03a6": 2.7024,
+    "Decay": 0.7225,
+    "S_int": 0.3402,
+    "Force": "EM",
+    "Weight": 1.952484,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4a090da1cfe6",
+    "\u03a6": 2.7019,
+    "Decay": 0.7225,
+    "S_int": 0.2271,
+    "Force": "EM",
+    "Weight": 1.952123,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "399e478c5751",
+    "\u03a6": 2.7006,
+    "Decay": 0.7225,
+    "S_int": 0.3926,
+    "Force": "Strong",
+    "Weight": 1.951184,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d3afa72ffe33",
+    "\u03a6": 2.7006,
+    "Decay": 0.7225,
+    "S_int": 0.1758,
+    "Force": "Strong",
+    "Weight": 1.951184,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "de6d778115a7",
+    "\u03a6": 2.6987,
+    "Decay": 0.7225,
+    "S_int": 0.2699,
+    "Force": "Gravity",
+    "Weight": 1.949811,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "7607412e858a",
+    "\u03a6": 2.6964,
+    "Decay": 0.7225,
+    "S_int": 0.3999,
+    "Force": "Gravity",
+    "Weight": 1.948149,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a52d003ff15a",
+    "\u03a6": 2.6959,
+    "Decay": 0.7225,
+    "S_int": 0.206,
+    "Force": "Weak",
+    "Weight": 1.947788,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9f3031136668",
+    "\u03a6": 2.6914,
+    "Decay": 0.7225,
+    "S_int": 0.1668,
+    "Force": "Strong",
+    "Weight": 1.944536,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d31c06dc8b53",
+    "\u03a6": 2.6906,
+    "Decay": 0.7225,
+    "S_int": 0.1748,
+    "Force": "Gravity",
+    "Weight": 1.943958,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a5b201e94e63",
+    "\u03a6": 2.6877,
+    "Decay": 0.7225,
+    "S_int": 0.1036,
+    "Force": "Weak",
+    "Weight": 1.941863,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "158d20872cc9",
+    "\u03a6": 2.6855,
+    "Decay": 0.7225,
+    "S_int": 0.2883,
+    "Force": "Strong",
+    "Weight": 1.940274,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "5fab89cbe90b",
+    "\u03a6": 2.6813,
+    "Decay": 0.7225,
+    "S_int": 0.2271,
+    "Force": "EM",
+    "Weight": 1.937239,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "5bf4645b2c42",
+    "\u03a6": 2.6802,
+    "Decay": 0.7225,
+    "S_int": 0.3249,
+    "Force": "EM",
+    "Weight": 1.936445,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c858ae8539b3",
+    "\u03a6": 2.6802,
+    "Decay": 0.7225,
+    "S_int": 0.1808,
+    "Force": "Weak",
+    "Weight": 1.936445,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a28c8f7b090e",
+    "\u03a6": 2.6711,
+    "Decay": 0.7225,
+    "S_int": 0.3344,
+    "Force": "Gravity",
+    "Weight": 1.92987,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "fe92cde81f33",
+    "\u03a6": 2.67,
+    "Decay": 0.7225,
+    "S_int": 0.203,
+    "Force": "Strong",
+    "Weight": 1.929075,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "709c8ccab36d",
+    "\u03a6": 2.6691,
+    "Decay": 0.7225,
+    "S_int": 0.3023,
+    "Force": "Gravity",
+    "Weight": 1.928425,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "eb65358356b9",
+    "\u03a6": 2.6691,
+    "Decay": 0.7225,
+    "S_int": 0.2231,
+    "Force": "Strong",
+    "Weight": 1.928425,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d22e5c397268",
+    "\u03a6": 2.665,
+    "Decay": 0.7225,
+    "S_int": 0.2274,
+    "Force": "Gravity",
+    "Weight": 1.925463,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "1bc2eea6f3f4",
+    "\u03a6": 2.6607,
+    "Decay": 0.7225,
+    "S_int": 0.3968,
+    "Force": "Gravity",
+    "Weight": 1.922356,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f4379ee2ee92",
+    "\u03a6": 2.6598,
+    "Decay": 0.7225,
+    "S_int": 0.31,
+    "Force": "EM",
+    "Weight": 1.921706,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "958dc3fae392",
+    "\u03a6": 2.6597,
+    "Decay": 0.7225,
+    "S_int": 0.1371,
+    "Force": "Strong",
+    "Weight": 1.921633,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "8c52b41e1bff",
+    "\u03a6": 2.6595,
+    "Decay": 0.7225,
+    "S_int": 0.3925,
+    "Force": "EM",
+    "Weight": 1.921489,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b5ad5d9e681b",
+    "\u03a6": 2.6582,
+    "Decay": 0.7225,
+    "S_int": 0.3653,
+    "Force": "EM",
+    "Weight": 1.920549,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "6197bf0dd382",
+    "\u03a6": 2.6579,
+    "Decay": 0.7225,
+    "S_int": 0.2541,
+    "Force": "Gravity",
+    "Weight": 1.920333,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "ce2dfd8ffb81",
+    "\u03a6": 2.6553,
+    "Decay": 0.7225,
+    "S_int": 0.2405,
+    "Force": "EM",
+    "Weight": 1.918454,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f4d970d62edd",
+    "\u03a6": 2.6552,
+    "Decay": 0.7225,
+    "S_int": 0.1355,
+    "Force": "EM",
+    "Weight": 1.918382,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "7dd48a1f9097",
+    "\u03a6": 2.6545,
+    "Decay": 0.7225,
+    "S_int": 0.3402,
+    "Force": "Strong",
+    "Weight": 1.917876,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "cb0f59386f78",
+    "\u03a6": 2.6532,
+    "Decay": 0.7225,
+    "S_int": 0.3569,
+    "Force": "Weak",
+    "Weight": 1.916937,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "5f486ca4ca19",
+    "\u03a6": 2.6515,
+    "Decay": 0.7225,
+    "S_int": 0.1118,
+    "Force": "EM",
+    "Weight": 1.915709,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d97c01fdcc32",
+    "\u03a6": 2.6492,
+    "Decay": 0.7225,
+    "S_int": 0.2316,
+    "Force": "Weak",
+    "Weight": 1.914047,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e9f0c7e4f523",
+    "\u03a6": 2.6492,
+    "Decay": 0.7225,
+    "S_int": 0.3937,
+    "Force": "EM",
+    "Weight": 1.914047,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "81a3eae8bd93",
+    "\u03a6": 2.6479,
+    "Decay": 0.7225,
+    "S_int": 0.2284,
+    "Force": "Strong",
+    "Weight": 1.913108,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "bcbde9006b90",
+    "\u03a6": 2.6459,
+    "Decay": 0.7225,
+    "S_int": 0.1822,
+    "Force": "Weak",
+    "Weight": 1.911663,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "083ee484af5b",
+    "\u03a6": 2.6432,
+    "Decay": 0.7225,
+    "S_int": 0.3075,
+    "Force": "Gravity",
+    "Weight": 1.909712,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "694bdb98a927",
+    "\u03a6": 2.6363,
+    "Decay": 0.7225,
+    "S_int": 0.1827,
+    "Force": "EM",
+    "Weight": 1.904727,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "846e348a7b32",
+    "\u03a6": 2.6358,
+    "Decay": 0.7225,
+    "S_int": 0.1953,
+    "Force": "Weak",
+    "Weight": 1.904366,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "aedaec5bbe9d",
+    "\u03a6": 2.6349,
+    "Decay": 0.7225,
+    "S_int": 0.1,
+    "Force": "Weak",
+    "Weight": 1.903715,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b90a11cdb480",
+    "\u03a6": 2.6347,
+    "Decay": 0.7225,
+    "S_int": 0.3543,
+    "Force": "Gravity",
+    "Weight": 1.903571,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "8ce56ee58201",
+    "\u03a6": 2.6304,
+    "Decay": 0.7225,
+    "S_int": 0.3914,
+    "Force": "Gravity",
+    "Weight": 1.900464,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d4dd0d16413a",
+    "\u03a6": 2.6297,
+    "Decay": 0.7225,
+    "S_int": 0.3578,
+    "Force": "Gravity",
+    "Weight": 1.899958,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a112e0439a63",
+    "\u03a6": 2.628,
+    "Decay": 0.7225,
+    "S_int": 0.3922,
+    "Force": "Strong",
+    "Weight": 1.89873,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0f0f618a74d0",
+    "\u03a6": 2.6227,
+    "Decay": 0.7225,
+    "S_int": 0.3258,
+    "Force": "Gravity",
+    "Weight": 1.894901,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0479f58a339f",
+    "\u03a6": 2.62,
+    "Decay": 0.7225,
+    "S_int": 0.2043,
+    "Force": "Weak",
+    "Weight": 1.89295,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "1bbe5676d1c2",
+    "\u03a6": 2.6117,
+    "Decay": 0.7225,
+    "S_int": 0.1519,
+    "Force": "Strong",
+    "Weight": 1.886953,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "67853b66c670",
+    "\u03a6": 2.6105,
+    "Decay": 0.7225,
+    "S_int": 0.3992,
+    "Force": "Gravity",
+    "Weight": 1.886086,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a75b3ce3d223",
+    "\u03a6": 2.6073,
+    "Decay": 0.7225,
+    "S_int": 0.3968,
+    "Force": "Strong",
+    "Weight": 1.883774,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "fe1564ca1d48",
+    "\u03a6": 2.606,
+    "Decay": 0.7225,
+    "S_int": 0.3204,
+    "Force": "EM",
+    "Weight": 1.882835,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c53a4b45c42f",
+    "\u03a6": 2.6051,
+    "Decay": 0.7225,
+    "S_int": 0.2168,
+    "Force": "Gravity",
+    "Weight": 1.882185,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "2bc2340fa138",
+    "\u03a6": 2.605,
+    "Decay": 0.7225,
+    "S_int": 0.1972,
+    "Force": "Gravity",
+    "Weight": 1.882113,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "187d6ea0946e",
+    "\u03a6": 2.6049,
+    "Decay": 0.7225,
+    "S_int": 0.322,
+    "Force": "Strong",
+    "Weight": 1.88204,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "82cfac062630",
+    "\u03a6": 2.6041,
+    "Decay": 0.7225,
+    "S_int": 0.3383,
+    "Force": "Strong",
+    "Weight": 1.881462,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "002890eef735",
+    "\u03a6": 2.6021,
+    "Decay": 0.7225,
+    "S_int": 0.1921,
+    "Force": "Gravity",
+    "Weight": 1.880017,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "1c8117e6e755",
+    "\u03a6": 2.602,
+    "Decay": 0.7225,
+    "S_int": 0.3692,
+    "Force": "Gravity",
+    "Weight": 1.879945,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "858d99ec218f",
+    "\u03a6": 2.6005,
+    "Decay": 0.7225,
+    "S_int": 0.3522,
+    "Force": "EM",
+    "Weight": 1.878861,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "5e9076fb28ce",
+    "\u03a6": 2.5958,
+    "Decay": 0.7225,
+    "S_int": 0.3204,
+    "Force": "Weak",
+    "Weight": 1.875466,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c27596a58a66",
+    "\u03a6": 2.5949,
+    "Decay": 0.7225,
+    "S_int": 0.1624,
+    "Force": "Gravity",
+    "Weight": 1.874815,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "76837bdfa4aa",
+    "\u03a6": 2.5948,
+    "Decay": 0.7225,
+    "S_int": 0.2628,
+    "Force": "Gravity",
+    "Weight": 1.874743,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9d42a7210422",
+    "\u03a6": 2.5937,
+    "Decay": 0.7225,
+    "S_int": 0.2211,
+    "Force": "Strong",
+    "Weight": 1.873948,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d01e8be724ec",
+    "\u03a6": 2.5931,
+    "Decay": 0.7225,
+    "S_int": 0.1704,
+    "Force": "Gravity",
+    "Weight": 1.873515,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "8a977eb90086",
+    "\u03a6": 2.5925,
+    "Decay": 0.7225,
+    "S_int": 0.2634,
+    "Force": "Strong",
+    "Weight": 1.873081,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "5b26886d8586",
+    "\u03a6": 2.5919,
+    "Decay": 0.7225,
+    "S_int": 0.2834,
+    "Force": "Gravity",
+    "Weight": 1.872648,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "fb8cdfd2dfc1",
+    "\u03a6": 2.5917,
+    "Decay": 0.7225,
+    "S_int": 0.2169,
+    "Force": "Weak",
+    "Weight": 1.872503,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "57dae586c6ff",
+    "\u03a6": 2.5912,
+    "Decay": 0.7225,
+    "S_int": 0.3547,
+    "Force": "Strong",
+    "Weight": 1.872142,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c6f2404b32cf",
+    "\u03a6": 2.5897,
+    "Decay": 0.7225,
+    "S_int": 0.3588,
+    "Force": "Strong",
+    "Weight": 1.871058,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "19496efd3867",
+    "\u03a6": 2.5858,
+    "Decay": 0.7225,
+    "S_int": 0.1578,
+    "Force": "Gravity",
+    "Weight": 1.86824,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4face277d2de",
+    "\u03a6": 2.5845,
+    "Decay": 0.7225,
+    "S_int": 0.2334,
+    "Force": "EM",
+    "Weight": 1.867301,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "3df032eaad96",
+    "\u03a6": 2.5845,
+    "Decay": 0.7225,
+    "S_int": 0.1217,
+    "Force": "Weak",
+    "Weight": 1.867301,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c7f85b4bb94e",
+    "\u03a6": 2.5841,
+    "Decay": 0.7225,
+    "S_int": 0.244,
+    "Force": "Strong",
+    "Weight": 1.867012,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "fc974253defc",
+    "\u03a6": 2.584,
+    "Decay": 0.7225,
+    "S_int": 0.382,
+    "Force": "Strong",
+    "Weight": 1.86694,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "7c3f1e62320f",
+    "\u03a6": 2.5826,
+    "Decay": 0.7225,
+    "S_int": 0.2082,
+    "Force": "Gravity",
+    "Weight": 1.865928,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0fe81b412c94",
+    "\u03a6": 2.5819,
+    "Decay": 0.7225,
+    "S_int": 0.3631,
+    "Force": "Weak",
+    "Weight": 1.865423,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "1fb51ad00349",
+    "\u03a6": 2.5776,
+    "Decay": 0.7225,
+    "S_int": 0.1625,
+    "Force": "EM",
+    "Weight": 1.862316,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b90dddcba5da",
+    "\u03a6": 2.5773,
+    "Decay": 0.7225,
+    "S_int": 0.3404,
+    "Force": "Gravity",
+    "Weight": 1.862099,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c7acc8bb78eb",
+    "\u03a6": 2.575,
+    "Decay": 0.7225,
+    "S_int": 0.3714,
+    "Force": "EM",
+    "Weight": 1.860438,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "ff60f63c7433",
+    "\u03a6": 2.5733,
+    "Decay": 0.7225,
+    "S_int": 0.2154,
+    "Force": "Weak",
+    "Weight": 1.859209,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f5f1f57876ec",
+    "\u03a6": 2.573,
+    "Decay": 0.7225,
+    "S_int": 0.3856,
+    "Force": "EM",
+    "Weight": 1.858993,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "3fed536ab70f",
+    "\u03a6": 2.5726,
+    "Decay": 0.7225,
+    "S_int": 0.337,
+    "Force": "Strong",
+    "Weight": 1.858704,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "2e2bc1c125f3",
+    "\u03a6": 2.5724,
+    "Decay": 0.7225,
+    "S_int": 0.2291,
+    "Force": "Gravity",
+    "Weight": 1.858559,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "6aeae93d3d0a",
+    "\u03a6": 2.5723,
+    "Decay": 0.7225,
+    "S_int": 0.3595,
+    "Force": "EM",
+    "Weight": 1.858487,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "315d521723e3",
+    "\u03a6": 2.5706,
+    "Decay": 0.7225,
+    "S_int": 0.305,
+    "Force": "EM",
+    "Weight": 1.857259,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "85742ee8c878",
+    "\u03a6": 2.5703,
+    "Decay": 0.7225,
+    "S_int": 0.2483,
+    "Force": "EM",
+    "Weight": 1.857042,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "600a3163ddb4",
+    "\u03a6": 2.5698,
+    "Decay": 0.7225,
+    "S_int": 0.2987,
+    "Force": "Gravity",
+    "Weight": 1.85668,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d098e90e4c47",
+    "\u03a6": 2.569,
+    "Decay": 0.7225,
+    "S_int": 0.3411,
+    "Force": "Weak",
+    "Weight": 1.856102,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "909be9ed8cf4",
+    "\u03a6": 2.5687,
+    "Decay": 0.7225,
+    "S_int": 0.166,
+    "Force": "Gravity",
+    "Weight": 1.855886,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "2bbd8f0d5042",
+    "\u03a6": 2.5683,
+    "Decay": 0.7225,
+    "S_int": 0.2267,
+    "Force": "EM",
+    "Weight": 1.855597,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f5b9586ccac7",
+    "\u03a6": 2.5669,
+    "Decay": 0.7225,
+    "S_int": 0.278,
+    "Force": "Gravity",
+    "Weight": 1.854585,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a3488d78354d",
+    "\u03a6": 2.5667,
+    "Decay": 0.7225,
+    "S_int": 0.1845,
+    "Force": "EM",
+    "Weight": 1.854441,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "0b6d9e8c3469",
+    "\u03a6": 2.5653,
+    "Decay": 0.7225,
+    "S_int": 0.1222,
+    "Force": "Strong",
+    "Weight": 1.853429,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "97032c3194c9",
+    "\u03a6": 2.5645,
+    "Decay": 0.7225,
+    "S_int": 0.3625,
+    "Force": "Strong",
+    "Weight": 1.852851,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "6c38b28bdae9",
+    "\u03a6": 2.5629,
+    "Decay": 0.7225,
+    "S_int": 0.3608,
+    "Force": "Weak",
+    "Weight": 1.851695,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "ac91db5d06c7",
+    "\u03a6": 2.5619,
+    "Decay": 0.7225,
+    "S_int": 0.2351,
+    "Force": "Weak",
+    "Weight": 1.850973,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "8fe4b5d978a8",
+    "\u03a6": 2.5614,
+    "Decay": 0.7225,
+    "S_int": 0.2286,
+    "Force": "EM",
+    "Weight": 1.850612,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "5654ea4aca3b",
+    "\u03a6": 2.5609,
+    "Decay": 0.7225,
+    "S_int": 0.3083,
+    "Force": "Gravity",
+    "Weight": 1.85025,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "d52909df24b3",
+    "\u03a6": 2.5599,
+    "Decay": 0.7225,
+    "S_int": 0.2624,
+    "Force": "Gravity",
+    "Weight": 1.849528,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "605f654df1fc",
+    "\u03a6": 2.5578,
+    "Decay": 0.7225,
+    "S_int": 0.3761,
+    "Force": "Strong",
+    "Weight": 1.848011,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4123002ea18e",
+    "\u03a6": 2.557,
+    "Decay": 0.7225,
+    "S_int": 0.2039,
+    "Force": "Gravity",
+    "Weight": 1.847433,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "1f0291687747",
+    "\u03a6": 2.554,
+    "Decay": 0.7225,
+    "S_int": 0.1492,
+    "Force": "Strong",
+    "Weight": 1.845265,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "25c2dc6dcfab",
+    "\u03a6": 2.5539,
+    "Decay": 0.7225,
+    "S_int": 0.1631,
+    "Force": "Weak",
+    "Weight": 1.845193,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "396d449e7ac5",
+    "\u03a6": 2.5507,
+    "Decay": 0.7225,
+    "S_int": 0.2881,
+    "Force": "Gravity",
+    "Weight": 1.842881,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9af848efe197",
+    "\u03a6": 2.5498,
+    "Decay": 0.7225,
+    "S_int": 0.3158,
+    "Force": "Strong",
+    "Weight": 1.84223,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "be78823972a9",
+    "\u03a6": 2.5496,
+    "Decay": 0.7225,
+    "S_int": 0.1288,
+    "Force": "EM",
+    "Weight": 1.842086,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c17b1adabf23",
+    "\u03a6": 2.5459,
+    "Decay": 0.7225,
+    "S_int": 0.1965,
+    "Force": "Gravity",
+    "Weight": 1.839413,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "95b97240a623",
+    "\u03a6": 2.5457,
+    "Decay": 0.7225,
+    "S_int": 0.1065,
+    "Force": "EM",
+    "Weight": 1.839268,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e2d6f32b25ed",
+    "\u03a6": 2.5449,
+    "Decay": 0.7225,
+    "S_int": 0.3132,
+    "Force": "Strong",
+    "Weight": 1.83869,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9ace32be457f",
+    "\u03a6": 2.5437,
+    "Decay": 0.7225,
+    "S_int": 0.306,
+    "Force": "Gravity",
+    "Weight": 1.837823,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "fca118a8527f",
+    "\u03a6": 2.5433,
+    "Decay": 0.7225,
+    "S_int": 0.2548,
+    "Force": "Strong",
+    "Weight": 1.837534,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4d61f510a5d1",
+    "\u03a6": 2.5421,
+    "Decay": 0.7225,
+    "S_int": 0.3901,
+    "Force": "Weak",
+    "Weight": 1.836667,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f550f19926aa",
+    "\u03a6": 2.5392,
+    "Decay": 0.7225,
+    "S_int": 0.1564,
+    "Force": "Gravity",
+    "Weight": 1.834572,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "91b5901d47c1",
+    "\u03a6": 2.5348,
+    "Decay": 0.7225,
+    "S_int": 0.176,
+    "Force": "Strong",
+    "Weight": 1.831393,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "67a52b60455d",
+    "\u03a6": 2.5311,
+    "Decay": 0.7225,
+    "S_int": 0.2183,
+    "Force": "Gravity",
+    "Weight": 1.82872,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "dfcf4e1b755f",
+    "\u03a6": 2.5308,
+    "Decay": 0.7225,
+    "S_int": 0.3501,
+    "Force": "Gravity",
+    "Weight": 1.828503,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "ee988cf523fd",
+    "\u03a6": 2.5289,
+    "Decay": 0.7225,
+    "S_int": 0.333,
+    "Force": "Gravity",
+    "Weight": 1.82713,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "19c02bbcda3d",
+    "\u03a6": 2.5214,
+    "Decay": 0.7225,
+    "S_int": 0.116,
+    "Force": "Weak",
+    "Weight": 1.821711,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "04751332fe48",
+    "\u03a6": 2.5204,
+    "Decay": 0.7225,
+    "S_int": 0.3562,
+    "Force": "EM",
+    "Weight": 1.820989,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b2112427714e",
+    "\u03a6": 2.5203,
+    "Decay": 0.7225,
+    "S_int": 0.3543,
+    "Force": "Weak",
+    "Weight": 1.820917,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "7c793d943a90",
+    "\u03a6": 2.52,
+    "Decay": 0.7225,
+    "S_int": 0.2234,
+    "Force": "Weak",
+    "Weight": 1.8207,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "f1b55d36b523",
+    "\u03a6": 2.5199,
+    "Decay": 0.7225,
+    "S_int": 0.1725,
+    "Force": "Gravity",
+    "Weight": 1.820628,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "c33c546f6e16",
+    "\u03a6": 2.5176,
+    "Decay": 0.7225,
+    "S_int": 0.1674,
+    "Force": "Strong",
+    "Weight": 1.818966,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "cc3f6b3af393",
+    "\u03a6": 2.5174,
+    "Decay": 0.7225,
+    "S_int": 0.3424,
+    "Force": "Weak",
+    "Weight": 1.818821,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "cc8816ef299e",
+    "\u03a6": 2.5149,
+    "Decay": 0.7225,
+    "S_int": 0.3481,
+    "Force": "Gravity",
+    "Weight": 1.817015,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4eb1a8bd0365",
+    "\u03a6": 2.5133,
+    "Decay": 0.7225,
+    "S_int": 0.1508,
+    "Force": "Strong",
+    "Weight": 1.815859,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "07298f57e419",
+    "\u03a6": 2.5133,
+    "Decay": 0.7225,
+    "S_int": 0.1129,
+    "Force": "Weak",
+    "Weight": 1.815859,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "284aa2c98387",
+    "\u03a6": 2.513,
+    "Decay": 0.7225,
+    "S_int": 0.203,
+    "Force": "Weak",
+    "Weight": 1.815643,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "97fdd4d891ce",
+    "\u03a6": 2.5128,
+    "Decay": 0.7225,
+    "S_int": 0.3999,
+    "Force": "Strong",
+    "Weight": 1.815498,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9c8879d8775f",
+    "\u03a6": 2.5103,
+    "Decay": 0.7225,
+    "S_int": 0.225,
+    "Force": "EM",
+    "Weight": 1.813692,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "bcaea67b8564",
+    "\u03a6": 2.5075,
+    "Decay": 0.7225,
+    "S_int": 0.151,
+    "Force": "Gravity",
+    "Weight": 1.811669,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "4c94061232e6",
+    "\u03a6": 2.507,
+    "Decay": 0.7225,
+    "S_int": 0.3284,
+    "Force": "Weak",
+    "Weight": 1.811308,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "9ef0412e7207",
+    "\u03a6": 2.5035,
+    "Decay": 0.7225,
+    "S_int": 0.2986,
+    "Force": "EM",
+    "Weight": 1.808779,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "e61a94bf2533",
+    "\u03a6": 2.5034,
+    "Decay": 0.7225,
+    "S_int": 0.1321,
+    "Force": "EM",
+    "Weight": 1.808707,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "a62fc8ac19f4",
+    "\u03a6": 2.5032,
+    "Decay": 0.7225,
+    "S_int": 0.2371,
+    "Force": "Weak",
+    "Weight": 1.808562,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "dac85b5fbb6b",
+    "\u03a6": 2.5029,
+    "Decay": 0.7225,
+    "S_int": 0.3441,
+    "Force": "Strong",
+    "Weight": 1.808345,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "8b53bc871b48",
+    "\u03a6": 2.5013,
+    "Decay": 0.7225,
+    "S_int": 0.2288,
+    "Force": "EM",
+    "Weight": 1.807189,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "02006604a051",
+    "\u03a6": 2.5007,
+    "Decay": 0.7225,
+    "S_int": 0.1266,
+    "Force": "EM",
+    "Weight": 1.806756,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "b3acf0b93442",
+    "\u03a6": 2.5007,
+    "Decay": 0.7225,
+    "S_int": 0.2254,
+    "Force": "Strong",
+    "Weight": 1.806756,
+    "Directive": "RESERVE"
+  },
+  {
+    "UID": "854387cd48b2",
+    "\u03a6": 2.5003,
+    "Decay": 0.7225,
+    "S_int": 0.1176,
+    "Force": "EM",
+    "Weight": 1.806467,
+    "Directive": "RESERVE"
+  }
+]
