@@ -1,0 +1,1 @@
+Getting started guide for new users

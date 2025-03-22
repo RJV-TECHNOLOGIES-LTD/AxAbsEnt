@@ -1,0 +1,1 @@
+Test integration tests initialization

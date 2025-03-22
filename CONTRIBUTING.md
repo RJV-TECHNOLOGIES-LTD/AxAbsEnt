@@ -1,0 +1,1 @@
+Detailed contribution guidelines for developers and researchers

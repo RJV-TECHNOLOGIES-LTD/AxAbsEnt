@@ -1,0 +1,1 @@
+Strong force emergence

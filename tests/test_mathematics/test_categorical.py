@@ -1,0 +1,1 @@
+Categorical theory tests

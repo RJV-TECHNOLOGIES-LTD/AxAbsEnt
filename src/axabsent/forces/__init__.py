@@ -1,0 +1,1 @@
+Forces module initialization

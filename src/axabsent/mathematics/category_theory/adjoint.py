@@ -1,0 +1,1 @@
+Adjoint functor implementation

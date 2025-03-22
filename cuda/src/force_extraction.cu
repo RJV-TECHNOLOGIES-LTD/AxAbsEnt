@@ -1,0 +1,1 @@
+GPU force extraction implementation

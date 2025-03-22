@@ -1,0 +1,1 @@
+_static index page

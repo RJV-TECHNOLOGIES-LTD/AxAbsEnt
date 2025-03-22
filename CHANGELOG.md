@@ -1,0 +1,1 @@
+Detailed version history and changes tracking
