@@ -1,1 +1,136 @@
-Python project configuration with build system requirements
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "axabsent"
+version = "0.1.0"
+description = "Enhanced Mathematical Ontology of Absolute Nothingness — Unified System for Simulated Forces, Interactions, and Cross-Absolutes"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Ricardo Jorge Do Vale", email = "contact@rjv-technologies.com" }
+]
+keywords = [
+  "unified-theory",
+  "simulated-forces",
+  "tensor-dynamics",
+  "quantum-causality",
+  "scientific-ontology",
+  "cross-absolute-interactions"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3.11",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Physics",
+  "Topic :: Software Development :: Libraries",
+  "Framework :: FastAPI"
+]
+requires-python = ">=3.10"
+
+dependencies = [
+  "numpy>=1.26",
+  "scipy>=1.12",
+  "sympy>=1.12",
+  "pandas>=2.2",
+  "matplotlib>=3.8",
+  "fastapi>=0.110",
+  "uvicorn[standard]>=0.29",
+  "pydantic>=2.6",
+  "h5py>=3.10",
+  "plotly>=5.21",
+  "einops>=0.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "black>=24.3",
+  "isort>=5.13",
+  "flake8>=7.0",
+  "mypy>=1.9",
+  "pytest>=8.1",
+  "pytest-cov>=4.1",
+  "pre-commit>=3.7",
+  "nbval>=0.10",
+  "tox>=4.14",
+  "jupytext>=1.16"
+]
+docs = [
+  "sphinx>=7.3",
+  "sphinx_rtd_theme>=2.0",
+  "nbsphinx>=0.9",
+  "doc8>=1.1"
+]
+gpu = [
+  "cupy-cuda12x>=12.2",
+  "torch>=2.2.1",
+  "jax[cuda12_pip]>=0.4.25",
+  "optuna>=3.6",
+  "pyvista>=0.43"
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+include = '\.pyi?$'
+exclude = '''
+/(
+  \.git
+  | \.venv
+  | build
+  | dist
+  | notebooks
+  | docs
+  | data
+  | __pycache__
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+skip_gitignore = true
+known_first_party = ["axabsent"]
+known_third_party = ["numpy", "scipy", "torch", "fastapi"]
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+warn_unused_configs = true
+strict_optional = true
+disallow_untyped_defs = true
+
+[tool.flake8]
+max-line-length = 100
+exclude = ".git,__pycache__,docs,build,dist,venv"
+extend-ignore = "E203,W503"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "--tb=short -ra --strict-markers"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["src/axabsent"]
+omit = [
+  "tests/*",
+  "notebooks/*",
+  "docs/*"
+]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+fail_under = 85
