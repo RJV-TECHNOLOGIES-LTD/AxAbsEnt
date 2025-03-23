@@ -89,21 +89,62 @@ The framework's ability to generate quantitative predictions for angular correla
 
 AxAbsEnt offers a unified approach to understanding gravity, electromagnetism, the strong and weak nuclear forces, uncovering deeper connections between them through cross-absolute interaction principles.
 
+## Installation
 
+### Prerequisites
+- Python 3.8 or higher
+- C++ compiler with C++17 support
+- CUDA Toolkit 11.0+ (for GPU acceleration)
+- CMake 3.15+
+- Conda (recommended for environment management)
 
-## Key Features
+### Basic Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/RJV-TECHNOLOGIES-LTD/AxAbsEnt.git
+cd AxAbsEnt
+
+# Create and activate conda environment
+conda env create -f environment.yml
+conda activate axabsent
+
+# Install the package
+pip install -e .
+```
+
+### Advanced Installation Options
+
+```bash
+# With C++ extensions for high-performance computing
+pip install -e ".[cpp]"
+
+# With CUDA support for GPU acceleration
+pip install -e ".[cuda]"
+
+# With visualization capabilities
+pip install -e ".[visualization]"
+
+# Full installation with all features
+pip install -e ".[cuda,cpp,visualization]"
+
+# Development installation
+pip install -e ".[dev,test,docs]"
+```
+
+## Core Features
 
 ### Theoretical Foundation
 - **Absolute Entity Modeling**: Define and manipulate absolute entities with intrinsic properties
 - **Interaction Operators**: Specify interactions between absolutes across mediator spaces
 - **Mediator Space Framework**: Implement spaces that facilitate information transfer between absolutes
 - **Transfinite Interaction Chains**: Analyze interactions across unlimited dimensional hierarchies
-- **Cross-Absolute Selection Principle**: Apply action minimization principles across absolutes
 - **Force Emergence Mechanisms**: Extract fundamental forces from interaction patterns
+- **Cross-Absolute Selection Principle**: Apply action minimization principles across absolutes
 
 ### Computational Capabilities
 - **High-Performance Core**: Python, C++, and CUDA implementations for optimal performance
-- **Advanced Mathematics**: Comprehensive implementations of category theory, transfinite analysis, differential geometry, and information theory
+- **Advanced Mathematics**: Implementations of category theory, transfinite analysis, and differential geometry
 - **Simulation Engines**: Quantum field, particle, resonance, and cosmological simulation capabilities
 - **Parallel Processing**: Multi-core and GPU-accelerated computation for complex simulations
 - **Distributed Computing**: Scale calculations across clusters for demanding problems
@@ -113,117 +154,29 @@ AxAbsEnt offers a unified approach to understanding gravity, electromagnetism, t
 - **Information Flow Analysis**: Track information transfer between absolutes
 - **Resonance Detection**: Identify resonance patterns across mediator spaces
 - **Multi-dimensional Visualization**: Visualize complex interaction structures
-- **Interactive Exploration**: Explore force fields and interaction graphs interactively
+- **Interactive Exploration**: Explore force fields and interaction graphs
 
 ### Experimental Connection
 - **Observable Signatures**: Define experimentally detectable signatures
 - **Particle Physics Predictions**: Generate predictions for particle collision experiments
 - **Cosmological Correlations**: Predict cosmological observations based on theory
 - **Vacuum Fluctuation Analysis**: Connect theory to vacuum energy measurements
-- **Validation Methods**: Compare predictions to experimental data
 
+## Usage Examples
 
-
-## Getting Started
-
-### Prerequisites
-- Python 3.8 or higher
-- C++ compiler with C++17 support (for high-performance components)
-- CUDA Toolkit 11.0+ (optional, for GPU acceleration)
-- CMake 3.15+
-- Conda (recommended for environment management)
-
-Begin exploring cross-absolute interactions immediately:
-
-```bash
-# Create a comprehensive cross-absolute interaction environment
-git clone https://github.com/RJV-TECHNOLOGIES-LTD/AxAbsEnt.git
-cd AxAbsEnt
-
-# Establish the computational foundation
-conda env create -f environment.yml
-conda activate axabsent
-
-# Install with full capabilities for advanced analysis
-pip install -e ".[cuda,cpp,visualization]"
-```
-
-Craft your first cross-absolute interaction model:
+### Basic Example: Creating Absolutes and Interactions
 
 ```python
 import axabsent as ax
 
-# Define the absolute entities with their intrinsic properties
-absolute_a = ax.core.Absolute("A", dimensions=3, 
-                               properties={"signature": [0.8, 0.2, 0.1, 0.05]})
-absolute_b = ax.core.Absolute("B", dimensions=3,
-                               properties={"signature": [0.1, 0.7, 0.3, 0.2]})
-
-# Create the mediator space that enables interaction
-mediator = ax.core.Mediator(dimensions=5, capacity=0.85)
-
-# Establish the interaction operator with coupling parameters
-interaction = ax.core.Interaction(
-    source=absolute_a,
-    target=absolute_b,
-    mediator=mediator,
-    coupling_constants={"α": 0.1, "β": 0.05, "γ": 0.02},
-    transfer_mechanism="quantum_tunneling"
-)
-
-# Initialize and execute the dynamic simulation
-simulation = ax.simulation.TransfiniteSimulation(
-    absolutes=[absolute_a, absolute_b],
-    interactions=[interaction],
-    parameters={"steps": 1000, "precision": "high", "chain_depth": 3}
-)
-
-# Generate comprehensive results with force extraction
-results = simulation.run()
-forces = ax.forces.extract_forces(results)
-
-# Analyze emergent force signatures
-force_signatures = ax.analysis.decompose_forces(forces)
-resonances = ax.analysis.detect_resonances(results)
-
-# Visualize the interaction dynamics and force emergence
-ax.visualization.plot_interaction_dynamics(results)
-ax.visualization.plot_force_signatures(force_signatures)
-```
-### With C++ Extensions
-
-```bash
-# Install with C++ extensions for high-performance components
-pip install -e ".[cpp]"
-```
-
-### With GPU Acceleration
-
-```bash
-# Install with CUDA extensions for GPU acceleration
-pip install -e ".[cuda]"
-```
-
-### Development Installation
-
-```bash
-# Install with development tools and testing dependencies
-pip install -e ".[dev,test,docs]"
-```
-
-## Quick Start
-
-```python
-import axabsent as ax
-
-# Create absolute entities
+# Define absolute entities
 absolute_a = ax.core.Absolute("A", dimensions=3)
 absolute_b = ax.core.Absolute("B", dimensions=3)
 
-# Define a mediator space
+# Create a mediator space
 mediator = ax.core.Mediator(dimensions=4)
 
-# Create interaction operator
+# Define an interaction between absolutes
 interaction = ax.core.Interaction(
     source=absolute_a,
     target=absolute_b,
@@ -231,189 +184,534 @@ interaction = ax.core.Interaction(
     coupling=0.1
 )
 
-# Run a simulation
+# Run a basic simulation
 simulation = ax.simulation.DynamicSimulation(
     absolutes=[absolute_a, absolute_b],
     interactions=[interaction]
 )
 
-result = simulation.run(steps=1000)
+results = simulation.run(steps=1000)
 
 # Extract emergent forces
-forces = ax.forces.extract_forces(result)
+forces = ax.forces.extract_forces(results)
 
-# Visualize interaction
+# Visualize results
 ax.visualization.plot_interaction_graph(interaction)
-
-# Visualize force field
 ax.visualization.plot_force_field(forces)
 ```
 
-## Documentation
-
-Comprehensive documentation is available at [https://axabsent.readthedocs.io/](https://axabsent.readthedocs.io/) including:
-
-- Conceptual explanations
-- API reference
-- Tutorials
-- Examples
-- Theory background
-- Mathematical foundations
-
-For local documentation:
-
-```bash
-# Build documentation
-cd docs
-make html
-
-# View documentation
-open _build/html/index.html
-```
-
-## Project Structure
-
-The AxAbsEnt framework is organized into several key modules:
-
-### Core Components
-- `src/axabsent/core/`: Fundamental entities and interaction operators
-- `src/axabsent/forces/`: Force emergence and decomposition mechanisms
-- `src/axabsent/mathematics/`: Mathematical foundations and utilities
-- `src/axabsent/simulation/`: Simulation engines and dynamics
-- `src/axabsent/visualization/`: Visualization tools and interfaces
-- `src/axabsent/experimental/`: Experimental prediction capabilities
-
-### Performance Extensions
-- `cpp/`: C++ implementations for performance-critical components
-- `cuda/`: CUDA implementations for GPU acceleration
-
-### Tests & Examples
-- `tests/`: Comprehensive test suite for all components
-- `examples/`: Example scripts demonstrating functionality
-- `notebooks/`: Jupyter notebooks with detailed tutorials
-
-### Documentation & Resources
-- `docs/`: Comprehensive documentation source
-- `data/`: Reference data and constants
-- `publications/`: Scientific papers and presentations
-
-## Performance Considerations
-
-AxAbsEnt provides multiple performance tiers depending on computational requirements:
-
-- **Pure Python**: Suitable for simple models and educational purposes
-- **C++ Extensions**: Significantly faster for complex calculations (10-100x speedup)
-- **CUDA Acceleration**: Enables massive parallelism for complex simulations (100-1000x speedup)
-- **Distributed Computing**: Scale calculations across multiple nodes
-
-For demanding simulations, use the GPU-accelerated components:
+### Advanced Example: Comprehensive Interaction Analysis
 
 ```python
 import axabsent as ax
 
-# Use GPU-accelerated simulation
-simulation = ax.simulation.CUDASimulation(
-    absolutes=[absolute_a, absolute_b],
-    interactions=[interaction],
-    device_id=0  # Specify GPU device ID
+# Define absolute entities with specific properties
+absolute_a = ax.core.Absolute(
+    name="A",
+    dimensions=3,
+    properties={
+        "signature": [0.8, 0.2, 0.1, 0.05],
+        "topology": "closed",
+        "stability": 0.95
+    }
 )
 
-# Run parallel simulations across multiple parameter configurations
+absolute_b = ax.core.Absolute(
+    name="B",
+    dimensions=3,
+    properties={
+        "signature": [0.1, 0.7, 0.3, 0.2],
+        "topology": "open",
+        "stability": 0.87
+    }
+)
+
+# Create a multi-dimensional mediator space with specific properties
+mediator = ax.core.Mediator(
+    dimensions=5,
+    capacity=0.85,
+    properties={
+        "permeability": 0.92,
+        "structure": "fibration",
+        "connectivity": "high"
+    }
+)
+
+# Create a detailed interaction operator
+interaction = ax.core.Interaction(
+    source=absolute_a,
+    target=absolute_b,
+    mediator=mediator,
+    coupling_constants={
+        "α": 0.1,
+        "β": 0.05,
+        "γ": 0.02
+    },
+    transfer_mechanism="quantum_tunneling",
+    symmetry="partial"
+)
+
+# Configure and run a transfinite simulation
+simulation = ax.simulation.TransfiniteSimulation(
+    absolutes=[absolute_a, absolute_b],
+    interactions=[interaction],
+    parameters={
+        "steps": 1000,
+        "precision": "high",
+        "chain_depth": 3,
+        "integration_method": "adaptive_runge_kutta",
+        "boundary_conditions": "periodic"
+    }
+)
+
+# Run the simulation with detailed tracking
+results = simulation.run(
+    track_metrics=["energy", "information_flow", "force_emergence"],
+    save_intermediates=True
+)
+
+# Extract and analyze forces
+forces = ax.forces.extract_forces(
+    results,
+    decomposition_method="spectral",
+    threshold=0.001
+)
+
+# Perform comprehensive analysis
+force_signatures = ax.analysis.decompose_forces(
+    forces,
+    components=["gravitational", "electromagnetic", "strong", "weak"]
+)
+
+resonances = ax.analysis.detect_resonances(
+    results,
+    sensitivity=0.01,
+    filtering="wavelet"
+)
+
+information_metrics = ax.analysis.compute_information_metrics(
+    results,
+    metrics=["mutual_information", "transfer_entropy", "channel_capacity"]
+)
+
+# Generate experimental predictions
+predictions = ax.experimental.generate_predictions(
+    results,
+    experiment_type="particle_collision",
+    energy_range=[0.1, 10.0],
+    resolution=0.01
+)
+
+# Create visualizations
+ax.visualization.plot_interaction_dynamics(
+    results,
+    dimensions=3,
+    time_resolution=0.1
+)
+
+ax.visualization.plot_force_signatures(
+    force_signatures,
+    normalized=True,
+    highlight_threshold=0.5
+)
+
+ax.visualization.plot_resonance_spectrum(
+    resonances,
+    frequency_range=[0, 5.0],
+    highlight_peaks=True
+)
+
+# Export results for further analysis
+ax.utilities.export_results(
+    results,
+    format="hdf5",
+    path="./simulation_results.h5",
+    compression=True
+)
+```
+
+### GPU-Accelerated Simulation
+
+```python
+import axabsent as ax
+
+# Create absolute entities
+absolute_a = ax.core.Absolute("A", dimensions=3)
+absolute_b = ax.core.Absolute("B", dimensions=3)
+absolute_c = ax.core.Absolute("C", dimensions=3)
+
+# Create mediator spaces
+mediator_ab = ax.core.Mediator(dimensions=4)
+mediator_bc = ax.core.Mediator(dimensions=4)
+mediator_ca = ax.core.Mediator(dimensions=4)
+
+# Create interactions
+interaction_ab = ax.core.Interaction(
+    source=absolute_a,
+    target=absolute_b,
+    mediator=mediator_ab,
+    coupling=0.1
+)
+
+interaction_bc = ax.core.Interaction(
+    source=absolute_b,
+    target=absolute_c,
+    mediator=mediator_bc,
+    coupling=0.15
+)
+
+interaction_ca = ax.core.Interaction(
+    source=absolute_c,
+    target=absolute_a,
+    mediator=mediator_ca,
+    coupling=0.08
+)
+
+# Use GPU-accelerated simulation
+simulation = ax.simulation.CUDASimulation(
+    absolutes=[absolute_a, absolute_b, absolute_c],
+    interactions=[interaction_ab, interaction_bc, interaction_ca],
+    parameters={
+        "precision": "double",
+        "block_size": 256,
+        "device_id": 0
+    }
+)
+
+# Run parameter scan in parallel
 results = ax.simulation.parallel_parameter_scan(
     simulation=simulation,
     parameters={
         'coupling': [0.01, 0.05, 0.1, 0.5, 1.0],
         'dimensions': [3, 4, 5, 6]
     },
-    num_processes=8  # Use 8 CPU cores
+    num_processes=8
+)
+
+# Analyze results
+resonances = ax.analysis.batch_analyze_resonances(results)
+force_patterns = ax.analysis.extract_force_patterns(results)
+
+# Visualize parameter space
+ax.visualization.plot_parameter_space(
+    results,
+    x_param='coupling',
+    y_param='dimensions',
+    color_metric='resonance_strength'
 )
 ```
 
-## Examples
+### Force Extraction and Analysis
 
-The framework includes numerous examples demonstrating different aspects:
+```python
+import axabsent as ax
+import numpy as np
 
-### Basic Usage
-- Absolute entity creation
-- Interaction definition
-- Mediator space creation
-- Transfinite chain analysis
+# Define absolute entities
+absolute_g = ax.core.Absolute(
+    "Gravitational",
+    dimensions=4,
+    properties={"signature": [0.9, 0.05, 0.03, 0.02]}
+)
 
-### Force Analysis
-- Force extraction
-- Force decomposition
-- Gravitational force emergence
-- Electromagnetic force emergence
-- Strong force emergence
-- Weak force emergence
+absolute_e = ax.core.Absolute(
+    "Electromagnetic",
+    dimensions=4,
+    properties={"signature": [0.1, 0.85, 0.03, 0.02]}
+)
 
-### Simulations
-- Dynamic evolution
-- Resonance detection
-- Quantum field simulation
-- Monte Carlo analysis
-- Cosmological simulation
-- Particle collision simulation
+absolute_s = ax.core.Absolute(
+    "Strong",
+    dimensions=4,
+    properties={"signature": [0.05, 0.05, 0.85, 0.05]}
+)
 
-### Complete Workflows
-- Full analysis pipeline
-- Theory to experiment workflow
-- Unified force analysis
+absolute_w = ax.core.Absolute(
+    "Weak",
+    dimensions=4,
+    properties={"signature": [0.05, 0.05, 0.05, 0.85]}
+)
 
-## Theory Overview
+# Create mediator spaces
+mediator_universal = ax.core.Mediator(
+    dimensions=5,
+    capacity=0.95,
+    properties={"universality": 0.9}
+)
 
-AxAbsEnt is built on several foundational theoretical concepts:
+# Define interactions between absolutes
+interactions = []
+absolutes = [absolute_g, absolute_e, absolute_s, absolute_w]
 
-### Absolute Entities
-Absolute entities represent foundational structures with intrinsic properties that exist independently but can interact through mediator spaces.
+for i, source in enumerate(absolutes):
+    for j, target in enumerate(absolutes):
+        if i != j:
+            coupling = 0.1 / (abs(i - j) + 1)  # Decreasing coupling with "distance"
+            interactions.append(
+                ax.core.Interaction(
+                    source=source,
+                    target=target,
+                    mediator=mediator_universal,
+                    coupling=coupling
+                )
+            )
 
-### Interaction Operators
-Interaction operators define how absolutes interact, specifying information transfer mechanisms and coupling strengths.
+# Configure force extraction simulation
+simulation = ax.simulation.ForceExtractionSimulation(
+    absolutes=absolutes,
+    interactions=interactions,
+    parameters={
+        "steps": 2000,
+        "precision": "high",
+        "force_resolution": 0.001
+    }
+)
 
-### Mediator Spaces
-Mediator spaces facilitate interactions between absolutes, enabling information and influence to propagate.
+# Run simulation
+results = simulation.run()
 
-### Transfinite Interaction Chains
-Transfinite chains enable analysis of interactions across potentially unlimited dimensional hierarchies.
+# Extract fundamental forces
+forces = ax.forces.extract_fundamental_forces(
+    results,
+    force_types=["gravitational", "electromagnetic", "strong", "weak"]
+)
 
-### Force Emergence
-Fundamental forces emerge from patterns of interactions between absolutes, with specific signatures that can be computationally detected.
+# Analyze force contributions
+force_contributions = ax.analysis.analyze_force_contributions(
+    forces,
+    absolutes=absolutes
+)
 
-### Selection Principle
-Cross-absolute interactions follow an action minimization principle that determines preferred interaction pathways.
+# Calculate force unification metrics
+unification_metrics = ax.analysis.calculate_unification_metrics(
+    forces,
+    energy_scale=np.logspace(-3, 18, 100)  # From meV to GUT scale
+)
 
-## Applications
+# Visualize force strengths across energy scales
+ax.visualization.plot_force_unification(
+    unification_metrics,
+    log_scale=True,
+    highlight_unification=True
+)
 
-AxAbsEnt can be applied to several areas of theoretical physics:
+# Create force contribution matrix visualization
+ax.visualization.plot_force_contribution_matrix(
+    force_contributions,
+    normalized=True
+)
+```
 
-- **Fundamental Force Unification**: Explore possible unification mechanisms
-- **Quantum Gravity**: Investigate interactions between quantum and gravitational domains
+### Cosmological Simulation
+
+```python
+import axabsent as ax
+
+# Create cosmologically-relevant absolutes
+absolute_vacuum = ax.core.Absolute(
+    "Vacuum",
+    dimensions=4,
+    properties={
+        "energy_density": 1e-9,
+        "fluctuation_amplitude": 1e-5
+    }
+)
+
+absolute_matter = ax.core.Absolute(
+    "Matter",
+    dimensions=4,
+    properties={
+        "density_parameter": 0.3,
+        "equation_of_state": 0.0
+    }
+)
+
+absolute_radiation = ax.core.Absolute(
+    "Radiation",
+    dimensions=4,
+    properties={
+        "density_parameter": 5e-5,
+        "equation_of_state": 0.33
+    }
+)
+
+# Create cosmological mediator space
+mediator_cosmos = ax.core.Mediator(
+    dimensions=4,
+    properties={
+        "expansion_rate": 70.0,
+        "curvature": 0.0
+    }
+)
+
+# Define cosmological interactions
+interaction_matter_vacuum = ax.core.Interaction(
+    source=absolute_matter,
+    target=absolute_vacuum,
+    mediator=mediator_cosmos,
+    coupling=0.1
+)
+
+interaction_radiation_vacuum = ax.core.Interaction(
+    source=absolute_radiation,
+    target=absolute_vacuum,
+    mediator=mediator_cosmos,
+    coupling=0.05
+)
+
+interaction_matter_radiation = ax.core.Interaction(
+    source=absolute_matter,
+    target=absolute_radiation,
+    mediator=mediator_cosmos,
+    coupling=0.2
+)
+
+# Configure cosmological simulation
+cosmo_sim = ax.simulation.CosmologicalSimulation(
+    absolutes=[absolute_vacuum, absolute_matter, absolute_radiation],
+    interactions=[
+        interaction_matter_vacuum, 
+        interaction_radiation_vacuum, 
+        interaction_matter_radiation
+    ],
+    parameters={
+        "initial_scale_factor": 1e-4,
+        "final_scale_factor": 1.0,
+        "num_steps": 1000,
+        "perturbation_modes": 50
+    }
+)
+
+# Run simulation
+cosmo_results = cosmo_sim.run()
+
+# Extract cosmological observables
+cmb_spectrum = ax.analysis.extract_cmb_spectrum(
+    cosmo_results,
+    max_multipole=2000
+)
+
+matter_power_spectrum = ax.analysis.extract_matter_power_spectrum(
+    cosmo_results,
+    k_range=[1e-4, 10.0],
+    num_k_bins=200
+)
+
+vacuum_fluctuations = ax.analysis.extract_vacuum_fluctuations(
+    cosmo_results,
+    scales=[1e-18, 1e-6, 1e-3]
+)
+
+# Generate predictions for comparison with observations
+predictions = ax.experimental.generate_cosmological_predictions(
+    cosmo_results,
+    observables=["cmb", "bao", "supernovae", "lss"]
+)
+
+# Visualize results
+ax.visualization.plot_cmb_spectrum(
+    cmb_spectrum,
+    compare_with_planck=True
+)
+
+ax.visualization.plot_matter_power_spectrum(
+    matter_power_spectrum,
+    compare_with_sdss=True
+)
+
+ax.visualization.plot_expansion_history(
+    cosmo_results,
+    include_observations=True
+)
+```
+
+## Project Structure
+
+```
+AxAbsEnt/
+├── src/axabsent/
+│   ├── core/               # Core entities and operators
+│   ├── forces/             # Force emergence mechanisms
+│   ├── mathematics/        # Mathematical foundations
+│   ├── simulation/         # Simulation engines
+│   ├── analysis/           # Analysis tools
+│   ├── visualization/      # Visualization tools
+│   └── experimental/       # Experimental predictions
+├── cpp/                    # C++ extensions
+├── cuda/                   # CUDA accelerated components
+├── tests/                  # Test suite
+├── examples/               # Example scripts
+├── notebooks/              # Jupyter notebooks
+├── docs/                   # Documentation
+├── data/                   # Reference data
+└── publications/           # Scientific papers
+```
+
+## Performance Optimization
+
+AxAbsEnt provides multiple performance tiers:
+
+- **Pure Python**: Suitable for basic models and educational use
+- **C++ Extensions**: 10-100x speedup for complex calculations
+- **CUDA Acceleration**: 100-1000x speedup for large simulations
+- **Distributed Computing**: Scale across multiple nodes
+
+### Performance Comparison
+
+| Computation Type          | Python | C++ Extension | CUDA   |
+|---------------------------|--------|---------------|--------|
+| Basic Interaction         | 1x     | 15x           | 120x   |
+| Transfinite Chain (d=3)   | 1x     | 40x           | 350x   |
+| Force Extraction          | 1x     | 25x           | 200x   |
+| Parameter Scanning        | 1x     | 30x           | 800x   |
+| Resonance Detection       | 1x     | 20x           | 250x   |
+
+## Theoretical Applications
+
+AxAbsEnt enables exploration of several foundational areas:
+
+- **Fundamental Force Unification**: Investigate common origins of all forces
+- **Quantum Gravity**: Explore quantum and gravitational domain connections
 - **Cosmological Modeling**: Model universe evolution using cross-absolute principles
 - **Particle Physics**: Predict particle properties and interaction behaviors
 - **Vacuum Energy**: Analyze vacuum fluctuations and zero-point energy
 
-## Contributing
+## Advanced Research Applications
 
-Contributions to AxAbsEnt are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines. Key areas for contribution include:
+### High-Energy Physics
+The framework generates specific predictions for particle collision experiments, including resonance signatures at characteristic energy levels (approximately 0.7 TeV) that would indicate cross-absolute interactions.
 
-- Theoretical extensions
-- Performance optimizations
-- New visualization techniques
-- Experimental prediction models
-- Documentation and examples
-- Test coverage expansion
+### Quantum Gravity
+AxAbsEnt provides perspectives on quantum gravity unification by implementing the mathematical formalism for gravitational force emergence from cross-absolute interactions.
 
-All contributors are expected to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
+### Cosmology
+Generate predictions for cosmic microwave background patterns, large-scale structure formation, and vacuum energy fluctuations based on cross-absolute interaction theory.
+
+### Fundamental Constants
+The quantization of cross-absolute interaction strengths suggests that fundamental physical constants should exhibit fine structure, which can be analyzed using the framework.
+
+## Documentation
+
+Comprehensive documentation is available at [https://axabsent.readthedocs.io/](https://axabsent.readthedocs.io/) including:
+
+- Theoretical foundations
+- API reference
+- Tutorials and examples
+- Mathematical formalism
+- Application guides
+
+To build documentation locally:
+
+```bash
+cd docs
+make html
+```
 
 ## Development
 
 For development work:
 
 ```bash
-# Clone repository
-git clone https://github.com/your-username/AxAbsEnt.git
-cd AxAbsEnt
-
 # Install development dependencies
 pip install -e ".[dev,test,docs]"
 
@@ -426,227 +724,24 @@ pytest tests/test_core/
 # Generate test coverage report
 pytest --cov=axabsent tests/
 
-# Run static type checking
-mypy src/axabsent
-
 # Check code style
 flake8 src/axabsent
+
+# Run static type checking
+mypy src/axabsent
 ```
 
 ## Docker Support
 
-AxAbsEnt provides Docker containers for various environments:
-
 ```bash
-# Build and run standard container
+# Standard container
 docker build -t axabsent .
 docker run -it axabsent
 
-# Build and run GPU-enabled container
+# GPU-enabled container
 docker build -f docker/Dockerfile.gpu -t axabsent-gpu .
 docker run --gpus all -it axabsent-gpu
-
-# Use Docker Compose for development environment
-docker-compose -f docker/docker-compose.yml up
 ```
-
-## Kubernetes Deployment
-
-For large-scale simulations, Kubernetes deployment files are provided:
-
-```bash
-# Deploy to Kubernetes cluster
-kubectl apply -f k8s/axabsent-deployment.yaml
-kubectl apply -f k8s/axabsent-service.yaml
-
-# For GPU-accelerated deployment
-kubectl apply -f k8s/gpu-deployment.yaml
-```
-
-## Web Interface
-
-AxAbsEnt includes a web interface for interactive exploration:
-
-```bash
-# Start the API server
-cd api
-python server.py
-
-# Start the web interface (in a separate terminal)
-cd web
-npm install
-npm start
-```
-
-The web interface provides:
-- Interactive interaction visualization
-- Force field exploration
-- Simulation configuration and execution
-- Results analysis and visualization
-
-## Advanced Usage
-
-Explore the depths of cross-absolute interaction theory through sophisticated analytical techniques:
-
-AxAbsEnt enables researchers to investigate how fundamental forces emerge from cross-absolute interactions through its comprehensive force extraction capabilities. 
-
-The software implements the complete mathematical formalism for projecting interaction operators onto force spaces, allowing detailed analysis of how each absolute contributes to gravitational, electromagnetic, strong, and weak forces.
-
-Researchers can explore the information-theoretic foundations of physical reality using AxAbsEnt's advanced analysis modules. 
-
-The framework quantifies mutual information between absolutes, calculates channel capacities for information transfer and analyzes entropy production in cross-absolute dynamics. 
-
-These capabilities provide novel perspectives on the relationship between information and physical forces.
-
-The transfinite interaction chain analysis module enables exploration of higher-order interactions across multiple absolutes. 
-
-Researchers can investigate how interaction strength decays with chain length and identify potential resonance conditions where interaction amplification occurs. 
-
-These resonances correspond to specific energy signatures that may be detectable in high-energy physics experiments.
-
-For cosmological applications, AxAbsEnt provides specialized modules for analyzing how cross-absolute dynamics might influence observable universe properties. 
-
-Researchers can generate predictions for angular correlation functions in cosmic microwave background radiation, vacuum energy density fluctuations and large-scale structure formation patterns that could validate the cross-absolute interaction theory.
-
-The framework's experimental prediction capabilities generate specific, quantifiable signatures that can be compared with data from particle physics experiments, cosmological observations and precision measurements of fundamental constants. 
-
-These predictions include energy resonances at approximately 0.7 TeV, vacuum energy density fluctuations of order 10^-6 at characteristic scales and distinctive patterns in angular correlation functions.
-
-## Documentation and Resources
-
-Comprehensive resources support your exploration of cross-absolute theory:
-
-The complete documentation at [https://axabsent.readthedocs.io/](https://axabsent.readthedocs.io/) provides detailed explanations of the mathematical formalism, computational implementation and practical applications. 
-
-Interactive tutorials guide researchers through the process of defining absolutes, establishing mediator spaces, configuring interaction operators, and analyzing emergent forces.
-
-The mathematics section offers rigorous coverage of the cross-absolute interaction framework, including detailed explanations of the interaction operator formalism, mediator space construction, transfinite interaction chains and the unified selection principle. 
-
-These resources help researchers understand the theoretical foundations implemented in the software.
-
-Application-specific guides demonstrate how AxAbsEnt can be applied to quantum gravity research, high-energy physics, cosmology, and fundamental force unification. These guides include example configurations, analysis workflows, and interpretation of results in the context of each application area.
-
-For researchers interested in extending the framework, comprehensive API documentation and architecture guides illuminate AxAbsEnt's internal structure. Contributors can leverage these resources to implement new absolute types, interaction mechanisms, force extraction methods, or experimental prediction capabilities.
-
-Regular workshops, webinars, and community discussions provide opportunities for researchers to exchange insights, share results and collaborate on advancing cross-absolute interaction theory. 
-
-These community resources foster a vibrant ecosystem around the theoretical and computational exploration of how physical reality emerges from absolute interactions.
-
-## Research Applications
-
-AxAbsEnt transforms theoretical exploration into experimental predictions:
-
-High-Energy Physics: 
-
-The framework generates specific predictions for particle collision experiments, including resonance signatures at characteristic energy levels (approximately 0.7 TeV) that would indicate cross-absolute interactions. 
-
-Researchers can use AxAbsEnt to analyze how these resonances would manifest in detector data and develop optimized search strategies.
-
-Quantum Gravity: 
-
-By implementing the complete mathematical formalism for gravitational force emergence from cross-absolute interactions, AxAbsEnt provides new perspectives on quantum gravity unification. 
-
-Researchers can explore how gravitational and quantum mechanical phenomena might emerge from common underlying cross-absolute dynamics, potentially illuminating paths toward reconciling general relativity and quantum field theory.
-
-Cosmology: 
-
-AxAbsEnt enables researchers to generate predictions for cosmic microwave background patterns, large-scale structure formation and vacuum energy fluctuations based on cross-absolute interaction theory. 
-
-The software's ability to calculate angular correlation functions with characteristic resonance terms provides testable cosmological signatures.
-
-Fundamental Constants: 
-
-The quantization of cross-absolute interaction strengths implemented in AxAbsEnt suggests that fundamental physical constants should exhibit fine structure. 
-
-Researchers can use the framework to analyze how this fine structure would manifest in precision measurements and develop experimental protocols for detecting these subtle patterns.
-
-Vacuum Energy: 
-
-By implementing the information-theoretic foundations of cross-absolute interactions, AxAbsEnt provides insights into vacuum energy density and fluctuations. 
-
-Researchers can generate specific predictions for how these fluctuations would manifest at characteristic scales (approximately 10^-18 m) and develop experimental approaches for detection.
-
-## Community and Collaboration
-
-Join a community advancing the frontiers of theoretical physics:
-
-The AxAbsEnt community brings together theoretical physicists, mathematicians, computational scientists and experimental researchers working at the intersection of fundamental forces, quantum gravity and cosmology. 
-
-Through collaborative exploration of cross-absolute interaction theory, this community aims to develop a deeper understanding of how physical reality emerges from abstract mathematical structures.
-
-Regular virtual workshops provide opportunities for researchers to share their findings, discuss theoretical challenges and explore new applications of the cross-absolute interaction framework. 
-
-These workshops feature presentations on recent advances, hands-on tutorials for leveraging AxAbsEnt's capabilities and collaborative problem-solving sessions.
-
-The open development model encourages contributions from researchers across disciplines. 
-
-Whether implementing new mathematical formalisms, optimizing computational performance, developing visualization techniques or connecting theory to experimental predictions, contributors can help advance the framework's capabilities and applications.
-
-Community-driven challenges focus collective effort on specific theoretical or computational problems. 
-
-Recent challenges have explored topics such as optimizing transfinite interaction chain calculations, identifying novel cross-absolute resonance conditions and developing enhanced visualization techniques for higher-dimensional mediator spaces.
-
-The mentorship program connects established researchers with students and early-career scientists interested in cross-absolute interaction theory. 
-
-This program provides guidance on using AxAbsEnt for research projects, understanding the mathematical formalism and connecting theoretical predictions with experimental data.
-
-## Future Directions
-
-AxAbsEnt continues to evolve at the frontier of theoretical physics:
-
-Quantum Information Integration: 
-
-Future releases will implement enhanced formalisms for quantum information transfer between absolutes, exploring how quantum entanglement, superposition and decoherence might emerge from cross-absolute interactions. 
-
-These capabilities will provide new perspectives on quantum foundations and potential applications in quantum computing.
-
-Advanced Cosmological Modeling: 
-
-Upcoming versions will feature expanded cosmological simulation capabilities, allowing researchers to model how cross-absolute dynamics might influence universe evolution from initial conditions through structure formation to present-day observations. 
-
-These advancements will generate more precise predictions for cosmological observations.
-
-Force Unification Exploration: 
-
-Ongoing development focuses on implementing advanced mathematical tools for exploring how the four fundamental forces might emerge from a unified cross-absolute interaction framework. 
-
-These capabilities will help researchers investigate potential unification mechanisms beyond current theoretical approaches.
-
-Experimental Data Integration: 
-
-Future releases will include enhanced tools for comparing theoretical predictions with experimental data from particle physics facilities, cosmological observations and precision measurements of fundamental constants. 
-
-These capabilities will strengthen the connection between abstract mathematics and empirical validation.
-
-Machine Learning Enhancement: 
-
-Upcoming versions will leverage machine learning techniques to identify patterns in cross-absolute interactions, optimize parameter searches and detect subtle signatures in simulated or experimental data. 
-
-These capabilities will accelerate the exploration of complex cross-absolute dynamics and their physical manifestations.
-
-## Acknowledgments
-
-AxAbsEnt stands on the shoulders of theoretical giants:
-
-This framework represents the culmination of decades of theoretical exploration across mathematics, physics and computer science. 
-
-We acknowledge the foundational contributions of researchers in quantum field theory, category theory, differential geometry, information theory and computational physics that have made this framework possible.
-
-Special recognition goes to the pioneering work in absolute nothingness ontology, which established the mathematical foundations upon which AxAbsEnt builds. 
-
-The cross-absolute interaction formalism implemented in this software extends these foundations to provide a computational environment for exploring how physical reality emerges from absolute interactions.
-
-We express our gratitude to the high-performance computing centers and research institutions that have provided computational resources for developing and testing AxAbsEnt. 
-
-Their support has enabled the implementation of computationally intensive features such as transfinite interaction chain analysis and cross-absolute resonance detection.
-
-The open-source communities around Python, C++, CUDA, and scientific computing libraries have provided essential tools and frameworks that AxAbsEnt leverages. 
-
-Their commitment to open knowledge sharing aligns with our mission to advance theoretical physics through collaborative exploration of cross-absolute interaction theory.
-
-Most importantly, we acknowledge the researchers, students and enthusiasts who apply AxAbsEnt to explore the deepest questions in theoretical physics. 
-
-Their curiosity, insights and discoveries drive the ongoing evolution of the cross-absolute interaction framework and its applications in understanding the fundamental nature of reality.
 
 ## Citation
 
@@ -675,38 +770,18 @@ When using AxAbsEnt in your research, please cite:
 }
 ```
 
-## Publications
-
-This framework is described in several scientific publications:
-
-- "Cross-Absolute Interactions: A New Framework for Understanding Force Emergence"
-- "Force Emergence from Cross-Absolute Interaction Patterns"
-- "Experimental Predictions of the Cross-Absolute Interaction Theory"
-- "Toward a Unified Theory: Cross-Absolute Approach to Fundamental Forces"
-
-## Community and Support
-
-- **Issue Tracker**: [GitHub Issues](https://github.com/RJV-TECHNOLOGIES-LTD/AxAbsEnt/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/RJV-TECHNOLOGIES-LTD/AxAbsEnt/discussions)
-## Roadmap
-
-Future development plans include:
+## Future Developments
 
 - Advanced quantum gravity integration
-- Improved cosmological prediction capabilities
-- Enhanced machine learning for pattern detection
-- Extended GPU acceleration for all components
-- Automated experimental signature detection
-- Integration with major physics experiment datasets
+- Enhanced cosmological prediction capabilities
+- Machine learning for pattern detection
+- Extended GPU acceleration
 - Real-time collaborative simulation environment
-
-Join us in exploring the fundamental nature of reality through cross-absolute interaction theory!
+- Integration with major physics experiment datasets
 
 ## License
 
-AxAbsEnt is released under the MIT License, promoting open collaboration while acknowledging original contributions. 
-
-See [LICENSE](LICENSE) for details.
+AxAbsEnt is released under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
