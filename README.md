@@ -112,26 +112,6 @@ conda activate axabsent
 # Install the package
 pip install -e .
 ```
-
-### Advanced Installation Options
-
-```bash
-# With C++ extensions for high-performance computing
-pip install -e ".[cpp]"
-
-# With CUDA support for GPU acceleration
-pip install -e ".[cuda]"
-
-# With visualization capabilities
-pip install -e ".[visualization]"
-
-# Full installation with all features
-pip install -e ".[cuda,cpp,visualization]"
-
-# Development installation
-pip install -e ".[dev,test,docs]"
-```
-
 ## Core Features
 
 ### Theoretical Foundation
@@ -161,6 +141,25 @@ pip install -e ".[dev,test,docs]"
 - **Particle Physics Predictions**: Generate predictions for particle collision experiments
 - **Cosmological Correlations**: Predict cosmological observations based on theory
 - **Vacuum Fluctuation Analysis**: Connect theory to vacuum energy measurements
+
+### Advanced Installation Options
+
+```bash
+# With C++ extensions for high-performance computing
+pip install -e ".[cpp]"
+
+# With CUDA support for GPU acceleration
+pip install -e ".[cuda]"
+
+# With visualization capabilities
+pip install -e ".[visualization]"
+
+# Full installation with all features
+pip install -e ".[cuda,cpp,visualization]"
+
+# Development installation
+pip install -e ".[dev,test,docs]"
+```
 
 ## Usage Examples
 
