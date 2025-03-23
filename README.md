@@ -1,12 +1,17 @@
-# AxAbsEnt - Cross-Absolute Interaction Theory Framework
+# 🧠 AxAbsEnt — Enhanced Mathematical Ontology of Absolute Nothingness  
+**Cross-Absolute Interaction Theory Execution Framework**
 
-![License: AxAbsEnt-NC](https://img.shields.io/badge/License-AxAbsEnt--NC-red.svg)
-![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10-blue)
-![C++ Version](https://img.shields.io/badge/C%2B%2B-17-blue)
-![CUDA Enabled](https://img.shields.io/badge/CUDA-11.0+-green)
-![Documentation Status](https://img.shields.io/badge/docs-passing-green)
-![Tests](https://img.shields.io/badge/tests-passing-green)
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+> Unified Simulation and Theoretical Engine for Transfinite Dynamics, Force Emergence, and Absolute Ontological Computation
+
+[![License: AxAbsEnt-NC](https://img.shields.io/badge/License-AxAbsEnt--NC-red.svg)](./LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.10%20|%203.11%20|%203.12-blue)](https://www.python.org/)
+[![C++ Standard](https://img.shields.io/badge/C%2B%2B-20-blue)](https://en.cppreference.com/w/cpp/20)
+[![CUDA Enabled](https://img.shields.io/badge/CUDA-12.0+-brightgreen)](https://developer.nvidia.com/cuda-toolkit)
+[![Status: Ontologically Compliant](https://img.shields.io/badge/Ontology-Verified-blueviolet)](./docs/theory/index.rst)
+[![Documentation](https://img.shields.io/badge/docs-stable-brightgreen)](https://github.com/RJV-TECHNOLOGIES-LTD/AxAbsEnt/tree/main/docs)
+[![Tests](https://img.shields.io/badge/tests-passing-success)](./tests)
+[![Version](https://img.shields.io/badge/version-0.1.0-informational)](./CHANGELOG.md)
+[![Citation Ready](https://img.shields.io/badge/cite-AxAbsEnt-orange)](./CITATION.cff)
 
 ## Overview
 
