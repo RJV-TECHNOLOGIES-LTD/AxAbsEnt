@@ -136,23 +136,6 @@ AxAbsEnt offers a unified approach to understanding gravity, electromagnetism, t
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # AxAbsEnt Installation Guide
 
 This guide provides detailed instructions for installing the AxAbsEnt framework on different operating systems and environments.
@@ -242,21 +225,370 @@ cd ..
 # Verify installation
 python -c "import axabsent; print(axabsent.__version__)"
 ```
+### Kubernetes Deployment Configuration
 
-## Docker Installation
+```bash
+# Kubernetes Deployment for AxAbsEnt
+# ---------------------------------
+# This configuration deploys the AxAbsEnt system on a Kubernetes cluster,
+# with separate components for simulation, API service, and web interface.
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: axabsent
+---
+# ConfigMap for application settings
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: axabsent-config
+  namespace: axabsent
+data:
+  SIMULATION_MODE: "distributed"
+  LOG_LEVEL: "INFO"
+  MAX_PARALLEL_SIMULATIONS: "10"
+  MAX_MEMORY_PER_SIM: "4Gi"
+  FORCE_EXTRACTION_PRECISION: "high"
+  API_ENABLE_CACHING: "true"
+  API_CACHE_TTL: "3600"
+---
+# API Service Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: axabsent-api
+  namespace: axabsent
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: axabsent-api
+  template:
+    metadata:
+      labels:
+        app: axabsent-api
+    spec:
+      containers:
+      - name: api
+        image: axabsent/api:latest
+        ports:
+        - containerPort: 8000
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
+          limits:
+            memory: "1Gi"
+            cpu: "1"
+        envFrom:
+        - configMapRef:
+            name: axabsent-config
+        livenessProbe:
+          httpGet:
+            path: /api/health
+            port: 8000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /api/ready
+            port: 8000
+          initialDelaySeconds: 15
+          periodSeconds: 5
+---
+# Simulation Engine Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: axabsent-simulation
+  namespace: axabsent
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: axabsent-simulation
+  template:
+    metadata:
+      labels:
+        app: axabsent-simulation
+    spec:
+      containers:
+      - name: simulation-engine
+        image: axabsent/simulation:latest
+        resources:
+          requests:
+            memory: "2Gi"
+            cpu: "1"
+          limits:
+            memory: "8Gi"
+            cpu: "4"
+        envFrom:
+        - configMapRef:
+            name: axabsent-config
+        volumeMounts:
+        - name: simulation-data
+          mountPath: /app/data
+        - name: results-volume
+          mountPath: /app/results
+      volumes:
+      - name: simulation-data
+        persistentVolumeClaim:
+          claimName: simulation-data-pvc
+      - name: results-volume
+        persistentVolumeClaim:
+          claimName: results-data-pvc
+---
+# GPU-accelerated simulation deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: axabsent-gpu-simulation
+  namespace: axabsent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: axabsent-gpu-simulation
+  template:
+    metadata:
+      labels:
+        app: axabsent-gpu-simulation
+    spec:
+      containers:
+      - name: gpu-simulation
+        image: axabsent/simulation:gpu
+        resources:
+          requests:
+            memory: "4Gi"
+            cpu: "2"
+          limits:
+            memory: "16Gi"
+            cpu: "8"
+            nvidia.com/gpu: 1
+        env:
+        - name: SIMULATION_MODE
+          value: "gpu_accelerated"
+        - name: CUDA_VISIBLE_DEVICES
+          value: "0"
+        volumeMounts:
+        - name: simulation-data
+          mountPath: /app/data
+        - name: results-volume
+          mountPath: /app/results
+      volumes:
+      - name: simulation-data
+        persistentVolumeClaim:
+          claimName: simulation-data-pvc
+      - name: results-volume
+        persistentVolumeClaim:
+          claimName: results-data-pvc
+---
+# Web Interface Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: axabsent-web
+  namespace: axabsent
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: axabsent-web
+  template:
+    metadata:
+      labels:
+        app: axabsent-web
+    spec:
+      containers:
+      - name: web
+        image: axabsent/web:latest
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "200m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 80
+          initialDelaySeconds: 30
+          periodSeconds: 10
+---
+# API Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: axabsent-api-service
+  namespace: axabsent
+spec:
+  selector:
+    app: axabsent-api
+  ports:
+  - port: 8000
+    targetPort: 8000
+  type: ClusterIP
+---
+# Web Interface Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: axabsent-web-service
+  namespace: axabsent
+spec:
+  selector:
+    app: axabsent-web
+  ports:
+  - port: 80
+    targetPort: 80
+  type: ClusterIP
+---
+# Ingress for external access
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: axabsent-ingress
+  namespace: axabsent
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+spec:
+  rules:
+  - host: axabsent.example.com
+    http:
+      paths:
+      - path: /api
+        pathType: Prefix
+        backend:
+          service:
+            name: axabsent-api-service
+            port:
+              number: 8000
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: axabsent-web-service
+            port:
+              number: 80
+```
 
 ### Basic Docker Setup
 
 ```bash
-# Clone the repository
-git clone https://github.com/username/AxAbsEnt.git
-cd AxAbsEnt
+# This file defines the multi-container Docker application for running
+# AxAbsEnt simulations and web interface.
 
-# Build the Docker image
-docker build -t axabsent:latest -f docker/Dockerfile .
+version: '3.8'
 
-# Run the Docker container
-docker run -it --name axabsent-container axabsent:latest
+services:
+  # Core application container
+  axabsent-app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: axabsent:latest
+    container_name: axabsent-app
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+    environment:
+      - PYTHONUNBUFFERED=1
+      - SIMULATION_MODE=standard
+      - LOG_LEVEL=INFO
+      - MAX_WORKERS=4
+    ports:
+      - "8000:8000"  # API port
+    depends_on:
+      - redis
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/api/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # GPU-accelerated computation container
+  axabsent-gpu:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.gpu
+    image: axabsent:gpu
+    container_name: axabsent-gpu
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+    environment:
+      - PYTHONUNBUFFERED=1
+      - CUDA_VISIBLE_DEVICES=0
+      - SIMULATION_MODE=accelerated
+      - LOG_LEVEL=INFO
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    depends_on:
+      - axabsent-app
+    restart: unless-stopped
+
+  # Web interface container
+  axabsent-web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    image: axabsent-web:latest
+    container_name: axabsent-web
+    ports:
+      - "3000:80"  # Web interface port
+    depends_on:
+      - axabsent-app
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "http://localhost:80"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Caching and job queue service
+  redis:
+    image: redis:alpine
+    container_name: axabsent-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Result visualization service
+  visualization:
+    build:
+      context: ./tools/visualization
+      dockerfile: Dockerfile
+    image: axabsent-viz:latest
+    container_name: axabsent-viz
+    volumes:
+      - ./results:/app/results
+    ports:
+      - "8050:8050"  # Visualization dashboard port
+    depends_on:
+      - axabsent-app
+    restart: unless-stopped
+
+volumes:
+  redis-data:
 ```
 
 ### GPU-enabled Docker Setup
@@ -416,6 +748,153 @@ forces = ax.forces.extract_forces(results)
 # Visualize results
 ax.visualization.plot_interaction_graph(interaction)
 ax.visualization.plot_force_field(forces)
+```
+### C++ Performance-Critical Implementation
+
+```// C++ Performance-Critical Implementation Example
+// ----------------------------------------------
+// This file shows how to implement and use performance-critical
+// components of AxAbsEnt in C++
+
+#include <axabsent/core/interaction.hpp>
+#include <axabsent/mathematics/tensor.hpp>
+#include <axabsent/simulation/dynamics.hpp>
+#include <vector>
+#include <iostream>
+#include <chrono>
+
+namespace axabsent {
+
+// High-performance tensor operation for force calculation
+class TensorForceCalculator {
+private:
+    TensorMatrix m_coupling_tensor;
+    double m_precision;
+    bool m_use_optimized;
+
+public:
+    TensorForceCalculator(const TensorMatrix& coupling_tensor, 
+                          double precision = 1e-10,
+                          bool use_optimized = true) 
+        : m_coupling_tensor(coupling_tensor),
+          m_precision(precision),
+          m_use_optimized(use_optimized) {}
+
+    // Calculate force between two entities using tensor operations
+    ForceVector calculateForce(const StateVector& source_state,
+                              const StateVector& target_state,
+                              const MediatorProperties& mediator) {
+        // Start performance timing
+        auto start = std::chrono::high_resolution_clock::now();
+        
+        // Get dimensions of state vectors
+        const size_t source_dim = source_state.getDimension();
+        const size_t target_dim = target_state.getDimension();
+        
+        // Create result force vector
+        ForceVector result(target_dim);
+        
+        if (m_use_optimized) {
+            // Optimized SIMD-accelerated implementation
+            calculateForceOptimized(source_state, target_state, mediator, result);
+        } else {
+            // Standard implementation
+            for (size_t i = 0; i < target_dim; ++i) {
+                double force_component = 0.0;
+                
+                for (size_t j = 0; j < source_dim; ++j) {
+                    force_component += m_coupling_tensor(i, j) * 
+                                       source_state[j] * 
+                                       mediator.getCouplingStrength();
+                }
+                
+                result[i] = force_component;
+            }
+        }
+        
+        // End performance timing
+        auto end = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double, std::milli> duration = end - start;
+        
+        if (mediator.isVerbose()) {
+            std::cout << "Force calculation completed in " 
+                      << duration.count() << " ms" << std::endl;
+        }
+        
+        return result;
+    }
+    
+private:
+    // SIMD-optimized force calculation
+    void calculateForceOptimized(const StateVector& source_state,
+                                const StateVector& target_state,
+                                const MediatorProperties& mediator,
+                                ForceVector& result) {
+        // Implementation using SIMD intrinsics for vectorized operations
+        #ifdef __AVX__
+            // AVX implementation
+            calculateForceAVX(source_state, target_state, mediator, result);
+        #elif defined(__SSE4_1__)
+            // SSE implementation
+            calculateForceSSE(source_state, target_state, mediator, result);
+        #else
+            // Fallback implementation with loop unrolling
+            calculateForceUnrolled(source_state, target_state, mediator, result);
+        #endif
+    }
+    
+    // AVX-optimized implementation
+    void calculateForceAVX(const StateVector& source_state,
+                          const StateVector& target_state,
+                          const MediatorProperties& mediator,
+                          ForceVector& result);
+                          
+    // SSE-optimized implementation
+    void calculateForceSSE(const StateVector& source_state,
+                         const StateVector& target_state,
+                         const MediatorProperties& mediator,
+                         ForceVector& result);
+                         
+    // Loop-unrolled implementation
+    void calculateForceUnrolled(const StateVector& source_state,
+                              const StateVector& target_state,
+                              const MediatorProperties& mediator,
+                              ForceVector& result);
+};
+
+} // namespace axabsent
+
+// Example usage in main function
+int main() {
+    using namespace axabsent;
+    
+    // Create coupling tensor
+    TensorMatrix coupling(4, 3);
+    coupling.setRandom();
+    
+    // Create calculator
+    TensorForceCalculator calculator(coupling);
+    
+    // Create state vectors
+    StateVector source_state(3);
+    source_state.setValues({1.0, 2.0, 3.0});
+    
+    StateVector target_state(4);
+    target_state.setValues({0.5, 1.5, 2.5, 3.5});
+    
+    // Create mediator properties
+    MediatorProperties mediator;
+    mediator.setCouplingStrength(0.75);
+    mediator.setVerbose(true);
+    
+    // Calculate force
+    ForceVector force = calculator.calculateForce(source_state, target_state, mediator);
+    
+    // Output results
+    std::cout << "Resulting force vector: " << force << std::endl;
+    
+    return 0;
+}
 ```
 
 ### Advanced Example: Comprehensive Interaction Analysis
@@ -1554,49 +2033,6 @@ Comprehensive documentation is available at [https://axabsent.readthedocs.io/](h
 - Tutorials and examples
 - Mathematical formalism
 - Application guides
-
-To build documentation locally:
-
-```bash
-cd docs
-make html
-```
-
-## Development
-
-For development work:
-
-```bash
-# Install development dependencies
-pip install -e ".[dev,test,docs]"
-
-# Run tests
-pytest
-
-# Run specific test modules
-pytest tests/test_core/
-
-# Generate test coverage report
-pytest --cov=axabsent tests/
-
-# Check code style
-flake8 src/axabsent
-
-# Run static type checking
-mypy src/axabsent
-```
-
-## Docker Support
-
-```bash
-# Standard container
-docker build -t axabsent .
-docker run -it axabsent
-
-# GPU-enabled container
-docker build -f docker/Dockerfile.gpu -t axabsent-gpu .
-docker run --gpus all -it axabsent-gpu
-```
 
 ## Citation
 
