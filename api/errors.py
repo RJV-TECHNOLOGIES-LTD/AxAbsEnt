@@ -13,6 +13,7 @@ from pydantic import BaseModel, Field
 from typing import Optional, Dict, Any, List, Union
 import logging
 from uuid import uuid4
+import datetime  # Added missing import
 
 # Setup logger
 logger = logging.getLogger("axabsent.errors")
