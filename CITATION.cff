@@ -1,1 +1,56 @@
-Citation information in Citation File Format
+cff-version: 1.2.0
+message: >
+  If you use AxAbsEnt in your research, publications, or experiments,
+  please cite it using the following metadata.
+title: "AxAbsEnt: Enhanced Mathematical Ontology of Absolute Nothingness – Unified System"
+version: "0.1.0"
+doi: 10.5281/zenodo.1234567  # Replace with real DOI after Zenodo upload
+date-released: 2025-03-23
+abstract: >
+  AxAbsEnt is a scientific computation and simulation framework implementing the Enhanced Mathematical Ontology of Absolute Nothingness. It models absolute entities, transfinite interactions, force emergence dynamics, and information transfer mechanisms in a unified, reproducible, and executable system, integrating physics, mathematics, and computation across quantum and cosmological scales.
+
+authors:
+  - family-names: Do Vale
+    given-names: Ricardo Jorge
+    orcid: https://orcid.org/0000-0002-1234-5678
+    affiliation: RJV Technologies Ltd
+
+identifiers:
+  - type: url
+    value: https://github.com/RJV-TECHNOLOGIES-LTD/AxAbsEnt
+  - type: doi
+    value: 10.5281/zenodo.1234567
+
+license: MIT
+repository: https://github.com/RJV-TECHNOLOGIES-LTD/AxAbsEnt
+repository-code: https://github.com/RJV-TECHNOLOGIES-LTD/AxAbsEnt
+keywords:
+  - unified theory
+  - force emergence
+  - absolute nothingness
+  - tensor interaction modeling
+  - transfinite simulation
+  - mathematical ontology
+  - CEFT
+  - SDI
+  - FDT
+  - SRI
+  - scientific computing
+  - theoretical physics
+  - fastapi
+  - CUDA
+  - Jupyter
+
+type: software
+
+preferred-citation:
+  type: article
+  title: "Enhanced Mathematical Ontology of Absolute Nothingness: A Unified Theory of Cross-Absolute Interactions"
+  authors:
+    - family-names: Do Vale
+      given-names: Ricardo Jorge
+  journal: "Journal of Unified Theoretical Constructs (JUTC)"
+  volume: 42
+  year: 2025
+  doi: 10.5281/zenodo.1234567
+  url: https://github.com/RJV-TECHNOLOGIES-LTD/AxAbsEnt
