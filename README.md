@@ -119,30 +119,248 @@ AxAbsEnt offers a unified approach to understanding gravity, electromagnetism, t
 - **Cosmological Correlations**: Predict cosmological observations based on theory
 - **Vacuum Fluctuation Analysis**: Connect theory to vacuum energy measurements
 
-## Installation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# AxAbsEnt Installation Guide
+
+This guide provides detailed instructions for installing the AxAbsEnt framework on different operating systems and environments.
+
+## Local Installation
 
 ### Prerequisites
-- Python 3.8 or higher
-- C++ compiler with C++17 support
-- CUDA Toolkit 11.0+ (for GPU acceleration)
-- CMake 3.15+
-- Conda (recommended for environment management)
 
-### Basic Installation
+- Python 3.8+ 
+- C++ compiler (GCC 9+, Clang 10+, or MSVC 19.2+)
+- CUDA toolkit 11.0+ (optional, for GPU acceleration)
+- CMake 3.15+
+- Git
+
+### Linux Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/RJV-TECHNOLOGIES-LTD/AxAbsEnt.git
+git clone https://github.com/username/AxAbsEnt.git
 cd AxAbsEnt
 
-# Create and activate conda environment
-conda env create -f environment.yml
-conda activate axabsent
+# Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate
 
-# Install the package
-pip install -e .
+# Install dependencies
+pip install -r requirements.txt
+
+# Build the C++ and CUDA extensions
+mkdir build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release -DAXABSENT_ENABLE_CUDA=ON
+make -j$(nproc)
+make install
+cd ..
+
+# Verify installation
+python -c "import axabsent; print(axabsent.__version__)"
 ```
 
+### macOS Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/username/AxAbsEnt.git
+cd AxAbsEnt
+
+# Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Build the C++ extensions (CUDA not supported on macOS)
+mkdir build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release -DAXABSENT_ENABLE_CUDA=OFF
+make -j$(sysctl -n hw.ncpu)
+make install
+cd ..
+
+# Verify installation
+python -c "import axabsent; print(axabsent.__version__)"
+```
+
+### Windows Installation
+
+```powershell
+# Clone the repository
+git clone https://github.com/username/AxAbsEnt.git
+cd AxAbsEnt
+
+# Create and activate a virtual environment
+python -m venv venv
+.\venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Build the C++ and CUDA extensions
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release -DAXABSENT_ENABLE_CUDA=ON
+cmake --build . --config Release
+cmake --install .
+cd ..
+
+# Verify installation
+python -c "import axabsent; print(axabsent.__version__)"
+```
+
+## Docker Installation
+
+### Basic Docker Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/username/AxAbsEnt.git
+cd AxAbsEnt
+
+# Build the Docker image
+docker build -t axabsent:latest -f docker/Dockerfile .
+
+# Run the Docker container
+docker run -it --name axabsent-container axabsent:latest
+```
+
+### GPU-enabled Docker Setup
+
+```bash
+# Build the GPU-enabled Docker image
+docker build -t axabsent:gpu -f docker/Dockerfile.gpu .
+
+# Run the Docker container with GPU support
+docker run -it --gpus all --name axabsent-gpu-container axabsent:gpu
+```
+
+## Cloud Deployment
+
+### AWS Deployment
+
+```bash
+# Configure AWS credentials
+aws configure
+
+# Deploy with CloudFormation
+aws cloudformation create-stack \
+  --stack-name axabsent-stack \
+  --template-body file://k8s/aws-cloudformation-template.yaml \
+  --parameters ParameterKey=InstanceType,ParameterValue=p3.2xlarge \
+               ParameterKey=KeyName,ParameterValue=your-key-pair
+
+# Connect to the EC2 instance
+aws ec2 describe-instances --filters "Name=tag:Name,Values=AxAbsEnt" --query "Reservations[].Instances[].PublicDnsName" --output text
+ssh -i your-key-pair.pem ec2-user@<instance-dns>
+```
+
+### Google Cloud Deployment
+
+```bash
+# Configure gcloud
+gcloud init
+
+# Create a GKE cluster
+gcloud container clusters create axabsent-cluster \
+  --num-nodes=3 \
+  --accelerator type=nvidia-tesla-v100,count=1 \
+  --machine-type=n1-standard-8 \
+  --zone=us-central1-a
+
+# Get credentials for kubectl
+gcloud container clusters get-credentials axabsent-cluster --zone us-central1-a
+
+# Apply Kubernetes configuration
+kubectl apply -f k8s/axabsent-deployment.yaml
+kubectl apply -f k8s/axabsent-service.yaml
+kubectl apply -f k8s/gpu-deployment.yaml
+
+# Check deployment status
+kubectl get pods
+```
+
+### Azure Deployment
+
+```bash
+# Login to Azure
+az login
+
+# Create a resource group
+az group create --name axabsent-resources --location eastus
+
+# Create an AKS cluster with GPU nodes
+az aks create \
+  --resource-group axabsent-resources \
+  --name axabsent-cluster \
+  --node-count 3 \
+  --node-vm-size Standard_NC6 \
+  --generate-ssh-keys
+
+# Get credentials for kubectl
+az aks get-credentials --resource-group axabsent-resources --name axabsent-cluster
+
+# Apply Kubernetes configuration
+kubectl apply -f k8s/axabsent-deployment.yaml
+kubectl apply -f k8s/axabsent-service.yaml
+kubectl apply -f k8s/gpu-deployment.yaml
+
+# Check deployment status
+kubectl get pods
+```
+
+## Kubernetes Deployment
+
+```bash
+# Apply Kubernetes configuration
+kubectl apply -f k8s/axabsent-deployment.yaml
+kubectl apply -f k8s/axabsent-service.yaml
+kubectl apply -f k8s/axabsent-configmap.yaml
+kubectl apply -f k8s/axabsent-secret.yaml
+kubectl apply -f k8s/gpu-deployment.yaml
+kubectl apply -f k8s/monitoring.yaml
+
+# Check deployment status
+kubectl get pods
+
+# Access the web interface
+kubectl port-forward svc/axabsent-service 8080:80
+# Now access the web interface at http://localhost:8080
+```
 ### Advanced Installation Options
 
 ```bash
@@ -623,6 +841,643 @@ ax.visualization.plot_expansion_history(
     cosmo_results,
     include_observations=True
 )
+```
+
+## Core Functionality Examples
+
+```
+# File: examples/basic/absolute_creation.py
+# Description: Creating and manipulating absolute entities
+
+import numpy as np
+from axabsent.core.absolute import AbsoluteEntity
+from axabsent.registry import AbsoluteRegistry
+
+# Create a registry to manage our absolute entities
+registry = AbsoluteRegistry()
+
+# Create an absolute entity representing a mathematical absolute
+mathematical_abs = AbsoluteEntity(
+    name="MathematicalAbsolute",
+    dimensionality=np.inf,  # Infinite dimensional
+    properties={
+        "completeness": True,
+        "consistent": True,
+        "independent": True,
+        "categorical_structure": "topos",
+    }
+)
+
+# Register the absolute entity
+registry.register(mathematical_abs)
+
+# Create an absolute entity representing a physical absolute
+physical_abs = AbsoluteEntity(
+    name="PhysicalAbsolute",
+    dimensionality=11,  # Example: 11-dimensional M-theory space
+    properties={
+        "quantized": True,
+        "symmetry_group": "E8",
+        "fundamental_constants": {"c": 299792458, "h": 6.62607015e-34, "G": 6.67430e-11}
+    }
+)
+
+# Register the absolute entity
+registry.register(physical_abs)
+
+# Create an informational absolute
+info_abs = AbsoluteEntity(
+    name="InformationalAbsolute",
+    dimensionality="variable",
+    properties={
+        "entropy_bound": "finite",
+        "encoding": "quantum",
+        "holographic": True
+    }
+)
+
+# Register the absolute entity
+registry.register(info_abs)
+
+# Print all absolute entities in the registry
+print("Registered absolute entities:")
+for abs_entity in registry.get_all():
+    print(f"- {abs_entity.name}: {abs_entity.properties}")
+
+# Retrieve a specific absolute by name
+retrieved_abs = registry.get("PhysicalAbsolute")
+print(f"\nRetrieved absolute: {retrieved_abs.name}")
+print(f"Dimensionality: {retrieved_abs.dimensionality}")
+print(f"Properties: {retrieved_abs.properties}")
+
+# File: examples/basic/interaction_definition.py
+# Description: Defining interactions between absolute entities
+
+import numpy as np
+from axabsent.core.absolute import AbsoluteEntity
+from axabsent.core.interaction import InteractionOperator
+from axabsent.registry import AbsoluteRegistry, InteractionRegistry
+
+# Create registries
+abs_registry = AbsoluteRegistry()
+int_registry = InteractionRegistry()
+
+# Create and register absolute entities
+physical_abs = AbsoluteEntity(
+    name="PhysicalAbsolute",
+    dimensionality=11,
+    properties={"quantized": True}
+)
+abs_registry.register(physical_abs)
+
+mathematical_abs = AbsoluteEntity(
+    name="MathematicalAbsolute",
+    dimensionality=np.inf,
+    properties={"complete": True}
+)
+abs_registry.register(mathematical_abs)
+
+# Define an interaction operator between the absolutes
+interaction = InteractionOperator(
+    name="PhysMathInteraction",
+    source=physical_abs,
+    target=mathematical_abs,
+    strength=0.8,  # Relative strength of interaction
+    properties={
+        "symmetrical": False,  # One-way interaction
+        "mediator_type": "information",
+        "coupling_constants": {
+            "alpha": 7.2973525693e-3,  # Fine-structure constant
+            "beta": 0.12  # Example coupling parameter
+        }
+    }
+)
+
+# Register the interaction
+int_registry.register(interaction)
+
+# Create a symmetric interaction (bidirectional)
+symmetric_interaction = InteractionOperator(
+    name="SymmetricInteraction",
+    source=physical_abs,
+    target=mathematical_abs,
+    strength=0.5,
+    properties={
+        "symmetrical": True,  # Two-way interaction
+        "resonant": True,
+        "resonance_frequency": 1.374e14,  # Example frequency in Hz
+    }
+)
+
+# Register the symmetric interaction
+int_registry.register(symmetric_interaction)
+
+# Retrieve and print all interactions
+print("All registered interactions:")
+for interaction in int_registry.get_all():
+    print(f"- {interaction.name}: {interaction.source.name} → {interaction.target.name}")
+    print(f"  Strength: {interaction.strength}")
+    print(f"  Properties: {interaction.properties}")
+
+# Calculate interaction potential
+def calculate_potential(interaction, distance):
+    """Calculate the interaction potential at a given distance."""
+    base_strength = interaction.strength
+    alpha = interaction.properties.get("coupling_constants", {}).get("alpha", 1.0)
+    
+    # Example potential function (inverse square law with coupling)
+    if distance == 0:
+        return float('inf')
+    potential = base_strength * alpha / (distance ** 2)
+    return potential
+
+# Test the potential calculation at different distances
+distances = [0.1, 1.0, 10.0, 100.0]
+print("\nInteraction potential at different distances:")
+for distance in distances:
+    potential = calculate_potential(interaction, distance)
+    print(f"Distance: {distance}, Potential: {potential:.8e}")
+
+# File: examples/basic/mediator_space_creation.py
+# Description: Creating and analyzing mediator spaces
+
+from axabsent.core.absolute import AbsoluteEntity
+from axabsent.core.interaction import InteractionOperator
+from axabsent.core.mediator import MediatorSpace
+
+# Create absolute entities
+physical_abs = AbsoluteEntity(name="PhysicalAbsolute", dimensionality=11)
+math_abs = AbsoluteEntity(name="MathematicalAbsolute", dimensionality="infinite")
+
+# Create an interaction
+interaction = InteractionOperator(
+    name="PhysMathInteraction", 
+    source=physical_abs, 
+    target=math_abs,
+    strength=0.75
+)
+
+# Create a mediator space for the interaction
+mediator_space = MediatorSpace(
+    name="PhysMathMediator",
+    interaction=interaction,
+    dimensionality=5,  # Mediator space dimensionality
+    properties={
+        "topology": "compact",
+        "curvature": -0.02,  # Slight negative curvature
+        "discrete": False,
+        "field_equations": ["Wave", "Diffusion"]
+    }
+)
+
+# Print mediator space information
+print(f"Mediator Space: {mediator_space.name}")
+print(f"Dimensionality: {mediator_space.dimensionality}")
+print(f"Properties: {mediator_space.properties}")
+print(f"Connects: {mediator_space.interaction.source.name} → {mediator_space.interaction.target.name}")
+
+# Define information propagation in the mediator space
+def propagate_information(mediator_space, information, distance):
+    """Propagate information through the mediator space."""
+    # Get mediator properties
+    curvature = mediator_space.properties.get("curvature", 0)
+    is_discrete = mediator_space.properties.get("discrete", False)
+    
+    # Simple propagation model with attenuation based on distance and curvature
+    if is_discrete:
+        # For discrete mediator spaces, step-wise decay
+        steps = int(distance)
+        attenuation = (1 - 0.1 * abs(curvature)) ** steps
+    else:
+        # For continuous mediator spaces, exponential decay
+        attenuation = np.exp(-distance * (0.1 + abs(curvature)))
+    
+    # Calculate propagated information
+    propagated_info = information * attenuation
+    
+    return propagated_info
+
+# Test information propagation
+initial_info = 100  # Initial information value
+distances = [1, 2, 5, 10]
+
+print("\nInformation propagation through mediator space:")
+for dist in distances:
+    result = propagate_information(mediator_space, initial_info, dist)
+    print(f"Distance: {dist}, Propagated Information: {result:.4f}")
+
+# Create a composite mediator space (from multiple interactions)
+info_abs = AbsoluteEntity(name="InformationalAbsolute", dimensionality="variable")
+
+# Create another interaction
+second_interaction = InteractionOperator(
+    name="PhysInfoInteraction", 
+    source=physical_abs, 
+    target=info_abs,
+    strength=0.6
+)
+
+# Create a second mediator space
+second_mediator = MediatorSpace(
+    name="PhysInfoMediator",
+    interaction=second_interaction,
+    dimensionality=3,
+    properties={"topology": "non-compact", "curvature": 0.01}
+)
+
+# Compose mediator spaces
+from axabsent.core.mediator_composition import compose_mediator_spaces
+
+composite_mediator = compose_mediator_spaces(
+    [mediator_space, second_mediator],
+    name="CompositeMediator",
+    composition_method="tensor_product"
+)
+
+print("\nComposite Mediator Space:")
+print(f"Name: {composite_mediator.name}")
+print(f"Method: {composite_mediator.composition_method}")
+print(f"Effective Dimensionality: {composite_mediator.effective_dimensionality}")
+print(f"Component Spaces: {[m.name for m in composite_mediator.components]}")
+
+```
+
+### Force Emergence Examples
+
+```
+# File: examples/forces/gravitational_emergence.py
+# Description: Demonstrating gravitational force emergence from cross-absolute interactions
+
+import numpy as np
+from axabsent.core.absolute import AbsoluteEntity
+from axabsent.core.interaction import InteractionOperator
+from axabsent.core.mediator import MediatorSpace
+from axabsent.forces.extraction import extract_force_signature
+from axabsent.forces.gravity import GravitationalForceExtractor
+from axabsent.visualization.force_fields import plot_force_field
+
+# Create absolute entities that will manifest gravity
+physical_abs = AbsoluteEntity(
+    name="PhysicalAbsolute",
+    dimensionality=11,
+    properties={
+        "energy_density": 1.0,
+        "mass_distribution": "continuous",
+        "symmetry_group": "SL(2,R) × SO(1,3)"
+    }
+)
+
+information_abs = AbsoluteEntity(
+    name="InformationalAbsolute",
+    dimensionality="holographic",
+    properties={
+        "entropy_bound": "holographic",
+        "information_density": "variable"
+    }
+)
+
+# Define the interaction that will give rise to gravity
+cross_interaction = InteractionOperator(
+    name="PhysInfoInteraction",
+    source=physical_abs,
+    target=information_abs,
+    strength=0.67,
+    properties={
+        "symmetrical": True,
+        "coherent": True,
+        "long_range": True,
+        "energy_scale": 1e19,  # Planck scale in GeV
+        "gauge_invariant": True
+    }
+)
+
+# Create the mediator space
+mediator = MediatorSpace(
+    name="GravitationalMediator",
+    interaction=cross_interaction,
+    dimensionality=4,
+    properties={
+        "topology": "pseudo-Riemannian",
+        "curvature": "dynamic",
+        "field_equations": ["Einstein"],
+        "spin": 2,  # Spin-2 field for gravitons
+        "propagation_speed": 1.0  # Speed of light (normalized)
+    }
+)
+
+# Initialize the gravitational force extractor
+gravity_extractor = GravitationalForceExtractor()
+
+# Extract the gravitational force signature
+gravity_signature = gravity_extractor.extract(
+    mediator=mediator,
+    reference_frame="inertial",
+    precision="high"
+)
+
+# Print the extracted force details
+print("Extracted Gravitational Force:")
+print(f"Name: {gravity_signature.name}")
+print(f"Strength Parameter (G): {gravity_signature.coupling_constant:.6e}")
+print(f"Range: {gravity_signature.range}")
+print(f"Dependence: {gravity_signature.distance_dependence}")
+print(f"Spin: {gravity_signature.spin}")
+print(f"Attractive/Repulsive: {gravity_signature.nature}")
+print(f"Affected Properties: {gravity_signature.affected_properties}")
+
+# Define a mass distribution function for visualization
+def mass_distribution(x, y, z):
+    """Define a simple mass distribution in 3D space."""
+    # Two mass centers
+    center1 = np.array([2, 0, 0])
+    center2 = np.array([-2, 0, 0])
+    mass1 = 10.0
+    mass2 = 5.0
+    
+    # Calculate distance from each point to the centers
+    position = np.array([x, y, z])
+    dist1 = np.linalg.norm(position - center1)
+    dist2 = np.linalg.norm(position - center2)
+    
+    # Calculate gravitational potential from each mass
+    # Avoid division by zero with small epsilon
+    epsilon = 1e-10
+    potential = -mass1 / (dist1 + epsilon) - mass2 / (dist2 + epsilon)
+    
+    return potential
+
+# Calculate gravitational force field on a grid
+def calculate_gravitational_field(gravity_signature, grid_size=20):
+    """Calculate the gravitational field on a 3D grid."""
+    # Create a 3D grid
+    x = np.linspace(-5, 5, grid_size)
+    y = np.linspace(-5, 5, grid_size)
+    z = np.linspace(-5, 5, grid_size)
+    
+    # Initialize force field arrays
+    force_x = np.zeros((grid_size, grid_size, grid_size))
+    force_y = np.zeros((grid_size, grid_size, grid_size))
+    force_z = np.zeros((grid_size, grid_size, grid_size))
+    
+    # Calculate force at each grid point
+    for i, xi in enumerate(x):
+        for j, yj in enumerate(y):
+            for k, zk in enumerate(z):
+                # Get the gravitational potential
+                potential = mass_distribution(xi, yj, zk)
+                
+                # Calculate gradient (force direction) using finite differences
+                if i > 0 and i < grid_size-1:
+                    force_x[i, j, k] = -(mass_distribution(x[i+1], yj, zk) - 
+                                         mass_distribution(x[i-1], yj, zk)) / (x[i+1] - x[i-1])
+                
+                if j > 0 and j < grid_size-1:
+                    force_y[i, j, k] = -(mass_distribution(xi, y[j+1], zk) - 
+                                         mass_distribution(xi, y[j-1], zk)) / (y[j+1] - y[j-1])
+                
+                if k > 0 and k < grid_size-1:
+                    force_z[i, j, k] = -(mass_distribution(xi, yj, z[k+1]) - 
+                                         mass_distribution(xi, yj, z[k-1])) / (z[k+1] - z[k-1])
+    
+    return x, y, z, force_x, force_y, force_z
+
+# Calculate and visualize the gravitational field
+x, y, z, fx, fy, fz = calculate_gravitational_field(gravity_signature, grid_size=10)
+
+# Plot the gravitational field (2D slice at z=0)
+z_slice = 5  # Middle slice
+field_data = {
+    'x': x,
+    'y': y,
+    'force_x': fx[:, :, z_slice],
+    'force_y': fy[:, :, z_slice],
+    'title': 'Gravitational Force Field (z=0 plane)',
+    'masses': [
+        {'position': [2, 0, 0], 'mass': 10.0},
+        {'position': [-2, 0, 0], 'mass': 5.0}
+    ]
+}
+
+# Use the axabsent visualization utility to plot the force field
+# This would be displayed or saved depending on implementation
+plot_force_field(field_data, save_path='gravitational_field.png')
+print("\nGravitational force field visualization created.")
+
+# Calculate theoretical predictions for gravitational interactions
+def predict_orbital_parameters(gravity_signature, mass1, mass2, distance):
+    """Calculate orbital parameters for two masses."""
+    G = gravity_signature.coupling_constant
+    
+    # Calculate orbital period
+    orbital_period = 2 * np.pi * np.sqrt(distance**3 / (G * (mass1 + mass2)))
+    
+    # Calculate orbital velocity
+    orbital_velocity = np.sqrt(G * (mass1 + mass2) / distance)
+    
+    return {
+        'period': orbital_period,
+        'velocity': orbital_velocity
+    }
+
+# Example: Predict Earth-Sun orbital parameters
+earth_mass = 5.97e24  # kg
+sun_mass = 1.99e30    # kg
+earth_sun_distance = 1.496e11  # meters
+
+orbital_params = predict_orbital_parameters(
+    gravity_signature, 
+    sun_mass, 
+    earth_mass, 
+    earth_sun_distance
+)
+
+print("\nTheoretical Orbital Predictions (Earth-Sun):")
+print(f"Orbital Period: {orbital_params['period'] / (60*60*24):.2f} days")
+print(f"Orbital Velocity: {orbital_params['velocity'] / 1000:.2f} km/s")
+
+# File: examples/forces/electromagnetic_emergence.py
+# Description: Demonstrating electromagnetic force emergence
+
+import numpy as np
+from axabsent.core.absolute import AbsoluteEntity
+from axabsent.core.interaction import InteractionOperator
+from axabsent.core.mediator import MediatorSpace
+from axabsent.forces.electromagnetic import ElectromagneticForceExtractor
+from axabsent.visualization.force_fields import plot_electromagnetic_field
+
+# Create absolute entities that will manifest electromagnetism
+physical_abs = AbsoluteEntity(
+    name="PhysicalAbsolute",
+    dimensionality=11,
+    properties={
+        "charge_distribution": "discrete",
+        "symmetry_group": "U(1)"
+    }
+)
+
+quantum_abs = AbsoluteEntity(
+    name="QuantumAbsolute",
+    dimensionality="functional",
+    properties={
+        "field_types": ["gauge", "matter"],
+        "probability_amplitude": "complex"
+    }
+)
+
+# Define the interaction that will give rise to electromagnetism
+em_interaction = InteractionOperator(
+    name="ElectromagneticInteraction",
+    source=physical_abs,
+    target=quantum_abs,
+    strength=0.85,
+    properties={
+        "symmetrical": True,
+        "gauge_symmetry": "U(1)",
+        "energy_scale": 1e3,  # GeV
+        "coupling_constants": {
+            "alpha": 7.2973525693e-3  # Fine structure constant
+        }
+    }
+)
+
+# Create the mediator space
+em_mediator = MediatorSpace(
+    name="ElectromagneticMediator",
+    interaction=em_interaction,
+    dimensionality=4,
+    properties={
+        "topology": "Minkowski",
+        "field_equations": ["Maxwell"],
+        "spin": 1,  # Spin-1 field for photons
+        "propagation_speed": 1.0,  # Speed of light (normalized)
+        "gauge_potential": "vector"
+    }
+)
+
+# Initialize the electromagnetic force extractor
+em_extractor = ElectromagneticForceExtractor()
+
+# Extract the electromagnetic force signature
+em_signature = em_extractor.extract(
+    mediator=em_mediator,
+    reference_frame="laboratory",
+    precision="high"
+)
+
+# Print the extracted force details
+print("Extracted Electromagnetic Force:")
+print(f"Name: {em_signature.name}")
+print(f"Coupling Constant (alpha): {em_signature.coupling_constant:.10f}")
+print(f"Range: {em_signature.range}")
+print(f"Dependence: {em_signature.distance_dependence}")
+print(f"Spin: {em_signature.spin}")
+print(f"Gauge Group: {em_signature.gauge_group}")
+print(f"Affected Properties: {em_signature.affected_properties}")
+
+# Define charge distributions for visualization
+def electric_charge_distribution(x, y, z):
+    """Create a simple charge distribution with positive and negative charges."""
+    # Two point charges
+    pos_charge = np.array([1, 0, 0])
+    neg_charge = np.array([-1, 0, 0])
+    q_pos = 1.0
+    q_neg = -1.0
+    
+    # Calculate distance from each point to the charges
+    position = np.array([x, y, z])
+    dist_pos = np.linalg.norm(position - pos_charge)
+    dist_neg = np.linalg.norm(position - neg_charge)
+    
+    # Calculate electric potential from each charge
+    epsilon = 1e-10  # Avoid division by zero
+    potential = q_pos / (dist_pos + epsilon) + q_neg / (dist_neg + epsilon)
+    
+    return potential
+
+# Calculate electric field on a grid
+def calculate_electric_field(grid_size=20):
+    """Calculate the electric field on a 3D grid."""
+    # Create a 3D grid
+    x = np.linspace(-3, 3, grid_size)
+    y = np.linspace(-3, 3, grid_size)
+    z = np.linspace(-3, 3, grid_size)
+    
+    # Initialize electric field arrays
+    E_x = np.zeros((grid_size, grid_size, grid_size))
+    E_y = np.zeros((grid_size, grid_size, grid_size))
+    E_z = np.zeros((grid_size, grid_size, grid_size))
+    
+    # Calculate electric field at each grid point
+    for i, xi in enumerate(x):
+        for j, yj in enumerate(y):
+            for k, zk in enumerate(z):
+                # Calculate gradient of potential (E-field) using finite differences
+                if i > 0 and i < grid_size-1:
+                    E_x[i, j, k] = -(electric_charge_distribution(x[i+1], yj, zk) - 
+                                     electric_charge_distribution(x[i-1], yj, zk)) / (x[i+1] - x[i-1])
+                
+                if j > 0 and j < grid_size-1:
+                    E_y[i, j, k] = -(electric_charge_distribution(xi, y[j+1], zk) - 
+                                     electric_charge_distribution(xi, y[j-1], zk)) / (y[j+1] - y[j-1])
+                
+                if k > 0 and k < grid_size-1:
+                    E_z[i, j, k] = -(electric_charge_distribution(xi, yj, z[k+1]) - 
+                                     electric_charge_distribution(xi, yj, z[k-1])) / (z[k+1] - z[k-1])
+    
+    return x, y, z, E_x, E_y, E_z
+
+# Calculate the electric field
+x, y, z, Ex, Ey, Ez = calculate_electric_field(grid_size=15)
+
+# Plot the electric field (2D slice at z=0)
+z_slice = 7  # Middle slice
+em_field_data = {
+    'x': x,
+    'y': y,
+    'field_x': Ex[:, :, z_slice],
+    'field_y': Ey[:, :, z_slice],
+    'title': 'Electric Field (z=0 plane)',
+    'charges': [
+        {'position': [1, 0, 0], 'charge': 1.0},
+        {'position': [-1, 0, 0], 'charge': -1.0}
+    ],
+    'field_type': 'electric'
+}
+
+# Use the axabsent visualization utility to plot the electromagnetic field
+plot_electromagnetic_field(em_field_data, save_path='electric_field.png')
+print("\nElectromagnetic field visualization created.")
+
+# Calculate a theoretical prediction for electromagnetic interactions
+def predict_coulomb_force(em_signature, charge1, charge2, distance):
+    """Calculate the Coulomb force between two charges."""
+    # Convert fine structure constant to Coulomb's constant
+    # k = 1/(4πε₀) = αℏc/(e²)
+    hbar = 1.0545718e-34  # J⋅s
+    c = 299792458        # m/s
+    e = 1.602176634e-19  # C
+    
+    alpha = em_signature.coupling_constant
+    k = alpha * hbar * c / (e**2)
+    
+    # Calculate force (positive for repulsive, negative for attractive)
+    force = k * charge1 * charge2 / (distance**2)
+    
+    return force
+
+# Example: Predict force between electron and proton at 1 angstrom
+electron_charge = -1.602176634e-19  # C
+proton_charge = 1.602176634e-19     # C
+atomic_distance = 1e-10             # m (1 angstrom)
+
+force = predict_coulomb_force(
+    em_signature, 
+    electron_charge, 
+    proton_charge, 
+    atomic_distance
+)
+
+print("\nTheoretical Coulomb Force Prediction:")
 ```
 
 ## Project Structure
