@@ -1,1 +1,100 @@
-Conda environment specification with all dependencies
+name: axabsent
+channels:
+  - conda-forge
+  - defaults
+  - nvidia
+
+dependencies:
+  # 🐍 Python & Core
+  - python=3.11
+  - pip
+
+  # 🔢 Numerical + Tensor Ops
+  - numpy>=1.26
+  - scipy>=1.12
+  - numba>=0.58
+  - sympy>=1.12
+  - pandas>=2.2
+  - h5py
+  - xarray
+
+  # 🧠 Deep Learning / GPU Acceleration
+  - pytorch=2.2.*
+  - pytorch-cuda=12.1
+  - torchvision
+  - torchaudio
+  - jax
+  - jaxlib=*=*cuda*
+
+  # 📈 Visualization
+  - matplotlib
+  - plotly
+  - seaborn
+  - ipywidgets
+  - pyvista
+  - vedo
+  - bokeh
+
+  # 🧪 Simulation & Scientific Tools
+  - scikit-learn
+  - scikit-image
+  - networkx
+  - trimesh
+  - meshio
+  - cython
+  - openmm
+
+  # 📚 Documentation
+  - sphinx
+  - sphinx-book-theme
+  - myst-parser
+  - nbsphinx
+  - pandoc
+  - latexmk
+  - graphviz
+
+  # 🔧 Dev Tools
+  - flake8
+  - mypy
+  - black
+  - isort
+  - pytest
+  - coverage
+  - pre-commit
+
+  # 🌐 Web & API
+  - fastapi
+  - uvicorn
+  - httpx
+  - pydantic>=2.5
+
+  # 🧬 I/O, Serialization
+  - jsonschema
+  - msgpack-python
+  - netcdf4
+
+  # 🧠 Symbolic Logic + Theoretical Extensions
+  - symengine
+  - mpmath
+  - z3-solver
+
+  # 🐳 Docker (optional local build)
+  - docker-py
+
+  # 🧪 Testing
+  - hypothesis
+
+  # 📦 Install pip packages not available on conda-forge
+  - pip:
+      - tensorboard
+      - loguru
+      - pyinstrument
+      - pybind11
+      - gpustat
+      - rich
+      - coverage-badge
+      - pyyaml
+      - onnx
+      - flax
+      - triton
+
