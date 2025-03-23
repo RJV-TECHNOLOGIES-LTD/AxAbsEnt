@@ -1,6 +1,6 @@
 # AxAbsEnt - Cross-Absolute Interaction Theory Framework
 
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![License: AxAbsEnt-NC](https://img.shields.io/badge/License-AxAbsEnt--NC-red.svg)
 ![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10-blue)
 ![C++ Version](https://img.shields.io/badge/C%2B%2B-17-blue)
 ![CUDA Enabled](https://img.shields.io/badge/CUDA-11.0+-green)
