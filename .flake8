@@ -1,1 +1,45 @@
-Flake8 linter configuration
+[flake8]
+# Maximum line length (consistent with Black and isort)
+max-line-length = 100
+
+# Exclude non-source directories
+exclude =
+    .git,
+    __pycache__,
+    docs,
+    notebooks,
+    build,
+    dist,
+    data,
+    .venv,
+    .mypy_cache,
+    .tox,
+    .eggs
+
+# Ignore specific rules that conflict with Black or scientific formatting
+extend-ignore =
+    E203,  # Whitespace before ':'
+    W503,  # Line break before binary operator
+
+# Enable specific style checks
+select = B,C,E,F,W,T4,B9
+
+# Enable per-file ignores (for auto-generated or init-heavy files)
+per-file-ignores =
+    __init__.py: F401, F403
+    tests/*: S101
+
+# Show full source of errors in output
+show-source = true
+
+# Count errors
+count = true
+
+# Exit non-zero on failure (for CI)
+exit-zero = false
+
+# Format for integration with pre-commit and CI
+format = default
+
+# Application-import detection
+application-import-names = axabsent
