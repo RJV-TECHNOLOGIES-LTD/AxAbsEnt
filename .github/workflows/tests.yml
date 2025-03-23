@@ -1,1 +1,68 @@
-Continuous integration test workflow
+# .github/workflows/tests.yml
+name: Run Full Test Suite
+
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main, dev ]
+
+jobs:
+  test:
+    name: Backend + Frontend Tests
+    runs-on: ubuntu-latest
+
+    services:
+      redis:
+        image: redis:7
+        ports:
+          - 6379:6379
+
+    env:
+      REDIS_HOST: localhost
+      REDIS_PORT: 6379
+      API_SECRET_KEY: test-key
+
+    steps:
+      - name: ⬇️ Checkout repository
+        uses: actions/checkout@v3
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 📦 Install backend dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+
+      - name: ✅ Run backend tests
+        run: |
+          pytest --maxfail=2 --disable-warnings --cov=src/api tests/
+
+      - name: 🧪 Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: 📦 Install frontend dependencies
+        run: |
+          cd web
+          npm install
+
+      - name: ✅ Run frontend tests
+        run: |
+          cd web
+          npm test -- --watchAll=false
+
+      - name: 🧼 Type checking
+        run: |
+          mypy src/
+
+      - name: 🧪 Coverage report
+        run: |
+          coverage xml
+          coverage report -m
+                     
