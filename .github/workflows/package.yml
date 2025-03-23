@@ -1,1 +1,42 @@
-Package build workflow
+# .github/workflows/package.yml
+name: Build and Package Python Distribution
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+  workflow_dispatch:
+
+jobs:
+  build-package:
+    name: Build AxAbsEnt Python Package
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout repository
+        uses: actions/checkout@v3
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 📦 Upgrade packaging tools
+        run: |
+          python -m pip install --upgrade pip setuptools wheel build twine
+
+      - name: 🔨 Build sdist and wheel
+        run: |
+          python -m build --sdist --wheel --outdir dist
+
+      - name: 🧪 Check distribution metadata
+        run: |
+          twine check dist/*
+
+      - name: 📤 Upload to PyPI (Optional)
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+          TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+        run: |
+          twine upload dist/*
