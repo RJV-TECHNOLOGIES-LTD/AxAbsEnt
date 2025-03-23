@@ -89,29 +89,6 @@ The framework's ability to generate quantitative predictions for angular correla
 
 AxAbsEnt offers a unified approach to understanding gravity, electromagnetism, the strong and weak nuclear forces, uncovering deeper connections between them through cross-absolute interaction principles.
 
-## Installation
-
-### Prerequisites
-- Python 3.8 or higher
-- C++ compiler with C++17 support
-- CUDA Toolkit 11.0+ (for GPU acceleration)
-- CMake 3.15+
-- Conda (recommended for environment management)
-
-### Basic Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/RJV-TECHNOLOGIES-LTD/AxAbsEnt.git
-cd AxAbsEnt
-
-# Create and activate conda environment
-conda env create -f environment.yml
-conda activate axabsent
-
-# Install the package
-pip install -e .
-```
 ## Core Features
 
 ### Theoretical Foundation
@@ -141,6 +118,30 @@ pip install -e .
 - **Particle Physics Predictions**: Generate predictions for particle collision experiments
 - **Cosmological Correlations**: Predict cosmological observations based on theory
 - **Vacuum Fluctuation Analysis**: Connect theory to vacuum energy measurements
+
+## Installation
+
+### Prerequisites
+- Python 3.8 or higher
+- C++ compiler with C++17 support
+- CUDA Toolkit 11.0+ (for GPU acceleration)
+- CMake 3.15+
+- Conda (recommended for environment management)
+
+### Basic Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/RJV-TECHNOLOGIES-LTD/AxAbsEnt.git
+cd AxAbsEnt
+
+# Create and activate conda environment
+conda env create -f environment.yml
+conda activate axabsent
+
+# Install the package
+pip install -e .
+```
 
 ### Advanced Installation Options
 
