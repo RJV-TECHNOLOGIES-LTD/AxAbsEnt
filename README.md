@@ -2038,117 +2038,116 @@ AxAbsEnt/
 │           ├── force_emergence.png                  # Force emergence diagram
 │           └── information_flow.png                 # Information flow diagram
 │
-├── src/                                             # Source code directory
-│   └── axabsent/                                    # Main package
-│       ├── __init__.py                              # Package initialization with version and imports
-│       ├── __main__.py                              # Command-line interface entry point
-│       ├── config.py                                # Configuration management
-│       ├── exceptions.py                            # Custom exception classes
-│       ├── registry.py                              # Registry for absolutes and interactions
-│       ├── core/                                    # Core functionality
-│       │   ├── __init__.py                          # Core module initialization
-│       │   ├── absolute.py                          # Absolute entity definitions and properties
-│       │   ├── interaction.py                       # Interaction operator implementation
-│       │   ├── interaction_composition.py           # Interaction composition operators
-│       │   ├── mediator.py                          # Mediator space implementation
-│       │   ├── mediator_composition.py              # Mediator space composition
-│       │   ├── transfinite.py                       # Transfinite interaction chain implementation
-│       │   ├── information.py                       # Information transfer operators
-│       │   ├── selection.py                         # Selection principle implementation
-│       │   ├── action.py                            # Cross-absolute action calculation
-│       │   └── constraints.py                       # Physical and mathematical constraints
-│       ├── forces/                                  # Force emergence modules
-│       │   ├── __init__.py                          # Forces module initialization
-│       │   ├── base.py                              # Base classes for forces
-│       │   ├── extraction.py                        # Force extraction operators
-│       │   ├── decomposition.py                     # Force decomposition algorithms
-│       │   ├── gravity.py                           # Gravitational force emergence
-│       │   ├── electromagnetic.py                   # Electromagnetic force emergence
-│       │   ├── strong.py                            # Strong force emergence
-│       │   ├── weak.py                              # Weak force emergence
-│       │   ├── signatures.py                        # Force signature analysis
-│       │   ├── coupling.py                          # Coupling constant calculations
-│       │   └── unification.py                       # Force unification mechanisms
-│       ├── mathematics/                             # Mathematical utilities
-│       │   ├── __init__.py                          # Mathematics module initialization
-│       │   ├── categorical.py                       # Categorical theory implementation
-│       │   ├── category_theory/                     # Category theory components
-│       │   │   ├── __init__.py                      # Category theory module initialization
-│       │   │   ├── category.py                      # Category implementation
-│       │   │   ├── functor.py                       # Functor implementation
-│       │   │   ├── natural_transformation.py        # Natural transformation implementation
-│       │   │   └── adjoint.py                       # Adjoint functor implementation
-│       │   ├── transfinite.py                       # Transfinite dimensional analysis
-│       │   ├── ordinals.py                          # Ordinal arithmetic implementation
-│       │   ├── entropy.py                           # Entropy and information measures
-│       │   ├── information_theory.py                # Information theory utilities
-│       │   ├── tensors.py                           # Tensor operations and algebra
-│       │   ├── differential_geometry.py             # Differential geometry utilities
-│       │   ├── topology.py                          # Topological space utilities
-│       │   ├── functional_analysis.py               # Functional analysis utilities
-│       │   ├── lie_algebra.py                       # Lie algebra implementation
-│       │   └── numerical/                           # Numerical mathematics
-│       │       ├── __init__.py                      # Numerical module initialization
-│       │       ├── integration.py                   # Numerical integration methods
-│       │       ├── optimization.py                  # Optimization algorithms
-│       │       ├── linear_algebra.py                # Linear algebra utilities
-│       │       └── differential_equations.py        # Differential equation solvers
-│       ├── simulation/                              # Simulation engines
-│       │   ├── __init__.py                          # Simulation module initialization
-│       │   ├── base.py                              # Base simulation classes
-│       │   ├── dynamics.py                          # Dynamic system simulation
-│       │   ├── quantum_field.py                     # Quantum field simulation
-│       │   ├── resonance.py                         # Resonance detection and analysis
-│       │   ├── montecarlo.py                        # Monte Carlo simulation methods
-│       │   ├── statistical.py                       # Statistical ensemble simulations
-│       │   ├── particle.py                          # Particle interaction simulation
-│       │   ├── cosmological.py                      # Cosmological simulations
-│       │   ├── vacuum_energy.py                     # Vacuum energy simulation
-│       │   ├── parallel.py                          # Parallel simulation framework
-│       │   └── distributed.py                       # Distributed simulation capabilities
-│       ├── visualization/                           # Visualization tools
-│       │   ├── __init__.py                          # Visualization module initialization
-│       │   ├── base.py                              # Base visualization classes
-│       │   ├── interaction_graphs.py                # Interaction graph visualization
-│       │   ├── force_fields.py                      # Force field visualization
-│       │   ├── multidimensional.py                  # Multi-dimensional data visualization
-│       │   ├── information_flow.py                  # Information flow visualization
-│       │   ├── entropy_maps.py                      # Entropy and information visualization
-│       │   ├── resonance_diagrams.py                # Resonance pattern visualization
-│       │   ├── interactive.py                       # Interactive visualization tools
-│       │   ├── plotly_interface.py                  # Plotly interface for interactive plots
-│       │   ├── matplotlib_interface.py              # Matplotlib interface for static plots
-│       │   └── three_dimensional.py                 # 3D visualization capabilities
-│       ├── experimental/                            # Experimental predictions
-│       │   ├── __init__.py                          # Experimental module initialization
-│       │   ├── signatures.py                        # Observable signatures definition
-│       │   ├── particle_physics.py                  # Particle collision predictions
-│       │   ├── cosmological.py                      # Cosmological predictions
-│       │   ├── vacuum_fluctuations.py               # Vacuum energy fluctuation predictions
-│       │   ├── detection_methods.py                 # Detection methodology
-│       │   ├── data_analysis.py                     # Experimental data analysis
-│       │   └── validation.py                        # Prediction validation methods
-│       ├── io/                                      # Input/output utilities
-│       │   ├── __init__.py                          # IO module initialization
-│       │   ├── importing.py                         # Data import functionality
-│       │   ├── exporting.py                         # Data export functionality
-│       │   ├── serialization.py                     # Object serialization
-│       │   ├── formatting.py                        # Data formatting utilities
-│       │   ├── hdf5.py                              # HDF5 file format interface
-│       │   ├── netcdf.py                            # NetCDF file format interface
-│       │   ├── json_io.py                           # JSON input/output
-│       │   └── visualization_export.py              # Visualization export utilities
-│       └── utils/                                   # Utility functions
-│           ├── __init__.py                          # Utils module initialization
-│           ├── constants.py                         # Physical and mathematical constants
-│           ├── units.py                             # Unit conversion utilities
-│           ├── logging.py                           # Logging utilities
-│           ├── profiling.py                         # Performance profiling tools
-│           ├── parallel.py                          # Parallel computation utilities
-│           ├── distributed.py                       # Distributed computation utilities
-│           ├── caching.py                           # Computation caching mechanisms
-│           ├── validation.py                        # Input validation utilities
-│           └── decorators.py                        # Utility decorators
+├── src/                                             # Source code directory            
+│   ├── __init__.py                              # Package initialization with version and imports
+│   ├── __main__.py                              # Command-line interface entry point
+│   ├── config.py                                # Configuration management
+│   ├── exceptions.py                            # Custom exception classes
+│   ├── registry.py                              # Registry for absolutes and interactions
+│   ├── core/                                    # Core functionality
+│   │   ├── __init__.py                          # Core module initialization
+│   │   ├── absolute.py                          # Absolute entity definitions and properties
+│   │   ├── interaction.py                       # Interaction operator implementation
+│   │   ├── interaction_composition.py           # Interaction composition operators
+│   │   ├── mediator.py                          # Mediator space implementation
+│   │   ├── mediator_composition.py              # Mediator space composition
+│   │   ├── transfinite.py                       # Transfinite interaction chain implementation
+│   │   ├── information.py                       # Information transfer operators
+│   │   ├── selection.py                         # Selection principle implementation
+│   │   ├── action.py                            # Cross-absolute action calculation
+│   │   └── constraints.py                       # Physical and mathematical constraints
+│   ├── forces/                                  # Force emergence modules
+│   │   ├── __init__.py                          # Forces module initialization
+│   │   ├── base.py                              # Base classes for forces
+│   │   ├── extraction.py                        # Force extraction operators
+│   │   ├── decomposition.py                     # Force decomposition algorithms
+│   │   ├── gravity.py                           # Gravitational force emergence
+│   │   ├── electromagnetic.py                   # Electromagnetic force emergence
+│   │   ├── strong.py                            # Strong force emergence
+│   │   ├── weak.py                              # Weak force emergence
+│   │   ├── signatures.py                        # Force signature analysis
+│   │   ├── coupling.py                          # Coupling constant calculations
+│   │   └── unification.py                       # Force unification mechanisms
+│   ├── mathematics/                             # Mathematical utilities
+│   │   ├── __init__.py                          # Mathematics module initialization
+│   │   ├── categorical.py                       # Categorical theory implementation
+│   │   ├── category_theory/                     # Category theory components
+│   │   │   ├── __init__.py                      # Category theory module initialization
+│   │   │   ├── category.py                      # Category implementation
+│   │   │   ├── functor.py                       # Functor implementation
+│   │   │   ├── natural_transformation.py        # Natural transformation implementation
+│   │   │   └── adjoint.py                       # Adjoint functor implementation
+│   │   ├── transfinite.py                       # Transfinite dimensional analysis
+│   │   ├── ordinals.py                          # Ordinal arithmetic implementation
+│   │   ├── entropy.py                           # Entropy and information measures
+│   │   ├── information_theory.py                # Information theory utilities
+│   │   ├── tensors.py                           # Tensor operations and algebra
+│   │   ├── differential_geometry.py             # Differential geometry utilities
+│   │   ├── topology.py                          # Topological space utilities
+│   │   ├── functional_analysis.py               # Functional analysis utilities
+│   │   ├── lie_algebra.py                       # Lie algebra implementation
+│   │   └── numerical/                           # Numerical mathematics
+│   │       ├── __init__.py                      # Numerical module initialization
+│   │       ├── integration.py                   # Numerical integration methods
+│   │       ├── optimization.py                  # Optimization algorithms
+│   │       ├── linear_algebra.py                # Linear algebra utilities
+│   │       └── differential_equations.py        # Differential equation solvers
+│   ├── simulation/                              # Simulation engines
+│   │   ├── __init__.py                          # Simulation module initialization
+│   │   ├── base.py                              # Base simulation classes
+│   │   ├── dynamics.py                          # Dynamic system simulation
+│   │   ├── quantum_field.py                     # Quantum field simulation
+│   │   ├── resonance.py                         # Resonance detection and analysis
+│   │   ├── montecarlo.py                        # Monte Carlo simulation methods
+│   │   ├── statistical.py                       # Statistical ensemble simulations
+│   │   ├── particle.py                          # Particle interaction simulation
+│   │   ├── cosmological.py                      # Cosmological simulations
+│   │   ├── vacuum_energy.py                     # Vacuum energy simulation
+│   │   ├── parallel.py                          # Parallel simulation framework
+│   │   └── distributed.py                       # Distributed simulation capabilities
+│   ├── visualization/                           # Visualization tools
+│   │   ├── __init__.py                          # Visualization module initialization
+│   │   ├── base.py                              # Base visualization classes
+│   │   ├── interaction_graphs.py                # Interaction graph visualization
+│   │   ├── force_fields.py                      # Force field visualization
+│   │   ├── multidimensional.py                  # Multi-dimensional data visualization
+│   │   ├── information_flow.py                  # Information flow visualization
+│   │   ├── entropy_maps.py                      # Entropy and information visualization
+│   │   ├── resonance_diagrams.py                # Resonance pattern visualization
+│   │   ├── interactive.py                       # Interactive visualization tools
+│   │   ├── plotly_interface.py                  # Plotly interface for interactive plots
+│   │   ├── matplotlib_interface.py              # Matplotlib interface for static plots
+│   │   └── three_dimensional.py                 # 3D visualization capabilities
+│   ├── experimental/                            # Experimental predictions
+│   │   ├── __init__.py                          # Experimental module initialization
+│   │   ├── signatures.py                        # Observable signatures definition
+│   │   ├── particle_physics.py                  # Particle collision predictions
+│   │   ├── cosmological.py                      # Cosmological predictions
+│   │   ├── vacuum_fluctuations.py               # Vacuum energy fluctuation predictions
+│   │   ├── detection_methods.py                 # Detection methodology
+│   │   ├── data_analysis.py                     # Experimental data analysis
+│   │   └── validation.py                        # Prediction validation methods
+│   ├── io/                                      # Input/output utilities
+│   │   ├── __init__.py                          # IO module initialization
+│   │   ├── importing.py                         # Data import functionality
+│   │   ├── exporting.py                         # Data export functionality
+│   │   ├── serialization.py                     # Object serialization
+│   │   ├── formatting.py                        # Data formatting utilities
+│   │   ├── hdf5.py                              # HDF5 file format interface
+│   │   ├── netcdf.py                            # NetCDF file format interface
+│   │   ├── json_io.py                           # JSON input/output
+│   │   └── visualization_export.py              # Visualization export utilities
+│   └── utils/                                   # Utility functions
+│       ├── __init__.py                          # Utils module initialization
+│       ├── constants.py                         # Physical and mathematical constants
+│       ├── units.py                             # Unit conversion utilities
+│       ├── logging.py                           # Logging utilities
+│       ├── profiling.py                         # Performance profiling tools
+│       ├── parallel.py                          # Parallel computation utilities
+│       ├── distributed.py                       # Distributed computation utilities
+│       ├── caching.py                           # Computation caching mechanisms
+│       ├── validation.py                        # Input validation utilities
+│       └── decorators.py                        # Utility decorators
 │
 ├── cpp/                                             # C++ implementation for performance-critical components
 │   ├── CMakeLists.txt                               # CMake build configuration
