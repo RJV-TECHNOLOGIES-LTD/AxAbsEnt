@@ -121,7 +121,6 @@ AxAbsEnt offers a unified approach to understanding gravity, electromagnetism, t
 - **Cosmological Correlations**: Predict cosmological observations based on theory
 - **Vacuum Fluctuation Analysis**: Connect theory to vacuum energy measurements
 - **Validation Methods**: Compare predictions to experimental data
-  
 
 ## Installation
 
@@ -132,79 +131,7 @@ AxAbsEnt offers a unified approach to understanding gravity, electromagnetism, t
 - CMake 3.15+
 - Conda (recommended for environment management)
 
-# AxAbsEnt: Cross-Absolute Interaction Framework
 
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
-![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10-blue)
-![C++ Version](https://img.shields.io/badge/C%2B%2B-17-blue)
-![CUDA Enabled](https://img.shields.io/badge/CUDA-11.0+-green)
-![Documentation Status](https://img.shields.io/badge/docs-passing-green)
-![Tests](https://img.shields.io/badge/tests-passing-green)
-![Version](https://img.shields.io/badge/version-1.2.0-blue)
-
-## Illuminating Reality Through Cross-Absolute Mathematics
-
-AxAbsEnt represents a paradigm shift in theoretical physics—a unified mathematical framework for modeling the emergence of physical reality from interactions between absolute entities. 
-
-Founded on our groundbreaking "Enhanced Mathematical Ontology of Absolute Nothingness" formalism, this software brings abstract mathematical concepts into the computational realm, allowing researchers to explore how fundamental forces emerge from the complex interplay between absolutes across mediator spaces.
-
-Our framework transcends traditional approaches by implementing the complete cross-absolute interaction theory, including explicit force emergence mechanisms, transfinite interaction chains, information-theoretic foundations and experimentally testable predictions. 
-
-Whether you're investigating quantum gravity unification, exploring cosmological correlations or probing vacuum energy fluctuations, AxAbsEnt provides the mathematical and computational tools to advance theoretical physics beyond current limitations.
-
-## Theoretical Foundation
-
-AxAbsEnt implements the complete cross-absolute interaction formalism, bridging abstract mathematics with computational physics:
-
-The core theoretical innovation centers on our Cross-Absolute Interaction Operator (I_ij), which enables previously orthogonal absolutes to interact through precisely defined mediator spaces. 
-
-By implementing the full mathematical formalism—including transfinite interaction chains, information-theoretic constraints and the unified selection principle—AxAbsEnt provides unprecedented insights into how physical reality emerges from patterns of absolute interactions.
-
-Our software embodies the key theoretical advances from our recent publications, including the explicit force extraction mechanism that decomposes each fundamental force into contributions from specific absolutes and their interactions. 
-
-Researchers can explore how gravitational, electromagnetic, strong and weak forces emerge through their respective projection operators and analyze the unique force signature of each absolute.
-
-The framework implements our recent mathematical breakthroughs in cross-absolute information transfer, allowing researchers to analyze how information flows between absolutes subject to channel capacity constraints. 
-
-Combined with our unified selection principle for cross-absolute dynamics, which governs which interaction paths are physically realized through action minimization, AxAbsEnt offers a complete computational environment for exploring the deepest questions in theoretical physics.
-
-## Computational Architecture
-
-AxAbsEnt transforms abstract mathematical concepts into high-performance computational tools:
-
-The architecture implements a multi-layered approach to performance optimization. 
-
-At the foundation, the Python API provides an intuitive interface for defining absolutes, mediator spaces and interaction operators. 
-
-For performance-critical operations, including transfinite interaction chain analysis and force extraction, the framework seamlessly transitions to optimized C++ implementations that deliver order-of-magnitude speed improvements.
-
-For the most computationally intensive tasks—particularly simulating cross-absolute resonances and analyzing their experimental signatures—AxAbsEnt leverages GPU acceleration through CUDA implementations. 
-
-These parallel processing capabilities enable researchers to explore parameter spaces and generate predictions that would be infeasible with traditional computational approaches.
-
-The distributed computing layer allows simulations to scale across high-performance computing environments, with integrated load balancing and fault tolerance. 
-
-This architecture supports exploration of complex cross-absolute dynamics at unprecedented scales, enabling researchers to generate statistically significant predictions for comparison with experimental data.
-
-## Practical Applications
-
-AxAbsEnt bridges theoretical elegance with experimental relevance:
-
-The framework's force extraction operators enable researchers to analyze how specific cross-absolute interactions contribute to observable physical forces. 
-
-By implementing our complete mathematical formalism for gravitational, electromagnetic, strong and weak force emergence, AxAbsEnt provides insights into potential unification mechanisms that transcend current theoretical approaches.
-
-Researchers investigating quantum gravity can leverage our transfinite interaction chain analysis to explore how gravitational and quantum mechanical phenomena might emerge from common cross-absolute interactions. 
-
-The information-theoretic foundations implemented in the software provide novel perspectives on entropy production and information transfer in physical systems.
-
-For high-energy physics, AxAbsEnt generates precise predictions for cross-absolute resonances that may be detectable in current or near-future particle collision experiments. 
-
-The software provides analysis tools for identifying specific energy signatures, decay patterns and correlation functions that would validate the cross-absolute interaction theory.
-
-Cosmologists can utilize AxAbsEnt to investigate how cross-absolute dynamics might influence large-scale structure formation, cosmic microwave background patterns and vacuum energy fluctuations. 
-
-The framework's ability to generate quantitative predictions for angular correlation functions and vacuum energy density variations connects abstract mathematical concepts to observable phenomena.
 
 ## Getting Started
 
