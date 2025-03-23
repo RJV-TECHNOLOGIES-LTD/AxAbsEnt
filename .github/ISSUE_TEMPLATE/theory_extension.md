@@ -1,9 +1,10 @@
 ---
-name: 🧠 Theory Extension Proposal
+name: "\U0001F9E0 Theory Extension Proposal"
 about: Propose a formal mathematical or ontological extension to the Unified Model
-title: '[THEORY] Proposed Entity / Interaction / Operator / Tensor Framework'
-labels: ['theory', 'research', 'enhanced-ontology']
-assignees: []
+title: "[THEORY] Proposed Entity / Interaction / Operator / Tensor Framework"
+labels: ''
+assignees: ''
+
 ---
 
 ## 📌 Title of Proposed Extension

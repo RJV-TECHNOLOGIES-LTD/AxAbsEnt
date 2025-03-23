@@ -1,9 +1,10 @@
 ---
-name: ✨ Feature Request
+name: "✨ Feature Request"
 about: Propose a new capability, operator, visualizer, endpoint, or interaction mechanism
-title: '[FEATURE] Precise and Traceable Feature Name'
-labels: ['enhancement', 'feature', 'proposal']
-assignees: []
+title: "[FEATURE] Precise and Traceable Feature Name"
+labels: enhancement
+assignees: ''
+
 ---
 
 ## 📌 Feature Name
@@ -122,4 +123,3 @@ How will success be verified?
 
 📌 **Proposed by:** `@your-username`  
 🧬 _“To reveal truth, interaction must become visible.”_
-
