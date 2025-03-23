@@ -119,23 +119,6 @@ AxAbsEnt offers a unified approach to understanding gravity, electromagnetism, t
 - **Cosmological Correlations**: Predict cosmological observations based on theory
 - **Vacuum Fluctuation Analysis**: Connect theory to vacuum energy measurements
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # AxAbsEnt Installation Guide
 
 This guide provides detailed instructions for installing the AxAbsEnt framework on different operating systems and environments.
@@ -154,7 +137,7 @@ This guide provides detailed instructions for installing the AxAbsEnt framework 
 
 ```bash
 # Clone the repository
-git clone https://github.com/username/AxAbsEnt.git
+git clone https://github.com/RJV-TECHNOLOGIES-LTD/AxAbsEnt.git
 cd AxAbsEnt
 
 # Create and activate a virtual environment
@@ -179,7 +162,7 @@ python -c "import axabsent; print(axabsent.__version__)"
 
 ```bash
 # Clone the repository
-git clone https://github.com/username/AxAbsEnt.git
+git clone https://github.com/RJV-TECHNOLOGIES-LTD/AxAbsEnt.git
 cd AxAbsEnt
 
 # Create and activate a virtual environment
@@ -204,7 +187,7 @@ python -c "import axabsent; print(axabsent.__version__)"
 
 ```powershell
 # Clone the repository
-git clone https://github.com/username/AxAbsEnt.git
+git clone https://github.com/RJV-TECHNOLOGIES-LTD/AxAbsEnt.git
 cd AxAbsEnt
 
 # Create and activate a virtual environment
