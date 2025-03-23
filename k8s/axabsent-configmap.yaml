@@ -1,1 +1,32 @@
-ConfigMap resource
+# k8s/axabsent-configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: axabsent-config
+  namespace: axabsent-system
+  labels:
+    app: axabsent-api
+    tier: backend
+    environment: production
+    project: axabsent
+data:
+  # Redis Configuration
+  redis_host: "axabsent-redis"
+  redis_port: "6379"
+
+  # API Behavior
+  default_model_version: "v1"
+  max_parallel_executions: "4"
+  cache_ttl_seconds: "300"
+
+  # Logging & Monitoring
+  log_level: "INFO"
+  log_path: "/var/log/axabsent/api.log"
+
+  # Simulation Defaults
+  default_simulation_resolution: "512"
+  default_force_threshold: "0.01"
+
+  # Documentation & UI Routes
+  docs_url: "/docs"
+  openapi_url: "/openapi.json"
