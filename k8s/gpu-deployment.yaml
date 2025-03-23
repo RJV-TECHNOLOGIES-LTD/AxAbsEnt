@@ -1,1 +1,88 @@
-GPU-accelerated deployment
+# k8s/gpu-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: axabsent-gpu-deployment
+  namespace: axabsent-system
+  labels:
+    app: axabsent-api
+    tier: backend
+    accelerator: gpu
+    environment: production
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: axabsent-api
+      accelerator: gpu
+  template:
+    metadata:
+      labels:
+        app: axabsent-api
+        accelerator: gpu
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8000"
+        prometheus.io/path: "/metrics"
+    spec:
+      containers:
+        - name: axabsent-api-gpu
+          image: rjvtechnologies/axabsent:gpu-latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8000
+          env:
+            - name: AXABSENT_ENV
+              value: production
+            - name: REDIS_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: axabsent-config
+                  key: redis_host
+            - name: REDIS_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: axabsent-config
+                  key: redis_port
+            - name: API_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: axabsent-secret
+                  key: api_secret_key
+            - name: ENABLE_GPU_ACCELERATION
+              value: "true"
+          resources:
+            limits:
+              nvidia.com/gpu: 1
+              memory: 8Gi
+              cpu: "4000m"
+            requests:
+              nvidia.com/gpu: 1
+              memory: 4Gi
+              cpu: "2000m"
+          volumeMounts:
+            - name: shared-logs
+              mountPath: /var/log/axabsent
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 15
+            periodSeconds: 30
+          readinessProbe:
+            httpGet:
+              path: /ready
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 15
+      restartPolicy: Always
+      terminationGracePeriodSeconds: 30
+      volumes:
+        - name: shared-logs
+          emptyDir: {}
+      tolerations:
+        - key: "nvidia.com/gpu"
+          operator: "Exists"
+          effect: "NoSchedule"
+      nodeSelector:
+        accelerator: nvidia
