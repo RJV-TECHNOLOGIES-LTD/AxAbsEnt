@@ -1,1 +1,1 @@
-Complete community guidelines and behavioral expectations
+Code of conduct

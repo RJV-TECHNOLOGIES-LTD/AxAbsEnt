@@ -1,1 +1,1 @@
-Detailed version history and changes tracking
+Change log

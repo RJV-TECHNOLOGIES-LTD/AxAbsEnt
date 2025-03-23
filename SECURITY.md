@@ -1,1 +1,1 @@
-Security policy and vulnerability reporting procedures
+Security policy
