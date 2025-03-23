@@ -122,7 +122,9 @@ AxAbsEnt offers a unified approach to understanding gravity, electromagnetism, t
 - **Vacuum Fluctuation Analysis**: Connect theory to vacuum energy measurements
 - **Validation Methods**: Compare predictions to experimental data
 
-## Installation
+
+
+## Getting Started
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -130,10 +132,6 @@ AxAbsEnt offers a unified approach to understanding gravity, electromagnetism, t
 - CUDA Toolkit 11.0+ (optional, for GPU acceleration)
 - CMake 3.15+
 - Conda (recommended for environment management)
-
-
-
-## Getting Started
 
 Begin exploring cross-absolute interactions immediately:
 
