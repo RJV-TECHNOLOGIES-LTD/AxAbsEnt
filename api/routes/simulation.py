@@ -61,3 +61,35 @@ def run_simulation(request: SimulationRequest):
             "title": title
         }
     }
+from fastapi.responses import JSONResponse
+from axabsent.simulation.results import (
+    list_simulation_results,
+    load_simulation_result
+)
+import os
+
+@router.get("/results")
+def get_simulation_results_list():
+    """
+    Lists all saved simulation result files.
+    Returns: { "files": [<filename1>, <filename2>, ...] }
+    """
+    files = list_simulation_results()
+    return { "files": files }
+
+@router.get("/results/{filename}")
+def get_simulation_result_file(filename: str):
+    """
+    Returns the contents of a specific simulation result file.
+    Returns: {
+      "x": [...],
+      "y": [...],
+      "z": [[...]],
+      "title": "Result Title"
+    }
+    """
+    try:
+        data = load_simulation_result(filename)
+        return JSONResponse(content=data)
+    except FileNotFoundError:
+        return JSONResponse(status_code=404, content={ "detail": "Result not found" })
