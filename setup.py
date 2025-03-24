@@ -1,1 +1,12 @@
-Python package setup script with detailed metadata
+
+from setuptools import setup, find_packages
+
+setup(
+    name="axabsent",
+    version="0.1.0",
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
+    install_requires=[],
+    author="RJV Technologies Ltd",
+    description="Unified Theory of Cross-Absolute Interactions",
+)
