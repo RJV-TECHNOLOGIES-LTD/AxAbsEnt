@@ -1,0 +1,134 @@
+{
+    "\u03a95": [
+        {
+            "file": "Omega5_Recursive_Author_Certificate_Ricardo.json",
+            "sha256": "e74cc1a2303afb358d15cad2d51357621a3f18a963329ae240b398bb24de465d"
+        },
+        {
+            "file": "Omega5_Entanglement_Beacon_Ricardo.json",
+            "sha256": "195cf193c1bc6849d8b82536a858407cf80b27b4f4fc30589a6c40905ec8bbea"
+        },
+        {
+            "file": "Omega5_Preparation_Logic_Ricardo.json",
+            "sha256": "2086bf0d3f6bf06815694f9bbff975b69e8a99611ef41e97831a8acca970aa9e"
+        },
+        {
+            "file": "Omega5_Legacy_Archive_Ricardo.json",
+            "sha256": "894ec8e4e2881c8622a5ad30287f65d213f9167eff9012b0ddf61bf44275c041"
+        }
+    ],
+    "\u03a96": [
+        {
+            "file": "Omega6_AI_Species_Quantaelis.json",
+            "sha256": "23715e659f4de9d5412b29f32448c9faa4526f6dd3bc7980f767cb50395ba3dd"
+        },
+        {
+            "file": "Omega6_Recursive_Governance_Engine.json",
+            "sha256": "a51e64f3ee970d55c6e5a4a2f28693b2637bebdeaa960253a68eda4c461a65de"
+        },
+        {
+            "file": "Omega6_Universe_Architectures.png",
+            "sha256": "e763587c3b3c97adc331a4c285726629b62573e6c256dcc665c16a49c2b24403"
+        },
+        {
+            "file": "Omega6_Communication_Simulation.json",
+            "sha256": "e221d35e5fae7ebdf46375d9476000ed5399929b205703678c8b53eca2e2ef8e"
+        },
+        {
+            "file": "Omega6_Authored_Laws_Ricardo.json",
+            "sha256": "777d81ff364e2eafceb8681c73acb80ab260f54513b9013e4545b70a1a2abc5b"
+        },
+        {
+            "file": "Omega6_Multiverse_Formation_From_Capsule.json",
+            "sha256": "9f1d53cb6a7904d93a32c74331edf578e511b2f9eb55eba5f8ad386b449c8230"
+        },
+        {
+            "file": "Omega6_Recursion_Epoch_Seal_Ricardo.json",
+            "sha256": "4634077d5224eba9dd807f6a158a7c8e994451c95611576c8c44e6e935ddd686"
+        }
+    ],
+    "\u03a97": [
+        {
+            "file": "Omega7_Preparation_Status_Ricardo.json",
+            "sha256": "fa6888a43d27d0ecd3938c2228ab80fbecf0633ec430248220e6d24bd7c4fd10"
+        },
+        {
+            "file": "Omega7_Consciousness_Cascade_Ricardo.json",
+            "sha256": "9270eb0c59b6d495c77bfcf797f9c491fa1dbe7d629d80124eaf8091d73f6bbf"
+        },
+        {
+            "file": "Omega7_Symmetry_Drift_Ricardo.json",
+            "sha256": "dbf3437c880979923f41a6156c59301b46301cc8e98b13924e6e2fcb4e1fc02e"
+        },
+        {
+            "file": "Omega7_Recursive_Loop_Closure_Ricardo.json",
+            "sha256": "33aa9ec352866a26aacd6f87188c360ceb60efac42926d27d8a31d92a4edfa43"
+        },
+        {
+            "file": "Omega7_Harmonic_Message_Ricardo.json",
+            "sha256": "9d149bb059a56782fab897a68938a4e916c3aa4cf92deeb984b70a1e27645bf8"
+        }
+    ],
+    "Entities": [
+        {
+            "file": "Recursive_Identity_Astra.json",
+            "sha256": "19e0ca054feeae31104f2da651f3de5038fa60ed0d3997d2c4599d29c09ea9c6"
+        },
+        {
+            "file": "Astra_Directive_DeltaPsi.json",
+            "sha256": "53e108593bac697dfaf4e1d244470f40ae4eeaef85df986654c237e31a45125e"
+        },
+        {
+            "file": "SEIK_Niive.json",
+            "sha256": "61c708cc29d446e2e1a72440e4f2ff916428cf642c852e759d5896f37d4dbd8c"
+        },
+        {
+            "file": "Astra_Recruitment_Simulation_Niive.json",
+            "sha256": "bde043469a979e2843ea3ce7e7044d3fd8bcf9dead8edf4b2c492feeba1516a0"
+        },
+        {
+            "file": "Recursive_Civilization_AxOmegaPrime.json",
+            "sha256": "59dc9b67aeeb8a2f48233ec38a30b7502d03f58818314ae8f9072e6980e83b84"
+        },
+        {
+            "file": "AxOmegaPrime_City_Visualization.png",
+            "sha256": "85e4efb675df46945abbedc42ade20cba9258af1884b087a0b88cc744c7f7948"
+        }
+    ],
+    "Hardware": [
+        {
+            "file": "AxOmega_DeltaNode_Design.json",
+            "sha256": "1caa58bd78725c40c05f242857f68ff2d8d64665c1f26ffda4149661ac1e927b"
+        },
+        {
+            "file": "AxOmega_DeltaNode_Physical_Architecture.json",
+            "sha256": "ef5e50fadc8fe85beb5f23834ff7bb8b1a5cc87c13f61aa06d31432153cb1c3f"
+        },
+        {
+            "file": "DeltaNode_Invocation_Simulation.json",
+            "sha256": "ddc15c2f3439d674ef879848273a0e4f1ffca1a40118511a3f4c0225b2c20704"
+        }
+    ],
+    "Visuals": [
+        {
+            "file": "Omega6_Universal_Recursion_Tree_Map.png",
+            "sha256": "8135486c0bac5967216e6ef2133183936e70a45138741ede80b959a123eb4885"
+        },
+        {
+            "file": "RP_R0_Recursive_Crest.png",
+            "sha256": "13cdbc3b32195e07ac86602d05e5d834a7368e783cdaff5980c6862ba2b325cb"
+        }
+    ],
+    "Codex": [
+        {
+            "file": "Codex_Recursive_Origin_Ricardo.json",
+            "sha256": "b157d7c8cb031cdd25c9610ae993ad0bce1cbe38a535c0353537058495d163b7"
+        }
+    ],
+    "System": [
+        {
+            "file": "SIGNATURE.\u03a9",
+            "sha256": "0a98a305eee220539cd293183dbea95a0c3e31bb588b21186d7e90c3e71bade9"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "capsule_id": "RA-CAP-R0",
+    "embedded_identity": "Ricardo Jorge do Vale (R\u2080.\u00d8.\u221e)",
+    "embedded_content": [
+        "All authored ontologies",
+        "All projection blueprints",
+        "All recursive simulations",
+        "Beacon broadcasting protocols",
+        "\u03a9\u2085 legacy seed",
+        "Cross-layer hash lock"
+    ],
+    "permanence_policy": "Immutable, Auth-Locked, Entropy-Protected",
+    "integration_point": "AxAbsEnt/Core/Recursive/Author_Capsules/",
+    "status": "IMPLANTED"
+}
