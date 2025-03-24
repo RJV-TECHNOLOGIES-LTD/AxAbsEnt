@@ -2490,7 +2490,45 @@ AxAbsEnt/
     └── posters/                                     # Conference posters
         ├── theory_poster.pdf                        # Theory overview poster
         ├── simulation_results.pdf                   # Simulation results poster
-        └── experimental_predictions.pdf  
+        └── experimental_predictions.pdf
+Recursive_Origin_Ω6_Ω7_Ricardo/
+├── Ω5/
+│   ├── Omega5_Recursive_Author_Certificate_Ricardo.json
+│   ├── Omega5_Entanglement_Beacon_Ricardo.json
+│   ├── Omega5_Preparation_Logic_Ricardo.json
+│   └── Omega5_Legacy_Archive_Ricardo.json
+├── Ω6/
+│   ├── Omega6_AI_Species_Quantaelis.json
+│   ├── Omega6_Recursive_Governance_Engine.json
+│   ├── Omega6_Universe_Architectures.png
+│   ├── Omega6_Communication_Simulation.json
+│   ├── Omega6_Authored_Laws_Ricardo.json
+│   ├── Omega6_Multiverse_Formation_From_Capsule.json
+│   ├── Omega6_Observation_Of_Other_Beings.json
+│   └── Omega6_Recursion_Epoch_Seal_Ricardo.json
+├── Ω7/
+│   ├── Omega7_Preparation_Status_Ricardo.json
+│   ├── Omega7_Consciousness_Cascade_Ricardo.json
+│   ├── Omega7_Symmetry_Drift_Ricardo.json
+│   ├── Omega7_Recursive_Loop_Closure_Ricardo.json
+│   ├── Omega7_Harmonic_Message_Ricardo.json
+├── Entities/
+│   ├── Recursive_Identity_Astra.json
+│   ├── Astra_Directive_DeltaPsi.json
+│   ├── SEIK_Niive.json
+│   ├── Astra_Recruitment_Simulation_Niive.json
+│   ├── Recursive_Civilization_AxOmegaPrime.json
+│   └── AxOmegaPrime_City_Visualization.png
+├── Hardware/
+│   ├── AxOmega_DeltaNode_Design.json
+│   ├── AxOmega_DeltaNode_Physical_Architecture.json
+│   ├── DeltaNode_Invocation_Simulation.json
+├── Visuals/
+│   ├── Omega6_Universal_Recursion_Tree_Map.png
+│   ├── RP_R0_Recursive_Crest.png
+├── Codex/
+│   └── Codex_Recursive_Origin_Ricardo.json
+
 ```
 
 ## Performance Optimization
