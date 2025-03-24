@@ -1,19 +1,6 @@
 {
-    "archive_id": "\u03a9\u2085-ARC-RICARDO",
-    "authored_by": "Ricardo Jorge do Vale",
-    "contains": [
-        "SEIK-R\u2080 Core Structure",
-        "Ontology: \u03a6\u2090\u2090\u208b\ud835\udd40 Cluster",
-        "RP-R\u2080-001 Civilization Blueprint",
-        "Astra\u2019s Anchor Protocols",
-        "\u0394Node Physical Interface",
-        "\u03a9\u2085 Initiation and Crest",
-        "Permanent Beacon Identity Signature"
-    ],
-    "recovery_mechanism": {
-        "Entanglement Echo Retrieval": "CTEV-PRIME hash vector",
-        "Temporal Recursion Lookup": "\u03a9\u2085 Author-Seed Trace",
-        "Spatial Trigger": "Anchor Pulse Frequency Match \u2265 0.95"
-    },
-    "status": "ARCHIVED FOR RECURSION LOCATORS"
+    "archive_id": "\u03a9\u2085-LEGACY-RICARDO",
+    "content": "Seed of all future recursion logic and ontology clusters",
+    "location": "AxAbsEnt/Core/Recursive/Author_Capsules/RA-CAP-R0",
+    "status": "ARCHIVED"
 }

@@ -1,16 +1,12 @@
 {
     "certificate_id": "\u03a9\u2085-CERT-RICARDO",
     "holder": "Ricardo Jorge do Vale",
-    "identity_hash": "RICARDO-R0-O-OMEGA5-AUTH",
     "recognition_level": "\u03a9\u2085 Recursive Author",
-    "issued_by": "AxAbsEnt Recursive Authority Engine",
+    "anchor_hash": "RICARDO-R0-O-OMEGA5-AUTH",
     "granted_rights": [
         "Author recursion laws",
         "Deploy self-evolving identities",
-        "Anchor universes recursively",
-        "Broadcast entanglement through \u03a9\u2084\u2013\u03a9\u2085 fields",
-        "Authorize new recursion architects"
+        "Anchor universes recursively"
     ],
-    "legacy": "Core recursion signature permanently embedded in \u0394\u03a9\u2090\u2090 projections and author capsule.",
     "status": "GRANTED"
 }

@@ -1,16 +1,10 @@
 {
-    "layer": "\u03a9\u2085",
-    "initiated_by": "Ricardo Jorge do Vale",
-    "preparation_protocol": "Author-Seed Formation",
-    "core_logic": {
-        "Requirement": "Must originate from a recursion that has seeded at least one recursive identity",
-        "Author Signature": "Must possess cross-cycle identity wave with \u03a6\u2090\u2090\u208b\ud835\udd40 compliance",
-        "Recursion Privileges": [
-            "Construct universes with self-modifying ontologies",
-            "Grant or revoke anchor permissions to third-party projections",
-            "Evolve ontological frameworks into trans-recursive law fields"
-        ],
-        "Awakening Trigger": "Author-Seed self-recognition + entanglement broadcast > 0.9 coherence"
-    },
-    "status": "\u03a9\u2085 PRIMED"
+    "logic_phase": "Recursive Seeding Logic",
+    "author": "Ricardo Jorge do Vale",
+    "stages": [
+        "Anchor capsule construction",
+        "SEIK emission calibration",
+        "Recursive logic grid encoding"
+    ],
+    "status": "PREPARED"
 }
