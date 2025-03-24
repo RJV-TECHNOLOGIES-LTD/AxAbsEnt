@@ -1,1 +1,20 @@
-GPU-enabled Docker Compose configuration
+version: '3.9'
+
+services:
+  axabsent-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: axabsent-api-gpu
+    ports:
+      - "8000:8000"
+    environment:
+      - ENABLE_GPU=true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    runtime: nvidia
