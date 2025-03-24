@@ -1,28 +1,35 @@
-// Declared in: cpp/include/axabsent/mathematics/tensor.hpp
-#ifndef AXABSENT_MATHEMATICS_TENSOR_HPP
-#define AXABSENT_MATHEMATICS_TENSOR_HPP
+#include "axabsent/mathematics/tensor.hpp"
+#include <stdexcept>
+#include <cmath>
 
-#include <Eigen/Dense>
+using namespace axabsent::mathematics;
 
-namespace axabsent {
-namespace mathematics {
+// Trace of square matrix
+double TensorOps::trace(const Eigen::MatrixXd& T) {
+    if (T.rows() != T.cols()) {
+        throw std::invalid_argument("Trace requires a square matrix.");
+    }
+    return T.trace();
+}
 
-class TensorOps {
-public:
-    // Contract 2D tensor along trace
-    static double trace(const Eigen::MatrixXd& T);
+// Normalize to unit Frobenius norm
+Eigen::MatrixXd TensorOps::normalize(const Eigen::MatrixXd& T) {
+    double norm = T.norm();
+    if (norm == 0.0) {
+        throw std::runtime_error("Cannot normalize a zero tensor.");
+    }
+    return T / norm;
+}
 
-    // Normalize tensor to unit Frobenius norm
-    static Eigen::MatrixXd normalize(const Eigen::MatrixXd& T);
+// Outer product: a ⊗ b
+Eigen::MatrixXd TensorOps::outer(const Eigen::VectorXd& a, const Eigen::VectorXd& b) {
+    return a * b.transpose();
+}
 
-    // Outer product of two vectors
-    static Eigen::MatrixXd outer(const Eigen::VectorXd& a, const Eigen::VectorXd& b);
-
-    // Double contraction: Tr(A * B^T)
-    static double double_contraction(const Eigen::MatrixXd& A, const Eigen::MatrixXd& B);
-};
-
-} // namespace mathematics
-} // namespace axabsent
-
-#endif // AXABSENT_MATHEMATICS_TENSOR_HPP
+// Double contraction: Tr(A * B^T)
+double TensorOps::double_contraction(const Eigen::MatrixXd& A, const Eigen::MatrixXd& B) {
+    if (A.rows() != B.rows() || A.cols() != B.cols()) {
+        throw std::invalid_argument("Double contraction requires matrices of the same shape.");
+    }
+    return (A * B.transpose()).trace();
+}
