@@ -1,1 +1,21 @@
-Docker Compose configuration
+version: '3.9'
+
+services:
+  axabsent-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: axabsent-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - LOG_LEVEL=info
+      - RELOAD=false
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 20s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
