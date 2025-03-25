@@ -1,56 +1,119 @@
-# src/mathematics/entropy.py
+"""
+AxAbsEnt | Entropy Mechanics Module
+
+This module provides foundational entropy and information theory functions
+used throughout the cross-absolute interaction framework. It supports:
+- Shannon entropy and extensions
+- Mutual information
+- Conditional entropy
+- Entropy distance metrics
+- Normalized entropy for structure comparison
+
+All computations assume base-2 logarithm (bits).
+"""
 
 import numpy as np
-from typing import Union, List
 
-def von_neumann_entropy(density_matrix: np.ndarray, tol: float = 1e-12) -> float:
-    """
-    Computes Von Neumann entropy: S = -Tr(ρ log ρ)
-    Used when AbsoluteEntity states are expressed via quantum-like density matrices.
-    """
-    if not np.allclose(density_matrix, density_matrix.T.conj(), atol=tol):
-        raise ValueError("Density matrix must be Hermitian.")
 
-    eigvals = np.linalg.eigvalsh(density_matrix)
-    eigvals = eigvals[eigvals > tol]  # remove near-zero eigenvalues to avoid log(0)
-    entropy = -np.sum(eigvals * np.log(eigvals))
-    return float(entropy)
+def shannon_entropy(probabilities: np.ndarray) -> float:
+    """
+    Compute the Shannon entropy of a probability distribution.
 
-def frobenius_entropy(tensor: np.ndarray) -> float:
-    """
-    Uses the Frobenius norm squared as a surrogate entropy measure for force fields.
-    Suitable for symmetric projection tensors and mediator curvature fields.
-    """
-    return float(np.linalg.norm(tensor, ord='fro')**2)
+    Parameters:
+        probabilities (np.ndarray): Probability vector (must sum to 1)
 
-def entropy_gradient(field: np.ndarray) -> np.ndarray:
-    """
-    Computes the entropy gradient over a scalar or tensor field.
-    Used to derive topological force vectors (CEFT/FDT).
-    """
-    return np.gradient(field)
+    Returns:
+        float: Entropy H(p) in bits
 
-def relative_entropy(p: Union[np.ndarray, List[float]], q: Union[np.ndarray, List[float]], base: float = np.e) -> float:
+    Raises:
+        ValueError: if negative or unnormalized probabilities are detected
     """
-    Computes Kullback-Leibler divergence (relative entropy) between two probability distributions.
-    Used for comparing entropic states in transfinite interaction chains.
-    """
-    p = np.array(p, dtype=np.float64)
-    q = np.array(q, dtype=np.float64)
-    p = np.clip(p, 1e-12, 1.0)
-    q = np.clip(q, 1e-12, 1.0)
-    return float(np.sum(p * (np.log(p / q) / np.log(base))))
+    p = np.asarray(probabilities, dtype=np.float64)
+    if np.any(p < 0) or not np.isclose(np.sum(p), 1.0):
+        raise ValueError("Probabilities must be non-negative and sum to 1.")
+    p = p[p > 0]  # Avoid log(0)
+    return -np.sum(p * np.log2(p))
 
-def entropy_flux(field_t: np.ndarray, field_prev: np.ndarray, dt: float) -> float:
-    """
-    Computes the temporal entropy flux (∂S/∂t) across consecutive tensor states.
-    Used to determine resonance onset or force emergence from entropy acceleration.
-    """
-    diff = field_t - field_prev
-    return float(np.linalg.norm(diff, ord='fro') / dt)
 
-def entropy_pressure(curvature_tensor: np.ndarray, entropy_tensor: np.ndarray) -> np.ndarray:
+def joint_entropy(p_xy: np.ndarray) -> float:
     """
-    Calculates entropic pressure induced by curvature deformation, essential to strong and gravitational fields.
+    Compute the joint entropy H(X, Y) for a joint distribution.
+
+    Parameters:
+        p_xy (np.ndarray): Joint probability matrix
+
+    Returns:
+        float: Joint entropy H(X, Y)
     """
-    return curvature_tensor @ entropy_tensor @ curvature_tensor.T
+    p = p_xy.astype(np.float64)
+    p = p[p > 0]
+    return -np.sum(p * np.log2(p))
+
+
+def mutual_information(p_xy: np.ndarray) -> float:
+    """
+    Compute the mutual information I(X; Y) from a joint distribution.
+
+    Parameters:
+        p_xy (np.ndarray): Joint probability matrix
+
+    Returns:
+        float: Mutual information I(X; Y)
+    """
+    p_xy = p_xy.astype(np.float64)
+    px = np.sum(p_xy, axis=1, keepdims=True)
+    py = np.sum(p_xy, axis=0, keepdims=True)
+    p_product = px @ py
+
+    # Avoid division by zero
+    mask = (p_xy > 0) & (p_product > 0)
+    return np.sum(p_xy[mask] * np.log2(p_xy[mask] / p_product[mask]))
+
+
+def conditional_entropy(p_xy: np.ndarray) -> float:
+    """
+    Compute conditional entropy H(Y|X) from joint distribution.
+
+    Parameters:
+        p_xy (np.ndarray): Joint probability matrix
+
+    Returns:
+        float: Conditional entropy H(Y|X)
+    """
+    H_joint = joint_entropy(p_xy)
+    px = np.sum(p_xy, axis=1)
+    H_x = shannon_entropy(px)
+    return H_joint - H_x
+
+
+def entropy_distance(p1: np.ndarray, p2: np.ndarray) -> float:
+    """
+    Compute symmetric entropy-based distance between two distributions.
+
+    D_H(p1, p2) = H((p1 + p2)/2) - 0.5 * H(p1) - 0.5 * H(p2)
+
+    Parameters:
+        p1, p2 (np.ndarray): Discrete probability distributions
+
+    Returns:
+        float: Entropy distance
+    """
+    p1 = p1 / np.sum(p1)
+    p2 = p2 / np.sum(p2)
+    m = 0.5 * (p1 + p2)
+    return shannon_entropy(m) - 0.5 * (shannon_entropy(p1) + shannon_entropy(p2))
+
+
+def normalized_entropy(matrix: np.ndarray) -> float:
+    """
+    Compute the normalized entropy of a matrix as a measure of disorder.
+
+    Parameters:
+        matrix (np.ndarray): A matrix (will be normalized to sum to 1)
+
+    Returns:
+        float: Normalized entropy in [0, 1]
+    """
+    p = np.abs(matrix.flatten())
+    p /= np.sum(p)
+    return shannon_entropy(p) / np.log2(len(p))
