@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  codex:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: omega_codex
+    volumes:
+      - ./Ω-Origin:/codex/Ω-Origin
+    restart: unless-stopped
+    entrypoint: ["python3", "ricardo_codex.py"]

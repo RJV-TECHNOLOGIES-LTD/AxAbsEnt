@@ -1,0 +1,50 @@
+/* web/src/components/App.css */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.app-header {
+  background-color: #0e1a2b;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.app-nav {
+  margin-top: 0.5rem;
+}
+
+.app-nav a {
+  color: #a8d4ff;
+  margin-right: 1.2rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.app-nav a.active {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.app-main {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #f6f7f9;
+}
+
+.app-footer {
+  background-color: #1b1e24;
+  color: #cccccc;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}

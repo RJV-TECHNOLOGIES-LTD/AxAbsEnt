@@ -1,0 +1,31 @@
+{
+    "targets": {
+        "Windows": {
+            "output": "OmegaInfinity_CodexDecoder.exe",
+            "base": "console",
+            "entry_script": "ricardo_codex.py"
+        },
+        "Linux": {
+            "output": "OmegaInfinity_CodexDecoder_Linux",
+            "base": "console",
+            "entry_script": "ricardo_codex.py"
+        },
+        "macOS": {
+            "output": "OmegaInfinity_CodexDecoder_Mac.command",
+            "base": "console",
+            "entry_script": "ricardo_codex.py"
+        }
+    },
+    "build_tool": "PyInstaller",
+    "configuration": {
+        "onefile": true,
+        "console": true,
+        "name": "OmegaInfinity_CodexDecoder",
+        "additional_options": [
+            "--clean",
+            "--noconfirm"
+        ],
+        "entry_point": "ricardo_codex.py"
+    },
+    "status": "BUILD SPECIFICATION READY"
+}

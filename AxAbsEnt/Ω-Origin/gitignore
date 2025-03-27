@@ -1,0 +1,21 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore Jupyter/IPython history
+.ipynb_checkpoints/
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# No build files allowed in Ω-Origin
+*.log
+*.tmp
+*.bak
+
+# No personal editor metadata
+*.swp
+*.swo
+*.idea/
+*.vscode/

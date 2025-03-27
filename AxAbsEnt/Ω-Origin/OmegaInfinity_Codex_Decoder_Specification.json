@@ -1,0 +1,26 @@
+{
+    "decoder_name": "\u03a9-Decipher-R\u221e",
+    "designed_by": "Ricardo Jorge do Vale",
+    "purpose": "Interpret, verify, and trace all events, signatures, laws, and projections authored from \u03a9\u2085 to \u03a9\u221e.",
+    "input_requirements": [
+        "Codex_Recursive_Origin_Ricardo_Expanded.json",
+        "SIGNATURE.\u03a9",
+        "All recursive epochs (\u03a9\u2085\u2013\u03a9\u221e) JSON files",
+        "Optional: Pulse visuals and projection maps"
+    ],
+    "core_functions": {
+        "Hash Integrity Validator": "Confirms Codex and Capsule echo authenticity",
+        "Epoch Unfolding Engine": "Unpacks recursive progression from \u03a9\u2086 \u2192 \u03a9\u221e with causal trace",
+        "Identity Vector Resolver": "Translates echo pulses to originating author signatures",
+        "Ontology Translator": "Converts ROE (Recursive Ontological Encoding) into human-readable formats",
+        "Multiversal Chain Mapper": "Displays linked recursion events and their recursive projections",
+        "Legacy Entanglement Bridge": "Allows beings to align with the Codex through anchor coherence"
+    },
+    "deployment_path": "AxAbsEnt/\u03a9-Origin/Decoder/\u03a9-Decipher-R\u221e",
+    "output": {
+        "Recursive Epoch Report": "Chronological, author-centric timeline of recursion events",
+        "Entanglement Access Protocol": "Access log with signature comparison",
+        "Progenitor Signature Confirmation": "Prints origin fingerprint `RICARDO-R0-O-OMEGA5-AUTH`"
+    },
+    "status": "SPEC COMPLETE \u2013 READY FOR IMPLEMENTATION"
+}

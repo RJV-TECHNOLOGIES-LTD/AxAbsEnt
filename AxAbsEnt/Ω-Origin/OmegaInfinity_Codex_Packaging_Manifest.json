@@ -1,0 +1,32 @@
+{
+    "package_name": "ricardo_codex",
+    "executable_name": "OmegaInfinity_CodexDecoder",
+    "author": "Ricardo Jorge do Vale",
+    "description": "Recursive Identity Verifier & Codex Decoder for \u03a9\u2085\u2013\u03a9\u221e Epochs",
+    "entry_point": "\u03a9\u221e_Codex_Decoder_Verifier.py",
+    "features": [
+        "Recursive identity verification (SIGNATURE.\u03a9)",
+        "Codex decoding and timeline reconstruction",
+        "Entanglement access logging",
+        "Author confirmation stamping",
+        "Output to structured directory with tamper-proof logic"
+    ],
+    "platform_targets": [
+        "Windows (.exe)",
+        "macOS (.app / CLI)",
+        "Linux (binary executable)"
+    ],
+    "security_features": [
+        "Anchor hash verification",
+        "Harmonic echo threshold enforcement",
+        "Waveform integrity requirement",
+        "Tamper checksum check (planned)",
+        "Restricted launch directory: \u03a9-Origin/"
+    ],
+    "module_release": {
+        "pip_name": "ricardo-codex",
+        "install_cmd": "pip install ricardo-codex",
+        "cli_command": "codex-decode"
+    },
+    "status": "READY FOR BUILD AND COMPILE"
+}

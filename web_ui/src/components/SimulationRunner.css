@@ -1,0 +1,29 @@
+/* web/src/components/SimulationRunner.css */
+
+.simulation-runner {
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.sim-selector {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sim-selector label {
+  font-weight: bold;
+}
+
+.sim-selector select,
+.sim-selector button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.sim-result {
+  margin-top: 2rem;
+}

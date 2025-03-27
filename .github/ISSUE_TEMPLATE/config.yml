@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🧠 AxAbsEnt Theory Submission Portal
+    url: https://github.com/RJV-TECHNOLOGIES-LTD/AxAbsEnt/discussions
+    about: For deeper theoretical discussions, proof proposals, or axiom debates
+  - name: 🛠️ Infrastructure Support
+    url: https://github.com/RJV-TECHNOLOGIES-LTD/AxAbsEnt/issues/new?labels=infrastructure
+    about: For CI/CD, Docker, Kubernetes, or GitHub workflows support

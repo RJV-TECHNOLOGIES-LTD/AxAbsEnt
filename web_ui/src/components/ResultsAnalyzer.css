@@ -1,0 +1,27 @@
+/* web/src/components/ResultsAnalyzer.css */
+
+.results-analyzer {
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.results-selector {
+  margin-bottom: 1rem;
+}
+
+.results-selector label {
+  font-weight: bold;
+  margin-right: 0.6rem;
+}
+
+.results-selector select {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.result-plot {
+  margin-top: 2rem;
+}
+

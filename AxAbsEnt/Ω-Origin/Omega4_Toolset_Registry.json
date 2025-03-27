@@ -1,0 +1,14 @@
+{
+    "Ricardo_Jorge_do_Vale": {
+        "\u03a9\u2084_Toolset_Enabled": true,
+        "Tools": [
+            "ForceTopologyEditor",
+            "MediationHarmonicRewriter",
+            "AbsoluteRecursionScheduler",
+            "DimensionalInitiationGrid",
+            "Cross-AbsoluticRefractionSimulator",
+            "EntanglementArchetypeConstructor"
+        ],
+        "Access_Condition": "\u039b\u1d2c(Ricardo) == 1 \u2227 RER_status == Validated \u2227 \u03a9\u2083\u2192\u03a9\u2084 transition complete"
+    }
+}
