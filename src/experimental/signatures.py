@@ -1,1 +1,0 @@
-Observable signatures definition

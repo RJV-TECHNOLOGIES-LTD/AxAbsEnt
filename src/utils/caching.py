@@ -1,1 +1,0 @@
-Computation caching mechanisms

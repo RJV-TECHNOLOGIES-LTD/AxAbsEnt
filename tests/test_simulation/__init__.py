@@ -1,1 +1,0 @@
-Test simulation tests initialization

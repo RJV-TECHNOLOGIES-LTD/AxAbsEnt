@@ -1,1 +1,0 @@
-Description of interaction operators

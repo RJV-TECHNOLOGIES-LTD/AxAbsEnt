@@ -1,1 +1,0 @@
-Category theory module initialization

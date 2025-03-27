@@ -1,5 +1,7 @@
-# Top-level CMakeLists.txt delegating to cpp/
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.14)
 project(AxAbsEnt)
 
-add_subdirectory(cpp)
+set(CMAKE_CXX_STANDARD 17)
+
+add_subdirectory(AxAbsEnt/gpu/cuda)
+add_subdirectory(AxAbsEnt/gpu/cudadev)

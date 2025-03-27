@@ -1,106 +1,13 @@
 name: axabsent
 channels:
-  - conda-forge
   - defaults
-  - nvidia
-
 dependencies:
-  # 🐍 Python & Core
-  - python=3.11
-  - pip
-
-  # 🔢 Numerical + Tensor Ops
-  - numpy>=1.26.4
-  - scipy>=1.12.0
-  - numba>=0.59.0
-  - sympy>=1.12
-  - pandas>=2.2.1
-  - h5py>=3.10.0
-  - xarray>=2023.12.0
-  - einops>=0.7.0
-  - opt_einsum>=3.3.0
-
-  # 🧠 Deep Learning / GPU Acceleration
-  - pytorch=2.2.1
-  - pytorch-cuda=12.1
-  - torchvision
-  - torchaudio
-  - jax>=0.4.25
-  - jaxlib=*=*cuda*
-
-  # 📈 Visualization
-  - matplotlib>=3.8.3
-  - plotly>=5.21.0
-  - seaborn>=0.13.2
-  - ipywidgets>=8.1.2
-  - pyvista>=0.43.3
-  - vedo
-  - bokeh>=3.3.2
-
-  # 🧪 Simulation & Scientific Tools
-  - scikit-learn>=1.4.1
-  - scikit-image
-  - networkx>=3.2.1
-  - trimesh
-  - meshio
-  - cython>=3.0.8
-  - openmm
-
-  # 📚 Documentation
-  - sphinx>=7.3.7
-  - sphinx-book-theme
-  - myst-parser>=1.0.0
-  - nbsphinx>=0.9.3
-  - pandoc
-  - latexmk
-  - graphviz
-
-  # 🔧 Dev Tools
-  - flake8>=7.0.0
-  - mypy>=1.9.0
-  - black>=24.3.0
-  - isort>=5.13.2
-  - pytest>=8.1.1
-  - pytest-cov>=4.1.0
-  - coverage>=7.4.4
-  - pre-commit>=3.7.0
-
-  # 🌐 Web & API
-  - fastapi>=0.110.0
-  - uvicorn>=0.29.0
-  - httpx>=0.26.0
-  - pydantic>=2.6.3
-
-  # 🧬 I/O, Serialization
-  - jsonschema
-  - msgpack-python
-  - netcdf4>=1.6.5
-
-  # 🧠 Symbolic Logic + Theoretical Extensions
-  - symengine
-  - mpmath>=1.3.0
-  - z3-solver
-
-  # 🐳 Docker (optional local build)
-  - docker-py
-
-  # 🧪 Testing
-  - hypothesis>=6.98.0
-
-  # 📦 Install pip packages not available on conda-forge
+  - python=3.10
+  - numpy
+  - pyyaml
+  - jupyterlab
+  - pytest
+  - mkdocs
   - pip:
-      - tensorboard>=2.16.2
-      - loguru>=0.7.2
-      - pyinstrument
-      - pybind11>=2.11.1
-      - gpustat>=1.1.1
-      - rich
-      - coverage-badge
-      - pyyaml
-      - onnx
-      - flax
-      - triton
-      # Performance monitoring
-      - prometheus-client>=0.19.0
-      - sentry-sdk>=1.40.4
-
+    - black
+    - flake8

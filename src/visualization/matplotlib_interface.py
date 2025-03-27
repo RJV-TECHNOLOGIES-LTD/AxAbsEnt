@@ -1,1 +1,0 @@
-Matplotlib interface for static plots

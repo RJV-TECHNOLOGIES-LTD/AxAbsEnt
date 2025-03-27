@@ -1,1 +1,0 @@
-Categorical theory implementation

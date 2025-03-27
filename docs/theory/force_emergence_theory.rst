@@ -1,1 +1,0 @@
-Force emergence theoretical explanation

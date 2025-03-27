@@ -1,1 +1,0 @@
-Physical and mathematical constants

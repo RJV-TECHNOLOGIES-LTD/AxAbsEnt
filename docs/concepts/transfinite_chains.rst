@@ -1,1 +1,0 @@
-Description of transfinite interaction chains

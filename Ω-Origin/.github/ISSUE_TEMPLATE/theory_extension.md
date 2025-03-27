@@ -1,1 +1,0 @@
-Template for proposing theoretical extensions

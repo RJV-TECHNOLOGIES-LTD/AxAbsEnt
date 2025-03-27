@@ -1,1 +1,0 @@
-Information transfer theoretical basis

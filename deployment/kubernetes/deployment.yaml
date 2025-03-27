@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: super-sql-ai
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: super-sql
+  template:
+    metadata:
+      labels:
+        app: super-sql
+    spec:
+      containers:
+      - name: super-sql
+        image: super_sql_image:latest
+        ports:
+        - containerPort: 8888
+        volumeMounts:
+        - mountPath: /usr/src/app
+          name: app-volume
+      volumes:
+      - name: app-volume
+        hostPath:
+          path: /mnt/super_sql
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: super-sql-service
+spec:
+  selector:
+    app: super-sql
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8888
+  type: ClusterIP

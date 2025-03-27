@@ -1,0 +1,12 @@
+site_name: AxAbsEnt Documentation
+site_url: https://rjv-technologies-ltd.github.io/AxAbsEnt
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - API: api.md
+  - CLI: cli.md
+  - Recursion: recursion.md
+theme:
+  name: material
+repo_url: https://github.com/RJV-TECHNOLOGIES-LTD/AxAbsEnt
+repo_name: RJV-Technologies-LTD/AxAbsEnt

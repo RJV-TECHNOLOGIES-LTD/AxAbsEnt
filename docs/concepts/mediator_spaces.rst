@@ -1,1 +1,0 @@
-Explanation of mediator spaces

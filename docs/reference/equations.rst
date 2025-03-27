@@ -1,1 +1,0 @@
-Key equations reference

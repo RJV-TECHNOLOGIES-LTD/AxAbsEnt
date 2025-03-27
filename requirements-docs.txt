@@ -1,1 +1,3 @@
-Documentation building dependencies
+mkdocs
+mkdocstrings
+markdown

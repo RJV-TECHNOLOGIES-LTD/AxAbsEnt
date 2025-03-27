@@ -1,1 +1,0 @@
-Tutorials index page

@@ -1,1 +1,0 @@
-Tutorial on force emergence

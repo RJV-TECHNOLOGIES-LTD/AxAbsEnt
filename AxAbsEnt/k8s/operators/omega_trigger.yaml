@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: axabsent-omega-trigger
+spec:
+  template:
+    spec:
+      containers:
+      - name: axabsent-runner
+        image: axabsent/omega:latest
+        command: ["python", "run_omega.py"]
+      restartPolicy: Never

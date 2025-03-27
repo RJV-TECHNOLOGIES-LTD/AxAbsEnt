@@ -1,5 +1,2 @@
 #!/bin/bash
-# Unix build script for AxAbsEnt C++ code
-mkdir -p build
-cmake -S cpp -B build
-cmake --build build --config Release
+python3 setup.py sdist bdist_wheel

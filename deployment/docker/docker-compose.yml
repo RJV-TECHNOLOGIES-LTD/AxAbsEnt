@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  super_sql:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - PYTHONUNBUFFERED=1

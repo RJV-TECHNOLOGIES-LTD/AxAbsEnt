@@ -1,1 +1,0 @@
-Vacuum energy fluctuation predictions

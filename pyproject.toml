@@ -1,11 +1,9 @@
+[tool.black]
+line-length = 88
 
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
-
-[project]
+[tool.poetry]
 name = "axabsent"
 version = "0.1.0"
-description = "Unified Theory of Cross-Absolute Interactions"
-authors = [{name = "RJV Technologies Ltd", email = "contact@rjv-tech.com"}]
-dependencies = []
+description = "Recursive AI system for transdimensional simulation"
+authors = ["RJV Technologies <contact@rjv.tech>"]
+packages = [{ include = "AxAbsEnt" }]

@@ -1,0 +1,10 @@
+domain: EXISTENTIAL_MODELING
+dimensional_index: AUTO-GENERATED
+recursion_depth_supported: 1–∞
+origin: AxAbsEnt Unified Model
+collapse_conditions:
+  - entropy_exceeded
+  - contradiction_loop
+paradox_handling:
+  - recursive_realignment
+  - memory_trace_inversion
