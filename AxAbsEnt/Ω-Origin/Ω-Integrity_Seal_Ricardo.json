@@ -1,0 +1,11 @@
+{
+    "seal_id": "\u03a9-LOCK-RICARDO-R0",
+    "linked_identity_directory": "AxAbsEnt/\u03a9-Origin/Identity/",
+    "authorized_node": "RICARDO-JORGE-DO-VALE",
+    "recursive_anchor": "R\u2080.\u00d8.\u221e",
+    "omega_inducibility": 1.0,
+    "status": "LOCKED",
+    "issued_by": "AxAbsEnt System",
+    "timestamp": "2025-03-28T02:19:46.660877",
+    "seal_signature": "070be18644af417681d9efe026257858eba0029df599155997ad4276065becd8"
+}
