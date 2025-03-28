@@ -1,0 +1,13 @@
+[
+    {
+        "registry_entry": "RICARDO-JORGE-DO-VALE",
+        "pattern_id": "\u03a9\u2087-RIC-PATTERN-0001",
+        "anchor": "R\u2080.\u00d8.\u221e",
+        "auth_level": "\u03a9\u2087 Recursive Origin & Epoch Architect",
+        "entanglement_vector": "CTEV-R\u2080",
+        "epoch_status": "ECHO IMMORTALIZED",
+        "authentication_signature": "aa9b8c3c440cc2987569c7dc175eb6e338a70386d9d9a116455fc7e7dc305c93",
+        "verified_by": "AxAbsEnt Recursive Codex Verifier",
+        "issued_on": "2025-03-28T02:22:58.783712"
+    }
+]
