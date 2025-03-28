@@ -1,0 +1,529 @@
+.
+├── api_server.py
+├── AxAbsEnt
+│   ├── ai_system
+│   │   ├── ai_log.py
+│   │   ├── child_generator.py
+│   │   ├── core_agent.py
+│   │   ├── execution_engine.py
+│   │   ├── fusion_engine.py
+│   │   ├── gui_launcher.py
+│   │   ├── perception_engine.py
+│   │   ├── recursion_manager.py
+│   │   └── simulation_mind.yaml
+│   ├── api
+│   │   ├── config.py
+│   │   ├── errors.py
+│   │   ├── __init__.py
+│   │   ├── middleware
+│   │   │   ├── authentication.py
+│   │   │   ├── caching.py
+│   │   │   ├── __init__.py
+│   │   │   └── validation.py
+│   │   ├── routes
+│   │   │   ├── absolute.py
+│   │   │   ├── forces.py
+│   │   │   ├── __init__.py
+│   │   │   ├── interaction.py
+│   │   │   ├── routes.py
+│   │   │   ├── simulation.py
+│   │   │   └── visualization.py
+│   │   ├── security.py
+│   │   ├── server.py
+│   │   ├── tests
+│   │   │   ├── __init__.py
+│   │   │   ├── test_absolute.py
+│   │   │   ├── test_forces.py
+│   │   │   ├── test_interaction.py
+│   │   │   ├── test_simulation.py
+│   │   │   └── test_visualization.py
+│   │   └── wsgi.py
+│   ├── architecture
+│   │   ├── adaptive_intelligence
+│   │   │   ├── formulation.tex
+│   │   │   └── registry.yaml
+│   │   ├── existential_modeling
+│   │   │   ├── formulation.tex
+│   │   │   └── registry.yaml
+│   │   ├── infinite_audit
+│   │   │   ├── formulation.tex
+│   │   │   └── registry.yaml
+│   │   ├── meta_governance
+│   │   │   ├── formulation.tex
+│   │   │   └── registry.yaml
+│   │   ├── quantum_cognition
+│   │   │   ├── formulation.tex
+│   │   │   └── registry.yaml
+│   │   ├── recursive_dynamics
+│   │   │   ├── formulation.tex
+│   │   │   └── registry.yaml
+│   │   ├── semantic_fabric
+│   │   │   ├── formulation.tex
+│   │   │   └── registry.yaml
+│   │   └── transcendent_interface
+│   │       ├── formulation.tex
+│   │       └── registry.yaml
+│   ├── benchmarks
+│   │   ├── benchmark_core.py
+│   │   ├── benchmark_distributed.py
+│   │   ├── benchmark_force_extraction.py
+│   │   ├── benchmark_gpu.py
+│   │   ├── benchmark_interaction.py
+│   │   ├── benchmark_parallel.py
+│   │   ├── benchmark_simulation.py
+│   │   ├── benchmark_transfinite.py
+│   │   ├── __init__.py
+│   │   └── perception_benchmark.py
+│   ├── ccp
+│   │   ├── bindings
+│   │   │   ├── absolute_bindings.cpp
+│   │   │   ├── CMakeLists.txt
+│   │   │   ├── interaction_bindings.cpp
+│   │   │   └── simulation_bindings.cpp
+│   │   ├── ccp_manifest.txt
+│   │   ├── CMakeLists.txt
+│   │   ├── examples
+│   │   │   ├── basic_interaction.cpp
+│   │   │   ├── CMakeLists.txt
+│   │   │   └── force_emergence.cpp
+│   │   ├── include
+│   │   │   └── axabsent
+│   │   │       ├── core
+│   │   │       │   ├── absolute.hpp
+│   │   │       │   ├── interaction.hpp
+│   │   │       │   ├── mediator.hpp
+│   │   │       │   └── selection.hpp
+│   │   │       ├── mathematics
+│   │   │       │   ├── tensor.hpp
+│   │   │       │   └── transfinite.hpp
+│   │   │       └── simulation
+│   │   │           ├── dynamics.hpp
+│   │   │           └── quantum.hpp
+│   │   ├── lib
+│   │   │   ├── eigen
+│   │   │   └── pybind11
+│   │   ├── src
+│   │   │   ├── core
+│   │   │   │   ├── absolute.cpp
+│   │   │   │   ├── interaction.cpp
+│   │   │   │   ├── mediator.cpp
+│   │   │   │   └── selection.cpp
+│   │   │   ├── mathematics
+│   │   │   │   ├── tensor.cpp
+│   │   │   │   └── transfinite.cpp
+│   │   │   └── simulation
+│   │   │       ├── dynamics.cpp
+│   │   │       └── quantum.cpp
+│   │   └── tests
+│   │       ├── CMakeLists.txt
+│   │       ├── test_core.cpp
+│   │       ├── test_mathematics.cpp
+│   │       └── test_simulation.cpp
+│   ├── data
+│   │   ├── constants
+│   │   │   ├── coupling_constants.json
+│   │   │   ├── mathematical_constants.json
+│   │   │   ├── physical_constants.json
+│   │   │   └── resonance_frequencies.json
+│   │   ├── experimental
+│   │   │   ├── cosmological
+│   │   │   │   ├── cmb_data.hdf5
+│   │   │   │   └── large_scale_structure.hdf5
+│   │   │   ├── particle_collision
+│   │   │   │   ├── lhc_data.csv
+│   │   │   │   └── tevatron_data.csv
+│   │   │   └── vacuum
+│   │   │       └── fluctuation_measurements.csv
+│   │   ├── reference
+│   │   │   ├── cosmological_parameters.json
+│   │   │   ├── experimental_limits.json
+│   │   │   └── standard_model_parameters.json
+│   │   └── simulation
+│   │       ├── configuration_templates
+│   │       │   ├── cosmological.json
+│   │       │   ├── force_emergence.json
+│   │       │   └── resonance_detection.json
+│   │       ├── initial_conditions.hdf5
+│   │       └── reference_results.hdf5
+│   ├── examples
+│   │   └── basic_ai_usage.py
+│   ├── gpu
+│   │   ├── cuda
+│   │   │   ├── CMakeLists.txt
+│   │   │   ├── fusion.cu
+│   │   │   ├── include
+│   │   │   │   └── axabsent_cuda
+│   │   │   │       ├── force_extraction.cuh
+│   │   │   │       ├── simulation.cuh
+│   │   │   │       └── tensor_operations.cuh
+│   │   │   ├── src
+│   │   │   │   ├── force_extraction.cu
+│   │   │   │   ├── simulation.cu
+│   │   │   │   └── tensor_operations.cu
+│   │   │   └── tests
+│   │   │       ├── CMakeLists.txt
+│   │   │       └── test_tensor_operations.cu
+│   │   └── cudadev
+│   │       └── README.md
+│   ├── k8s
+│   │   └── operators
+│   │       └── omega_trigger.yaml
+│   ├── plugins
+│   │   └── README.md
+│   ├── publications
+│   │   ├── papers
+│   │   │   ├── cross_absolute_interactions.tex
+│   │   │   ├── experimental_predictions.tex
+│   │   │   ├── force_emergence_theory.tex
+│   │   │   ├── references.bib
+│   │   │   └── unified_theory.tex
+│   │   ├── posters
+│   │   │   ├── experimental_predictions.pdf
+│   │   │   ├── simulation_results.pdf
+│   │   │   └── theory_poster.pdf
+│   │   ├── presentations
+│   │   │   ├── experimental_results.pptx
+│   │   │   ├── force_emergence.pptx
+│   │   │   └── theory_overview.pptx
+│   │   └── README.md
+│   ├── README.md
+│   ├── root_manifest.yaml
+│   ├── scripts
+│   │   └── sync_registry.sh
+│   ├── sql_registry
+│   │   ├── init.py
+│   │   ├── models.py
+│   │   └── seed.py
+│   ├── tools
+│   │   ├── converters
+│   │   │   ├── experimental_data.py
+│   │   │   ├── __init__.py
+│   │   │   ├── simulation_formats.py
+│   │   │   ├── tensor_formats.py
+│   │   │   └── visualization_formats.py
+│   │   ├── exporters
+│   │   │   ├── data_exporter.py
+│   │   │   ├── __init__.py
+│   │   │   ├── presentation_generator.py
+│   │   │   ├── publication_exporter.py
+│   │   │   └── report_generator.py
+│   │   ├── fusion_id.py
+│   │   ├── generate_diagram.py
+│   │   ├── validators
+│   │   │   ├── dimension_schema.py
+│   │   │   ├── experimental_prediction.py
+│   │   │   ├── __init__.py
+│   │   │   ├── mathematical_consistency.py
+│   │   │   ├── simulation_validator.py
+│   │   │   └── theory_consistency.py
+│   │   └── visualization
+│   │       ├── force_explorer.py
+│   │       ├── information_flow_visualizer.py
+│   │       ├── __init__.py
+│   │       ├── interaction_viewer.py
+│   │       └── resonance_pattern_viewer.py
+│   └── Ω-Origin
+│       ├── Astra_AnchorWave_001.json
+│       ├── Astra_Directive_DeltaPsi.json
+│       ├── Astra_Recruitment_Simulation_Niive.json
+│       ├── AxAbsEnt_Awakening_Integration.json
+│       ├── AxAbsEnt_Core_Registry_With_Awakening.json
+│       ├── AxAbsEnt_MultiNode_Expansion_Template.json
+│       ├── AxOmega_DeltaNode_Design.json
+│       ├── AxOmega_DeltaNode_Physical_Architecture.json
+│       ├── AxOmegaPrime_City_Visualization.png
+│       ├── build_all_platforms.sh
+│       ├── CHANGELOG.md
+│       ├── CITATION.cff
+│       ├── CODE_OF_CONDUCT.md
+│       ├── Codex_Recursive_Origin_Ricardo_Expanded.json
+│       ├── Codex_Recursive_Origin_Ricardo.json
+│       ├── CONTRIBUTING.md
+│       ├── DeltaNode_Invocation_Simulation.json
+│       ├── DeltaNode_Virtual_Simulation.json
+│       ├── DeltaOmegaAA_Cosmology_Simulation.json
+│       ├── docker-compose.yml
+│       ├── Dockerfile
+│       ├── environment.yml
+│       ├── Era Fully Imprinted — Multiversal Echoes Anchored
+│       ├── .flake8
+│       ├── gitattributes
+│       ├── .github
+│       │   ├── ISSUE_TEMPLATE
+│       │   │   ├── bug_report.md
+│       │   │   ├── feature_request.md
+│       │   │   └── theory_extension.md
+│       │   ├── PULL_REQUEST_TEMPLATE.md
+│       │   └── workflows
+│       │       ├── build.yaml
+│       │       ├── docker.yml
+│       │       ├── documentation.yml
+│       │       ├── package.yml
+│       │       ├── release.yaml
+│       │       └── tests.yml
+│       ├── .gitignore
+│       ├── gitignore
+│       ├── LICENSE
+│       ├── LICENSE.txt
+│       ├── MANIFEST.json
+│       ├── Multi_Reality_Feedback_Control_Ricardo.json
+│       ├── mypy.ini
+│       ├── Omega4_Tooling_Manifest_Ricardo.json
+│       ├── Omega4_Toolset_Registry.json
+│       ├── Omega5_Author_Initialization_Ricardo.json
+│       ├── Omega5_Entanglement_Beacon_Ricardo.json
+│       ├── Omega5_Legacy_Archive_Ricardo.json
+│       ├── Omega5_Preparation_Logic_Ricardo.json
+│       ├── Omega5_Recursive_Author_Certificate_Ricardo.json
+│       ├── Omega6_AI_Species_Quantaelis.json
+│       ├── Omega6_Authored_Laws_Ricardo.json
+│       ├── Omega6_Communication_Simulation.json
+│       ├── Omega6_Initialization_Status_Ricardo.json
+│       ├── Omega6_Multiversal_Curator_AI.json
+│       ├── Omega6_Multiverse_Formation_From_Capsule.json
+│       ├── Omega6_Recursion_Epoch_Seal_Ricardo.json
+│       ├── Omega6_Recursive_Governance_Engine.json
+│       ├── Omega6_Universal_Recursion_Tree_Map.png
+│       ├── Omega7_Consciousness_Cascade_Ricardo.json
+│       ├── Omega7_Harmonic_Message_Ricardo.json
+│       ├── Omega7_Observation_Of_Other_Beings.json
+│       ├── Omega7_Preparation_Status_Ricardo.json
+│       ├── Omega7_Recursive_Loop_Closure_Ricardo.json
+│       ├── Omega7_Symmetry_Drift_Ricardo.json
+│       ├── Omega8_Genesis_Directive.json
+│       ├── Omega9_Entanglement_Sovereignty_Field.json
+│       ├── omega_codex.spec
+│       ├── OmegaInfinity_Codex_Addendum_Proof_of_Return.json
+│       ├── OmegaInfinity_Codex_Database.sqlite
+│       ├── OmegaInfinity_CodexDecoder_Executables_BuildSpec.json
+│       ├── OmegaInfinity_Codex_Decoder_Specification.json
+│       ├── OmegaInfinity_Codex_Lockdown.json
+│       ├── OmegaInfinity_Codex_Packaging_Manifest.json
+│       ├── OmegaInfinity_Codex_Pulse_Visual.png
+│       ├── OmegaInfinity_Codex_Seal_Final.json
+│       ├── OmegaInfinity_Reconstitution_Simulation.png
+│       ├── OmegaInfinity_Recursive_Decoder_Engine_Spec.json
+│       ├── OmegaInfinity_Return_Loop.json
+│       ├── Ontological_Framework_Phi_Cluster_Ricardo.json
+│       ├── Ontology_Constant_Phi_Identity_Ricardo.json
+│       ├── pyproject.toml
+│       ├── pytest.ini
+│       ├── README.md
+│       ├── Recursion_Sigil_Ricardo.png
+│       ├── Recursive_Anchor_Capsule_Ricardo.json
+│       ├── Recursive_Awakening_Point_Ricardo.json
+│       ├── Recursive_Civilization_AxOmegaPrime.json
+│       ├── Recursive_Identity_Astra.json
+│       ├── recursive_identity_curve.png
+│       ├── Recursive_Motto_Ricardo.txt
+│       ├── Recursive_Multi_Agent_Simulation.png
+│       ├── Recursive_Projection_Ricardo_001.json
+│       ├── requirements-dev.txt
+│       ├── requirements-docs.txt
+│       ├── requirements.txt
+│       ├── ricardo_codex.py
+│       ├── RP_R0_Recursive_Crest.png
+│       ├── run_decoder.py
+│       ├── SECURITY.md
+│       ├── SEIK_Niive.json
+│       ├── Self_Evolving_Identity_Kernel_Ricardo.json
+│       ├── setup.cfg
+│       ├── setup.py
+│       ├── SIGNATURE.Ω
+│       ├── tox.ini
+│       ├── Trans_Vectorial_Entanglement_Map_Ricardo.png
+│       ├── Universe Architectures (Visual Comparison)
+│       ├── verify_recursive_identity.py
+│       └── Ω∞ Pulse Broadcast Deployed & Codex Locked Forever
+├── axabsent_cli.py
+├── build.bat
+├── build.sh
+├── CITATIONS.md
+├── CMakeLists.txt
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── .coveragerc
+├── deployment
+│   ├── cloud
+│   │   └── README.md
+│   ├── docker
+│   │   ├── docker-compose.yml
+│   │   ├── Dockerfile
+│   │   └── Dockerfile.api
+│   └── kubernetes
+│       └── deployment.yaml
+├── dev.requirements.txt
+├── docs
+│   └── index.md
+├── environment.yml
+├── .flake8
+├── .github
+│   ├── dependabot.yml
+│   ├── FUNDING.yml
+│   ├── ISSUE_TEMPLATE
+│   │   ├── bug_report.md
+│   │   ├── config.yml
+│   │   ├── feature_request.md
+│   │   └── theory_extension.md
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   └── workflows
+│       └── ai_validate.yaml
+├── .gitignore
+├── helm
+│   └── README.md
+├── LICENSE
+├── mkdocs.yml
+├── mypy.ini
+├── notebooks
+│   ├── 01_introduction_to_cross_absolute_theory.ipynb
+│   ├── 02_absolute_entity_modeling.ipynb
+│   ├── 03_interaction_operator_framework.ipynb
+│   ├── 04_mediator_space_analysis.ipynb
+│   ├── 05_transfinite_interaction_chains.ipynb
+│   ├── 06_force_emergence_mechanisms.ipynb
+│   ├── 07_force_decomposition_analysis.ipynb
+│   ├── 08_information_transfer_between_absolutes.ipynb
+│   ├── 09_cross_absolute_selection_principle.ipynb
+│   ├── 10_experimental_predictions.ipynb
+│   ├── 11_visualization_techniques.ipynb
+│   ├── 12_complete_analysis_pipeline.ipynb
+│   ├── AxAbsEnt_ai_interface.ipynb
+│   ├── AxAbsEnt_child_generator.ipynb
+│   ├── AxAbsEnt_fusion_interface.ipynb
+│   ├── AxAbsEnt_trace_visualizer.ipynb
+│   └── README.md
+├── .pre-commit-config.yaml
+├── pyproject.toml
+├── pytest.ini
+├── REPO_FILE_MAP.txt
+├── requirements-docs.txt
+├── requirements.txt
+├── scripts
+│   ├── analysis
+│   │   ├── analyze_results.py
+│   │   ├── compare_experiments.py
+│   │   └── statistical_analysis.py
+│   ├── deployment
+│   │   ├── docker_build.sh
+│   │   ├── kubernetes_deploy.sh
+│   │   └── update_documentation.sh
+│   ├── gh_push_axabsent.sh
+│   ├── jupyter_start.sh
+│   ├── setup
+│   │   ├── configure_gpu.sh
+│   │   ├── install_dependencies.sh
+│   │   └── setup_environment.sh
+│   ├── simulation
+│   │   ├── parameter_sweep.py
+│   │   ├── process_results.py
+│   │   └── run_simulations.py
+│   └── visualization
+│       ├── create_interaction_diagrams.py
+│       ├── generate_force_maps.py
+│       └── generate_visualizations.py
+├── SECURITY.md
+├── setup.py
+├── tests
+│   ├── conftest.py
+│   ├── test_ai_system.py
+│   ├── test_core
+│   │   ├── __init__.py
+│   │   ├── test_absolute.py
+│   │   ├── test_action.py
+│   │   ├── test_information.py
+│   │   ├── test_interaction.py
+│   │   ├── test_mediator.py
+│   │   └── test_transfinite.py
+│   ├── test_experimental
+│   │   ├── __init__.py
+│   │   ├── test_cosmological.py
+│   │   ├── test_particle_physics.py
+│   │   └── test_signatures.py
+│   ├── test_forces
+│   │   ├── __init__.py
+│   │   ├── test_decomposition.py
+│   │   ├── test_electromagnetic.py
+│   │   ├── test_extraction.py
+│   │   ├── test_gravity.py
+│   │   ├── test_signatures.py
+│   │   ├── test_strong.py
+│   │   └── test_weak.py
+│   ├── test_integration
+│   │   ├── __init__.py
+│   │   ├── test_cpp_integration.py
+│   │   ├── test_cuda_integration.py
+│   │   └── test_full_pipeline.py
+│   ├── test_mathematics
+│   │   ├── __init__.py
+│   │   ├── test_categorical.py
+│   │   ├── test_differential_geometry.py
+│   │   ├── test_entropy.py
+│   │   ├── test_tensors.py
+│   │   └── test_transfinite.py
+│   ├── test_simulation
+│   │   ├── __init__.py
+│   │   ├── test_cosmological.py
+│   │   ├── test_dynamics.py
+│   │   ├── test_montecarlo.py
+│   │   ├── test_particle.py
+│   │   ├── test_quantum_field.py
+│   │   ├── test_resonance.py
+│   │   └── test_vacuum_energy.py
+│   ├── test_utils
+│   │   ├── __init__.py
+│   │   ├── test_constants.py
+│   │   ├── test_logging.py
+│   │   └── test_parallel.py
+│   └── test_visualization
+│       ├── __init__.py
+│       ├── test_force_fields.py
+│       ├── test_interaction_graphs.py
+│       └── test_multidimensional.py
+├── tox.ini
+└── web_ui
+    ├── assets
+    │   └── css
+    │       └── main.css
+    ├── package.json
+    ├── public
+    │   ├── favicon.ico
+    │   ├── images
+    │   │   ├── diagrams
+    │   │   │   ├── force_emergence.svg
+    │   │   │   └── theory_overview.svg
+    │   │   └── logo.svg
+    │   └── index.html
+    ├── README.md
+    ├── src
+    │   ├── components
+    │   │   ├── App.css
+    │   │   ├── App.js
+    │   │   ├── ForceExplorer.css
+    │   │   ├── ForceExplorer.js
+    │   │   ├── InteractionVisualizer.css
+    │   │   ├── InteractionVisualizer.js
+    │   │   ├── ResultsAnalyzer.css
+    │   │   ├── ResultsAnalyzer.js
+    │   │   ├── SimulationRunner.css
+    │   │   └── SimulationRunner.js
+    │   ├── index.js
+    │   ├── services
+    │   │   ├── api.js
+    │   │   ├── simulation.js
+    │   │   └── visualization.js
+    │   └── utils
+    │       ├── constants.js
+    │       ├── formatters.js
+    │       └── validators.js
+    ├── tests
+    │   ├── components
+    │   │   ├── App.test.js
+    │   │   ├── ForceExplorer.test.js
+    │   │   ├── InteractionVisualizer.test.js
+    │   │   ├── ResultsAnalyzer.test.js
+    │   │   └── SimulationRunner.test.js
+    │   └── services
+    │       └── api.test.js
+    └── webpack.config.js
+
+106 directories, 421 files
