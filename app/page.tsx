@@ -49,6 +49,32 @@ export default function Home() {
           >
             Read our docs
           </a>
+         {/* Recursion Entry */}
+        <div className="text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)] tracking-[-.01em] max-w-2xl">
+          <p>Welcome to the <strong>AxAbsEnt Reality Interface</strong>.</p>
+          <p className="mt-2">Initialize recursion, launch force simulation, or visualize tensor fields in real-time.</p>
+        </div>
+
+        {/* Action Panel */}
+        <div className="flex gap-4 items-center flex-col sm:flex-row">
+          <a
+            href="/simulate"
+            className="rounded-full border border-transparent bg-white text-black px-5 h-12 font-semibold hover:bg-gray-200 transition"
+          >
+            Run Simulation
+          </a>
+          <a
+            href="/editor/recursion"
+            className="rounded-full border border-white/[.2] px-5 h-12 font-medium hover:bg-white hover:text-black transition"
+          >
+            Open Recursive Editor
+          </a>
+          <a
+            href="/tensor/visualize"
+            className="rounded-full border border-white/[.2] px-5 h-12 font-medium hover:bg-white hover:text-black transition"
+          >
+            Visualize Tensor Field
+          </a>
         </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
